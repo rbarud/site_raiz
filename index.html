@@ -167,7 +167,7 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .btn-sage{padding:15px 38px;font-size:.93rem}
 .btn-sage-lg{padding:19px 52px;font-size:1.05rem;box-shadow:var(--btn-shadow-lg)}
 .nav-cta{padding:9px 22px;font-size:.79rem}
-.apply-cta-btn{padding:17px 44px;font-size:1rem;box-shadow:var(--btn-shadow-lg);border:2px solid rgba(255,255,255,.25) !important;width:auto;min-width:340px;max-width:100%;white-space:nowrap}
+.apply-cta-btn{padding:16px 36px;font-size:.95rem;box-shadow:var(--btn-shadow-lg);border:none !important;width:100%;max-width:420px;white-space:normal;display:inline-block;text-align:center;line-height:1.4}
 .oc-btn{width:100%;padding:12px 20px;font-size:.83rem}
 
 /* HOVER — all gradient buttons */
@@ -222,6 +222,7 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 ══════════════════════════════════════ */
 .hero{min-height:100vh;background:var(--cream);display:flex;align-items:center;padding:80px 0 64px}
 .hero-inner{text-align:center}
+.hero-right{display:none}
 .hero-pre{margin-bottom:1.75rem}
 .hero-hl{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,4.8vw,4.2rem);font-weight:300;line-height:1.1;color:var(--dark);margin-bottom:1.25rem}
 .hero-hl em{font-style:italic;color:var(--sage)}
@@ -230,11 +231,11 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .hero-sub{font-size:1.07rem;color:var(--mid);line-height:1.88;font-weight:300;max-width:580px;margin:0 auto 1rem}
 .hero-sub strong{color:var(--dark);font-weight:500}
 /* TB mechanism tease — planted below the empathy */
-.mech-pill{display:inline-flex;align-items:center;gap:10px;background:var(--sage-pale);border:1px solid rgba(107,127,90,.22);border-radius:12px;padding:13px 20px;font-size:.85rem;color:var(--sage-deep);margin:1.25rem 0 2.25rem;font-weight:400}
+.mech-pill{display:inline-flex;align-items:center;gap:10px;background:var(--sage-pale);border:1px solid rgba(107,127,90,.22);border-radius:12px;padding:13px 20px;font-size:.85rem;color:var(--sage-deep);margin:1.25rem 0 2rem;font-weight:400}
 .mech-pill strong{font-weight:600}
 .hero-urgency{margin-top:1.25rem}
-.hero-social{display:flex;align-items:center;justify-content:center;gap:0;margin-top:2rem;background:var(--warm);border:1px solid var(--border);border-radius:14px;overflow:hidden;max-width:480px;margin-left:auto;margin-right:auto}
-.hs-item{display:flex;flex-direction:column;align-items:center;padding:14px 22px;flex:1}
+.hero-social{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:0;background:var(--warm);border:1px solid var(--border);border-radius:14px;overflow:hidden;max-width:520px;margin:0 auto}
+.hs-item{display:flex;flex-direction:column;align-items:center;padding:14px 22px;flex:1;text-align:center}
 .hs-num{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;color:var(--sage-deep);line-height:1}
 .hs-lbl{font-size:.68rem;color:var(--soft);margin-top:3px;letter-spacing:.03em;text-align:center}
 .hs-sep{width:1px;height:36px;background:var(--border);flex-shrink:0}
@@ -395,9 +396,10 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 ══════════════════════════════════════ */
 .offer{background:var(--dark);padding:6rem 0}
 .offer-head{text-align:center;margin-bottom:4rem}
-.offer-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:stretch;justify-items:stretch}
+.offer-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;align-items:stretch;justify-items:stretch;max-width:700px;margin:0 auto}
 .oc{background:rgba(248,245,240,.05);border:1px solid rgba(248,245,240,.1);border-radius:18px;padding:2.25rem 2rem;text-align:center;position:relative;display:flex;flex-direction:column}
 .oc.best{border:2px solid var(--sage-l);background:rgba(107,127,90,.07);position:relative;z-index:1;box-shadow:0 6px 24px rgba(74,92,58,.18)}
+.oc-badge-diag{display:inline-block;background:var(--gold);color:#fff;font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;padding:4px 14px;border-radius:100px;white-space:nowrap;margin-bottom:.65rem}
 .oc-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--sage);color:#fff;font-size:.67rem;letter-spacing:.08em;text-transform:uppercase;padding:4px 16px;border-radius:100px;white-space:nowrap}
 .oc-type{font-size:.69rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,245,240,.3);margin-bottom:.65rem;min-height:2.2rem;display:flex;align-items:center;justify-content:center}
 .oc-price{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--cream);line-height:1;margin-top:.5rem}
@@ -526,6 +528,30 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .close-urgency p strong{font-weight:600;color:var(--sage-deep)}
 .rule-gold{width:42px;height:1px;background:var(--gold);margin:2.5rem auto}
 
+/* Ilusão Cognitiva */
+.ilusao-cognitiva{margin:2rem 0;padding:1.5rem 2rem;background:rgba(184,147,90,.06);border-left:2px solid var(--gold);border-radius:0 12px 12px 0}
+.ic-frase{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--mid);line-height:1.75;font-weight:300;margin-bottom:.6rem}
+.ic-nome{font-size:.97rem;color:var(--dark);font-weight:300;margin-bottom:.35rem}
+.ic-detalhe{font-size:.9rem;color:var(--mid);font-weight:300}
+
+/* GAP Diagram */
+.gap-diagram{display:grid;grid-template-columns:1fr auto 1fr;gap:0;margin:1.25rem 0 1.5rem;border:1px solid var(--border);border-radius:14px;overflow:hidden;font-size:.84rem}
+.gap-col{padding:1.25rem 1.1rem}
+.gap-mente{background:rgba(42,37,32,.03);border-right:1px solid var(--border)}
+.gap-corpo{background:rgba(42,37,32,.03)}
+.gap-col-title{font-size:.67rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--mid);margin-bottom:.75rem}
+.gap-list{list-style:none;display:flex;flex-direction:column;gap:4px}
+.gap-list li{font-size:.82rem;color:var(--mid);font-weight:300;padding:1px 0}
+.gap-col-quote{font-style:italic;font-size:.79rem;color:var(--soft);margin-top:.9rem;font-family:'Cormorant Garamond',serif}
+.gap-center{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:.75rem 1rem;background:var(--sage-pale);border-left:1px solid var(--border);border-right:1px solid var(--border)}
+.gap-label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--sage-deep);margin-bottom:.4rem}
+.gap-arrow{font-size:.75rem;color:var(--sage);margin-bottom:.4rem}
+.gap-sublabel{font-size:.65rem;color:var(--soft);text-align:center;line-height:1.5;letter-spacing:.04em;text-transform:uppercase}
+
+/* Scarcity note (simplified) */
+.scarcity-note{background:rgba(42,37,32,.03);border:1px solid var(--border);border-radius:10px;padding:1rem 1.5rem;margin:1.25rem 0}
+.scarcity-note p{font-size:.83rem;color:var(--soft);line-height:1.72;font-weight:300;margin:0;text-align:center}
+
 /* Armadilha da Consciência */
 .armadilha{background:var(--cream);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 18px 18px 0;padding:2.25rem 2.5rem;margin:2.5rem 0}
 .armadilha-kicker{font-size:.69rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:.6rem}
@@ -534,6 +560,7 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .armadilha p:last-child{margin-bottom:0}
 .armadilha p strong{color:var(--dark);font-weight:500}
 .armadilha-break{border-top:1px solid var(--border);padding-top:1rem !important;margin-top:1.25rem !important;font-style:italic;color:var(--sage-deep) !important;font-family:'Cormorant Garamond',serif;font-size:1.05rem !important}
+.armadilha-ilusao{border-top:1px solid var(--border);margin-top:1.5rem;padding-top:1.5rem}
 
 /* FOOTER */
 footer{background:var(--dark);padding:2.25rem 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
@@ -574,7 +601,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
 .ba-c:last-child{border-right:none;color:var(--sage-deep);background:rgba(107,127,90,.04);font-weight:400}
 
 /* Frase-chave destacada dentro do depoimento */
-.t-highlight{display:block;font-family:'DM Sans',sans-serif;font-style:normal;font-size:.86rem;font-weight:500;color:var(--sage-deep);background:rgba(107,127,90,.08);border-left:2px solid var(--sage);border-radius:0 8px 8px 0;padding:.6rem 1rem;margin:1rem 0}
+.t-highlight{display:inline;font-family:inherit;font-style:inherit;font-size:inherit;font-weight:600;color:var(--dark);background:none;border:none;padding:0;margin:0}
 .integration-moment{background:var(--warm);border:1px solid var(--border);border-left:3px solid var(--sage);border-radius:0 18px 18px 0;padding:2rem 2.25rem;margin:2.5rem 0}
 .im-kicker{font-size:.69rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:1rem}
 .integration-moment p{font-size:.95rem;color:var(--mid);line-height:1.85;font-weight:300;margin-bottom:.9rem}
@@ -687,7 +714,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
 <!-- ████████████████████████████████████████
      01 · HERO
 ████████████████████████████████████████ -->
-<section class="hero" aria-label="Apresentação — Método Raiz Somática">
+<section class="hero" aria-label="Apresentação — Método Integração Soma-Cognitiva">
   <div class="col hero-inner">
 
     <div class="hero-pre rv">
@@ -697,8 +724,8 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
     <h1 class="hero-hl rv">
       Sua mente já fez a parte dela.<br>
       Seu corpo está esperando para fazer a dele.<br>
-      Descubra o único processo que<br>
-      <em>conecta os dois,</em> no espaço exato onde seus padrões vivem.
+      <strong>Descubra o único processo que<br>
+      <em>conecta os dois,</em> no espaço exato onde seus padrões vivem.</strong>
     </h1>
 
     <p class="hero-sub rv">
@@ -706,26 +733,11 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
     </p>
 
     <div class="mech-pill rv">
-      O que faltava tem nome: <strong>Raiz Somática:</strong> o processo que conecta o que sua mente já entende com o que seu corpo ainda repete
-    </div>
-
-    <div style="display:flex;justify-content:center;width:100%">
-      <a href="#aplicar" class="btn btn-sage-lg rv">Quero integrar mente e corpo</a>
-    </div>
-
-    <div class="hero-urgency rv">
-      <div class="dot-row">
-        <div class="dot"></div>
-        <span>Restam <strong>3 vagas</strong> para atendimento individual este mês · 7 vagas totais por mês</span>
-      </div>
-      <div class="vagas-bar-wrap">
-        <div class="vagas-bar-label"><strong>3 de 7 vagas</strong> disponíveis este mês</div>
-        <div class="vagas-bar-track"><div class="vagas-bar-fill"></div></div>
-      </div>
+      O que faltava tem nome: <strong>Método Integração Soma-Cognitiva</strong>
     </div>
 
     <div class="hero-social rv">
-      <div class="hs-item"><span class="hs-num">80+</span><span class="hs-lbl">mulheres atendidas desde 2018</span></div>
+      <div class="hs-item"><span class="hs-num">156+</span><span class="hs-lbl">mulheres atendidas desde 2018</span></div>
       <div class="hs-sep"></div>
       <div class="hs-item"><span class="hs-num">ICF</span><span class="hs-lbl">certificação internacional</span></div>
       <div class="hs-sep"></div>
@@ -786,7 +798,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
     </ul>
 
     <div class="pain-bridge rv">
-      Se você se reconheceu em dois ou mais desses pontos, o que compartilho a seguir explica por que, e o que muda isso.
+      Se você se reconheceu em dois ou mais desses pontos, o que vem a seguir vai explicar exatamente por que isso acontece — e o que pode ser feito a respeito.
     </div>
 
   </div>
@@ -801,7 +813,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
 
     
 
-    <div class="rule rv"></div>
+    <div class="rule ctr rv"></div>
 
     <p class="prose rv">Aqui está o que ninguém te disse ainda, e que muda completamente a forma como você entende tudo que já tentou:</p>
 
@@ -822,7 +834,12 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
       <p>Não é ter consciência demais. É ter consciência <strong>sem integração.</strong> Sua mente entende perfeitamente o padrão — mas essa compreensão nunca chega ao corpo. E a ilusão de que entender é o mesmo que mudar te mantém no ciclo: entender mais, esperar a mudança, não mudar, entender mais.</p>
       <p>Quanto mais você entende, mais sofisticada a armadilha se torna. E mais invisível. <strong>Mulheres inteligentes são as mais vulneráveis a ela</strong> — justamente porque sua capacidade de entender é alta.</p>
       <p>A armadilha não é a consciência em si. É a consciência desconectada do corpo. E enquanto as duas metades não forem integradas, o ciclo continua.</p>
-      <p class="armadilha-break">O Método Raiz Somática é o processo que quebra esse ciclo — integrando o que sua mente já entende com o que seu corpo ainda repete.</p>
+      <p class="armadilha-break">O Método Integração Soma-Cognitiva é o processo que quebra esse ciclo — integrando o que sua mente já entende com o que seu corpo ainda repete.</p>
+      <div class="armadilha-ilusao">
+        <p class="ic-frase">Quanto mais você entende seus padrões, mais acha que está perto de resolvê-los — mas na verdade está apenas refinando a narrativa enquanto o corpo continua operando no mesmo estado.</p>
+        <p class="ic-nome">Isso se chama <strong>Ilusão Cognitiva.</strong></p>
+        <p class="ic-detalhe">O inimigo não é a mente. O inimigo é a <strong>desconexão</strong>.</p>
+      </div>
     </div>
 
     <p class="prose rv">Sua mente fez a parte dela. Fez bem. Criou consciência, nomeou padrões, construiu entendimento. <strong>Esse trabalho não foi perdido. Ele é a base.</strong> Mas a base sozinha não sustenta a mudança. O que falta é integrar essa base com o que seu corpo ainda registra como padrão ativo.</p>
@@ -845,7 +862,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
       Não é falta de consciência.<br>
       É falta de <em>integração</em>.<br>
       O problema está no espaço entre<br>
-      mente e corpo: a <strong>Raiz Somática.</strong>
+      mente e corpo: a <strong>Integração Soma-Cognitiva.</strong>
     </h2>
 
     <p class="body lt rv" style="text-align:center;max-width:540px;margin:0 auto 2.5rem">Quatro razões pelas quais entender um padrão não o dissolve, e por que a integração entre mente e corpo é o que faltava:</p>
@@ -882,12 +899,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
       </li>
     </ul>
 
-    <div class="sci-bar rv">
-      <div class="sci"><div class="sci-name">Bessel van der Kolk</div><div class="sci-text">O corpo guarda o registro. Experiências ficam registradas fisicamente</div></div>
-      <div class="sci"><div class="sci-name">Gabor Maté</div><div class="sci-text">Padrões fisiológicos se formam em camadas que o insight sozinho não alcança</div></div>
-      <div class="sci"><div class="sci-name">Peter Levine</div><div class="sci-text">Ciclos somáticos se completam quando corpo e mente trabalham juntos</div></div>
-      <div class="sci"><div class="sci-name">Teoria Polivagal · Porges</div><div class="sci-text">Estado fisiológico determina comportamento possível, não intenção</div></div>
-    </div>
+  </div>
 
   </div>
 </section>
@@ -896,24 +908,24 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
 <!-- ████████████████████████████████████████
      06 · MECANISMO ÚNICO
 ████████████████████████████████████████ -->
-<section class="mech" aria-label="Mecanismo único — O que é a Raiz Somática">
+<section class="mech" aria-label="Mecanismo único — O que é a Integração Soma-Cognitiva">
   <div class="col">
 
     <div class="kicker line-l rv">O Mecanismo Único</div>
-    <h2 class="h2 rv" style="margin:.5rem 0 1rem">O que é a Raiz Somática <em>e por que é diferente</em> de tudo que você já tentou</h2>
+    <h2 class="h2 rv" style="margin:.5rem 0 1rem">O que é a Integração Soma-Cognitiva <em>e por que é diferente</em> de tudo que você já tentou</h2>
 
     <div class="origin-note rv">
-      <p>O termo <strong>Raiz Somática</strong> foi cunhado a partir de 6 anos de prática clínica, combinando integração soma-cognitiva, neurociência aplicada e regulação do sistema nervoso, depois de identificar um padrão específico: clientes com alto nível de consciência que não conseguiam integrar o que entendiam com o que o corpo ainda repetia. O conceito nomeia a estrutura que vive no espaço entre mente e corpo, onde outras abordagens não chegam.</p>
+      <p>O termo <strong>Integração Soma-Cognitiva</strong> foi cunhado a partir de 6 anos de prática clínica, combinando integração soma-cognitiva, neurociência aplicada e regulação do sistema nervoso, depois de identificar um padrão específico: clientes com alto nível de consciência que não conseguiam integrar o que entendiam com o que o corpo ainda repetia. O conceito nomeia a estrutura que vive no espaço entre mente e corpo, onde outras abordagens não chegam.</p>
     </div>
 
-    <p class="body rv">A Raiz Somática é a base interna de padrões registrados no espaço entre o que sua mente entende e o que seu corpo repete, e que determina como você age, decide e sustenta sua vida. <strong>É um sistema reorganizável.</strong></p>
+    <p class="body rv">A Integração Soma-Cognitiva é a base interna de padrões registrados no espaço entre o que sua mente entende e o que seu corpo repete, e que determina como você age, decide e sustenta sua vida. <strong>É um sistema reorganizável.</strong></p>
 
     <p class="body rv">Quando essa base está desorganizada, com mente e corpo operando em paralelo sem conexão, você pode ter toda a consciência do mundo e ainda assim não conseguir sustentar mudanças.</p>
 
     <p class="body rv">Quando mente e corpo finalmente operam como um sistema único, a mudança para de depender de esforço. <strong>Você age diferente porque está diferente por dentro. Porque os dois sistemas que antes operavam em paralelo agora trabalham juntos.</strong></p>
 
     <div class="mech-reveal rv">
-      <div class="mech-reveal-hl">O Método Raiz Somática trabalha em <em>3 camadas simultâneas de integração</em></div>
+      <div class="mech-reveal-hl">O Método Integração Soma-Cognitiva trabalha em <em>3 camadas simultâneas de integração</em></div>
       <p class="mech-reveal-sub">Cada camada conecta o que sua mente já construiu com o que seu corpo ainda precisa processar. Nenhuma sozinha é suficiente. A combinação das três é o que cria reorganização real, não apenas mais consciência.</p>
     </div>
 
@@ -926,7 +938,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
         </div>
         <div class="mpart-c">
           <div class="mpart-title">Localização Integrada: onde a mente sabe e o corpo guarda</div>
-          <p class="mpart-body">Usando técnicas de Focusing e Felt Sense, identificamos, no corpo e na mente ao mesmo tempo, onde o padrão está registrado e o que está impedindo o ciclo de se completar. <strong>Não descartamos o que você já entende. Usamos seu entendimento como mapa para localizar no corpo exatamente onde o padrão ainda vive.</strong></p>
+          <p class="mpart-body">Identificamos, no corpo e na mente ao mesmo tempo, onde o padrão está registrado e o que está impedindo o ciclo de se completar. <strong>Não descartamos o que você já entende. Usamos seu entendimento como mapa para localizar no corpo exatamente onde o padrão ainda vive.</strong></p>
         </div>
       </li>
       <li class="mpart">
@@ -954,7 +966,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
     </ul>
 
     <div class="claim rv">
-      "Toda abordagem que você já tentou construiu metade da sua estrutura interna: a metade da consciência. O Método Raiz Somática constrói a outra metade, a do corpo, e conecta as duas. <em>É nessa conexão que a mudança real acontece.</em>"
+      "Toda abordagem que você já tentou construiu metade da sua estrutura interna: a metade da consciência. O Método Integração Soma-Cognitiva constrói a outra metade, a do corpo, e conecta as duas. <em>É nessa conexão que a mudança real acontece.</em>"
     </div>
 
     <div class="anchor-phrase rv">
@@ -966,67 +978,43 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
       <div class="anticat-item no"><span class="anticat-ico">✗</span><div><strong>Não é terapia</strong> : não trabalhamos com diagnóstico, narrativa do passado ou mais entendimento. Você já tem entendimento suficiente.</div></div>
       <div class="anticat-item no"><span class="anticat-ico">✗</span><div><strong>Não é coaching</strong> : não trabalhamos com metas, planos de ação ou accountability. Seu problema não é falta de direção.</div></div>
       <div class="anticat-item no"><span class="anticat-ico">✗</span><div><strong>Não é somática isolada</strong> : não trabalhamos só no corpo ignorando o que sua mente já construiu. Sua consciência é um ativo, não um obstáculo.</div></div>
-      <div class="anticat-item yes"><span class="anticat-ico">✓</span><div><strong>É Reorganização Integrativa</strong> : o único processo que cria a ponte entre o que sua mente já entende e o que seu corpo ainda registra como padrão.</div></div>
+      <div class="anticat-item yes"><span class="anticat-ico">✓</span><div><strong>É Integração Soma-Cognitiva</strong> : o único processo que cria a ponte entre o que sua mente já entende e o que seu corpo ainda registra como padrão.</div></div>
     </div>
 
-    <!-- Pos 5 — CTA intermediário minimalista -->
-    <div class="scarcity sc-5 rv" style="margin:2.5rem 0">
-      <p>Atendo poucas mulheres por vez. Intencionalmente. Porque integração real exige presença real. Se esse é o seu momento, o formulário é o primeiro passo.</p>
-      <div style="display:flex;justify-content:center">
-        <a href="#aplicar" class="btn btn-sage">Quero integrar mente e corpo</a>
-      </div>
-    </div>
 
-    <!-- Tabela 3 colunas -->
+
+    <!-- Tabela 3 colunas ISC -->
     <div class="tri-table rv">
       <div class="tri-head">
-        <div class="tri-h old">Abordagens da Mente</div>
-        <div class="tri-h body-col">Abordagens do Corpo</div>
-        <div class="tri-h new">Reorganização Integrativa<br><span>Raiz Somática</span></div>
+        <div class="tri-h old">O que a mente faz<br><span style="font-weight:300;opacity:.7">(e você já fez)</span></div>
+        <div class="tri-h body-col">O que o corpo faz<br><span style="font-weight:300;opacity:.7">(e você ainda não acessou)</span></div>
+        <div class="tri-h new">O que a INTEGRAÇÃO faz<br><span>Soma-Cognitiva</span></div>
       </div>
       <div class="tri-row">
-        <div class="tri-c old">Trabalham na camada cognitiva</div>
-        <div class="tri-c body-col">Trabalham na camada somática</div>
-        <div class="tri-c new">Trabalha no espaço entre as duas, onde o padrão realmente vive</div>
+        <div class="tri-c old">Entende a origem ✓</div>
+        <div class="tri-c body-col">Registra a experiência ✓</div>
+        <div class="tri-c new"><strong>Conecta origem + registro: ciclo completo</strong></div>
       </div>
       <div class="tri-row">
-        <div class="tri-c old">Entendem a origem do padrão</div>
-        <div class="tri-c body-col">Localizam a sensação no corpo</div>
-        <div class="tri-c new">Integra origem e sensação, fechando o ciclo completo</div>
+        <div class="tri-c old">Cria consciência ✓</div>
+        <div class="tri-c body-col">Guarda a memória somática ✓</div>
+        <div class="tri-c new"><strong>Sincroniza consciência + memória: reorganização</strong></div>
       </div>
       <div class="tri-row">
-        <div class="tri-c old">Criam consciência e insight</div>
-        <div class="tri-c body-col">Criam regulação e presença</div>
-        <div class="tri-c new">Reorganização estrutural: consciência e regulação integradas</div>
-      </div>
-      <div class="tri-row">
-        <div class="tri-c old">Você já fez essa parte</div>
-        <div class="tri-c body-col">Essa parte estava esperando</div>
-        <div class="tri-c new">Aqui as duas se encontram</div>
+        <div class="tri-c old">Desenvolve narrativa ✓</div>
+        <div class="tri-c body-col">Mantém o estado base ✓</div>
+        <div class="tri-c new"><strong>Integra narrativa + estado: mudança sustentável</strong></div>
       </div>
       <div class="tri-row result-row">
-        <div class="tri-c old">Mais entendimento, mesma oscilação</div>
-        <div class="tri-c body-col">Mais presença, sem base cognitiva</div>
-        <div class="tri-c new">Estrutura interna integrada que se sustenta sozinha</div>
+        <div class="tri-c old"><em>Você já fez essa parte</em></div>
+        <div class="tri-c body-col"><em>Essa parte estava esperando</em></div>
+        <div class="tri-c new"><strong>Aqui as duas se encontram</strong></div>
       </div>
     </div>
 
-    <div class="integration-moment rv">
-      <div class="im-kicker">O que acontece no momento da integração</div>
-      <p>Existe um momento, geralmente entre a 2ª e a 6ª sessão, em que algo muda. Não é um insight. Não é uma decisão. É uma <strong>sensação.</strong></p>
-      <p>Enquanto trabalhamos um padrão específico, sua mente está acompanhando o que está acontecendo e, ao mesmo tempo, seu corpo começa a processar o que estava guardado. As duas partes, que sempre operaram em paralelo, se encontram.</p>
-      <p>Quando isso acontece, o padrão perde a base onde se sustentava. Não porque você decidiu ser diferente. Porque o sistema inteiro se reorganizou. A mente entende. O corpo processa. E os dois, juntos, completam o ciclo que estava aberto.</p>
-      <p>Depois disso, a mudança não precisa ser mantida com esforço. <strong>Ela se sustenta, porque tem base integrada.</strong></p>
-    </div>
 
-    <div class="mid-cta rv" style="text-align:center;margin-top:2.5rem">
-      <a href="#aplicar" class="btn btn-sage">Quero integrar mente e corpo</a>
-      <p style="font-size:.78rem;color:var(--soft);margin-top:.75rem">Sem compromisso além de uma sessão · Valor abatido se continuar</p>
-    </div>
 
-    <div class="scarcity sc-2 rv">
-      <p>Cada processo de Reorganização Integrativa dura de 6 a 12 semanas. Enquanto um processo está ativo, aquele espaço está ocupado. Novas vagas abrem conforme processos se completam, não conforme a demanda. <strong>Este mês: 3 disponíveis.</strong></p>
-    </div>
+    
 
   </div>
 </section>
@@ -1046,8 +1034,9 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
         <div class="t-av">MN</div>
         <div><div class="t-name">M. Nogueira</div><div class="t-meta">Gestora · São Paulo · 6 anos de terapia anterior</div><span class="t-quote-mark">"</span></div>
       </div>
-      <p class="t-body">Fiz terapia por seis anos. Entendia absolutamente tudo sobre mim mesma: de onde vieram meus padrões, por que existiam, como se manifestavam. Esse trabalho foi importante. Ele me deu a base. Mas na hora de sustentar um limite real ou tomar uma decisão sem entrar em colapso depois, o corpo simplesmente não acompanhava o que a mente entendia. O trabalho com a Seheilen foi a primeira vez que senti as duas partes se conectando.
-      <span class="t-highlight">Na sessão, senti fisicamente, no peito, o padrão perdendo força. Não foi uma ideia. Foi uma sensação. E depois disso, a decisão simplesmente se sustentou.</span></p>
+      <p class="t-body">Na terceira sessão, aconteceu algo que nunca tinha experimentado em 6 anos de terapia. Enquanto trabalhávamos um padrão específico,
+      <span class="t-highlight">senti fisicamente — no peito, na garganta — o momento exato em que o ciclo se completou. Não foi uma ideia. Foi uma sensação. E depois disso, o padrão simplesmente parou de se ativar.</span>
+      Não precisei decidir ser diferente. Eu já era.</p>
       <div class="t-result">Resultado: parou de desfazer decisões depois de tomá-las, pela primeira vez em anos de trabalho pessoal.</div>
     </div>
 
@@ -1057,7 +1046,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
         <div><div class="t-name">P. Nunes</div><div class="t-meta">Advogada · Rio de Janeiro · 4 anos de terapia + coaching</div><span class="t-quote-mark">"</span></div>
       </div>
       <p class="t-body">Eu sabia exatamente por que adiava decisões: o medo de errar, a necessidade de aprovação, a origem de tudo isso. Tinha consciência perfeita do padrão. E essa consciência não foi inútil. Ela me trouxe até aqui. Mas saber não estava mudando nada, porque minha mente e meu corpo estavam operando em paralelo.
-      <span class="t-highlight">O que o Método Raiz Somática fez foi integrar o que eu já entendia com o que meu corpo ainda registrava como ameaça. Quando as duas partes se conectaram, o ciclo se completou.</span>
+      <span class="t-highlight">O que o Método Integração Soma-Cognitiva fez foi integrar o que eu já entendia com o que meu corpo ainda registrava como ameaça. Quando as duas partes se conectaram, o ciclo se completou.</span>
       Depois disso, tomei em três meses decisões que carregava sem conseguir fechar há anos.</p>
       <div class="t-result">Resultado: tomou decisões de carreira em aberto há mais de 2 anos, dentro de 12 semanas de processo.</div>
     </div>
@@ -1077,14 +1066,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ESCASSEZ POS 3 — após depoimentos -->
-<div class="col">
-  <div class="scarcity sc-3 rv">
-    <p>Tudo que você já investiu em terapia e autoconhecimento construiu a primeira metade. Essa metade está pronta. Agora.</p>
-    <span class="sc-anchor">A questão não é se você vai integrar. É quando.</span>
-    <p style="margin-top:.6rem;font-size:.84rem;opacity:.8">3 espaços disponíveis este mês para começar.</p>
-  </div>
-</div>
+
 
 
 <!-- ████████████████████████████████████████
@@ -1096,7 +1078,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
 
     <div class="kicker line-l rv">Antes de aplicar</div>
     <h2 class="h2 rv" style="margin:.5rem 0 .75rem">Esse processo funciona<br>para um <em>perfil específico</em></h2>
-    <p class="body rv" style="margin-bottom:0">Preciso ser direta. O Método Raiz Somática tem resultados consistentes, mas apenas com quem preenche critérios reais. Não aceito todas as candidatas não por seleção artificial, mas porque <strong>o processo só entrega o que promete com alinhamento verdadeiro.</strong></p>
+    <p class="body rv" style="margin-bottom:0">Preciso ser direta. O Método Integração Soma-Cognitiva tem resultados consistentes, mas apenas com quem preenche critérios reais. Não aceito todas as candidatas não por seleção artificial, mas porque <strong>o processo só entrega o que promete com alinhamento verdadeiro.</strong></p>
 
     <div class="q-grid">
       <div class="q-card q-yes rv">
@@ -1133,21 +1115,29 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
      09 · OFFER — TODD BROWN
      After mechanism. Clean and logical.
 ████████████████████████████████████████ -->
-<section class="offer" aria-label="Investimento — Como começar o Método Raiz Somática">
+<section class="offer" aria-label="Investimento — Como começar o Método Integração Soma-Cognitiva">
   <div class="col">
 
     <div class="offer-head rv">
       <div class="kicker lt" style="justify-content:center;margin-bottom:1.1rem">O investimento</div>
       <h2 class="h2 lt" style="margin-bottom:.75rem">Como <em>completar a outra metade</em><br>do sistema</h2>
-      <p class="body lt" style="text-align:center;max-width:480px;margin:0 auto">Três opções. Cada uma serve um estágio diferente. Escolha a que faz sentido para onde você está agora.</p>
+      <p class="body lt" style="text-align:center;max-width:480px;margin:0 auto">Quatro opções. Cada uma serve um estágio diferente. Escolha a que faz sentido para onde você está agora.</p>
     </div>
 
     <div class="offer-cards rv">
       <div class="oc">
-        <div class="oc-type">Porta de Entrada</div>
+        <div class="oc-badge-diag">🎯 Comece aqui</div>
+        <div class="oc-type">Sessão Diagnóstica</div>
+        <div class="oc-price"><sup>R$</sup>197</div>
+        <div class="oc-unit">Sessão individual · 30 min</div>
+        <p class="oc-desc">Uma sessão completa para identificar exatamente onde mente e corpo estão desconectados no seu padrão. <strong>Se depois escolher o plano mensal, os R$ 197 são abatidos integralmente e a sessão diagnóstica sai de graça.</strong></p>
+        <button type="button" class="oc-btn">Agendar sessão diagnóstica</button>
+      </div>
+      <div class="oc">
+        <div class="oc-type">Experiência Integrativa</div>
         <div class="oc-price"><sup>R$</sup>750</div>
-        <div class="oc-unit">Experiência Integrativa · sessão avulsa</div>
-        <p class="oc-desc">Para sentir mente e corpo trabalhando juntos, provavelmente pela primeira vez, antes de qualquer compromisso. Se depois decidir continuar, <strong>o valor é abatido integralmente no plano.</strong></p>
+        <div class="oc-unit">Sessão avulsa · 60–75 min</div>
+        <p class="oc-desc">Para sentir mente e corpo trabalhando juntos, provavelmente pela primeira vez, antes de qualquer compromisso. <strong>Se decidir continuar, o valor é abatido integralmente no plano.</strong></p>
         <button type="button" class="oc-btn">Quero experimentar</button>
       </div>
       <div class="oc best">
@@ -1156,21 +1146,21 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
         <div class="oc-price"><sup>R$</sup>1.200</div>
         <div class="oc-unit">2 sessões / mês</div>
         <div class="oc-per">R$ 600 por sessão</div>
-        <p class="oc-desc">Ritmo que permite <strong>profundidade real e integração</strong> entre sessões, quando mente e corpo precisam de tempo para sincronizar entre os encontros.</p>
+        <p class="oc-desc">Sessões de <strong>60 a 75 minutos</strong>, com ritmo que permite <strong>profundidade real e integração</strong> entre encontros, quando mente e corpo precisam de tempo para sincronizar.</p>
         <button type="button" class="oc-btn hi">Aplicar agora</button>
       </div>
       <div class="oc">
         <div class="oc-type">Reorganização Acelerada</div>
-        <div class="oc-price"><sup>R$</sup>1.520</div>
+        <div class="oc-price"><sup>R$</sup>1.800</div>
         <div class="oc-unit">4 sessões / mês</div>
-        <div class="oc-per">R$ 380 por sessão</div>
-        <p class="oc-desc">Para quem quer <strong>acompanhamento próximo e reorganização integrativa mais rápida</strong> com suporte contínuo.</p>
+        <div class="oc-per">R$ 450 por sessão</div>
+        <p class="oc-desc">Sessões de <strong>60 a 75 minutos</strong>, para quem quer <strong>acompanhamento próximo e reorganização mais rápida</strong> com suporte contínuo.</p>
         <button type="button" class="oc-btn">Aplicar agora</button>
       </div>
     </div>
 
     <div class="entry-note rv">
-      <p><strong>Se você está incerta:</strong> comece pela sessão avulsa. Em 60 minutos você vai sentir mente e corpo trabalhando juntos, provavelmente pela primeira vez, e vai ter informação real para decidir se quer continuar. <strong>Sem risco. Sem pressão. Sem compromisso além de uma sessão.</strong></p>
+      <p><strong>Não sabe por onde começar?</strong> A Sessão Diagnóstica é o primeiro passo. Em 60 minutos você identifica exatamente onde o padrão vive no seu sistema — e sai com clareza real sobre o que o processo pode fazer por você. Se escolher continuar, o valor já está pago. <strong>Sem risco. Sem pressão. Sem compromisso além de uma sessão.</strong></p>
     </div>
 
   </div>
@@ -1194,10 +1184,10 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
 
     <p class="prose rv">Mas aqui está o que eu preciso te dizer: <strong>esse investimento anterior não foi perdido.</strong></p>
 
-    <p class="body rv">Ele construiu a metade mais importante do sistema: a base de consciência. Sem ela, o que eu faço não funciona. Você já pagou pela metade mais difícil. O Método Raiz Somática é o investimento que completa esse ciclo, conectando o que sua mente já construiu com o que seu corpo ainda precisa processar.</p>
+    <p class="body rv">Ele construiu a metade mais importante do sistema: a base de consciência. Sem ela, o que eu faço não funciona. Você já pagou pela metade mais difícil. O Método Integração Soma-Cognitiva é o investimento que completa esse ciclo, conectando o que sua mente já construiu com o que seu corpo ainda precisa processar.</p>
 
     <div class="anchor-calc rv">
-      <p>Se você faz terapia há <strong>3 anos a R$ 300/mês</strong>, já investiu mais de <strong>R$ 10.800</strong> construindo a base de consciência. Ela é real. Ela é sua. E agora ela está pronta para ser integrada. O Método Raiz Somática é uma fração desse valor, <strong>e é o investimento que conecta tudo que você já construiu para que finalmente funcione junto.</strong></p>
+      <p>Se você faz terapia há <strong>3 anos a R$ 300/mês</strong>, já investiu mais de <strong>R$ 10.800</strong> construindo a base de consciência. Ela é real. Ela é sua. E agora ela está pronta para ser integrada. O Método Integração Soma-Cognitiva é uma fração desse valor, <strong>e é o investimento que conecta tudo que você já construiu para que finalmente funcione junto.</strong></p>
     </div>
 
     <div class="coi rv">
@@ -1227,9 +1217,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
 
     <div class="pull rv">Eu não estou te pedindo para gastar dinheiro. Estou te convidando a completar o que você já começou. Sua mente fez a parte dela. Agora falta integrar a parte do corpo.</div>
 
-    <div class="scarcity sc-4 rv">
-      <p>Você pode aplicar no próximo mês. Ou no seguinte. As vagas voltam. Mas cada mês que passa é mais um mês com mente e corpo operando em paralelo. Mais um mês de decisões sem base, limites sem sustentação, padrões se repetindo <strong>não por falta de consciência, mas por falta de integração.</strong></p>
-    </div>
+    
 
     <p class="body rv">E existe uma porta de entrada sem risco: <strong>a sessão avulsa de R$ 750</strong>. Você experimenta a integração uma vez, sente o que acontece quando mente e corpo trabalham juntos, avalia por conta própria. Se não fizer sentido, você não perde nada além de uma sessão. Se fizer, e geralmente faz, você entra no processo sabendo exatamente o que esperar, com esse valor já abatido.</p>
 
@@ -1251,7 +1239,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
       <p>Eu acredito que consciência é um ativo, não um obstáculo. Que tudo que você já fez em terapia, coaching e autoconhecimento construiu a base mais importante. E que essa base está pronta para ser completada.</p>
       <p>Eu acredito que a mudança real não vem de mais entendimento. Vem da integração entre o que sua mente já sabe e o que seu corpo ainda repete.</p>
       <p>Eu acredito que quando mente e corpo finalmente trabalham juntos, você para de se forçar a ser quem já é.</p>
-      <p class="manifesto-close">Eu criei o Método Raiz Somática para ser a ponte entre essas duas metades.<br>Para mulheres que chegaram ao teto da terapia, prontas para integrar.</p>
+      <p class="manifesto-close">Eu criei o Método Integração Soma-Cognitiva para ser a ponte entre essas duas metades.<br>Para mulheres que chegaram ao teto da terapia, prontas para integrar.</p>
     </div>
 
   </div>
@@ -1280,11 +1268,11 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
         </div>
         <div class="portrait-overlay">
           <div class="portrait-name">Seheilen Toyama</div>
-          <div class="portrait-cred">Especialista em Reorganização Integrativa · Criadora do Método Raiz Somática · ICF</div>
+          <div class="portrait-cred">Especialista em Integração Soma-Cognitiva · Criadora do Método Integração Soma-Cognitiva · ICF</div>
         </div>
       </div>
       <div>
-        <p class="auth-text rv">Eu não criei o Método Raiz Somática a partir de uma teoria. Criei porque precisei.</p>
+        <p class="auth-text rv">Eu não criei o Método Integração Soma-Cognitiva a partir de uma teoria. Criei porque precisei.</p>
         <p class="auth-text rv">Por anos, vivi o mesmo paradoxo das minhas clientes: entendia tudo sobre mim mesma e continuava repetindo os mesmos padrões. Sabia de onde vieram. Sabia por que existiam. E isso não mudava nada. <strong>Até descobrir que meu corpo guardava o que minha mente já tinha entendido — e que ninguém havia me ensinado a conectar os dois.</strong> Quando fiz isso, parei de tentar mudar. A mudança simplesmente aconteceu.</p>
         <p class="auth-text rv">Me certifiquei pela <strong>ICF</strong>, pela <strong>The Somatic School</strong> e pela metodologia <strong>Positive Intelligence</strong>. Aprofundei em neurociência aplicada, integração soma-cognitiva e regulação do sistema nervoso.</p>
         <div class="auth-pull rv">O que eu faço hoje não é ajudar você a se entender melhor. Você já se entende. É ajudá-la a integrar o que sua mente já construiu com o que seu corpo ainda precisa processar, para que a vida que você quer finalmente tenha base para existir.</div>
@@ -1323,28 +1311,28 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
       <li class="pstep">
         <div class="pstep-n"><span>2</span></div>
         <div class="pstep-c">
-          <div class="pstep-title">Eu analiso e entro em contato em até 48h</div>
-          <p class="pstep-body">Se houver alinhamento real, agendamos uma <strong>conversa de 20 minutos</strong>, sem custo, sem compromisso. Essa conversa não é uma venda. É uma avaliação mútua. Eu preciso entender se o processo é adequado para você, e você precisa sentir se faz sentido.</p>
+          <div class="pstep-title">Eu analiso e retorno em até 48h</div>
+          <p class="pstep-body">Leio cada formulário pessoalmente. Se houver alinhamento, agendamos a <strong>Sessão Diagnóstica</strong> — uma sessão individual de 60 minutos por R$ 197. Não é uma conversa introdutória. É trabalho real.</p>
         </div>
       </li>
       <li class="pstep">
         <div class="pstep-n"><span>3</span></div>
         <div class="pstep-c">
-          <div class="pstep-title">Se fizer sentido para as duas, começamos</div>
-          <p class="pstep-body">A sessão inicial é uma experiência completa, não uma amostra reduzida. Em 60 minutos você vai sentir, provavelmente pela primeira vez, o que acontece quando mente e corpo trabalham juntos no mesmo padrão. <strong>Você vai sair com clareza real, não com mais uma teoria sobre si mesma.</strong></p>
+          <div class="pstep-title">A Sessão Diagnóstica — onde tudo começa</div>
+          <p class="pstep-body">Em 60 a 75 minutos você identifica exatamente onde o padrão está registrado no seu sistema, sente o que acontece quando mente e corpo trabalham juntos, e sai com clareza real. <strong>Não mais uma teoria. Uma experiência de integração.</strong> Se quiser continuar, os R$ 197 são abatidos integralmente no plano escolhido.</p>
         </div>
       </li>
       <li class="pstep">
         <div class="pstep-n"><span>4</span></div>
         <div class="pstep-c">
-          <div class="pstep-title">Você decide. Qualquer que seja a decisão, eu respeito</div>
-          <p class="pstep-body">Sem pressão. Sem follow-up insistente. Se a experiência fez sentido e você quiser continuar, escolhemos juntas o formato mais adequado. Se não fizer sentido, você leva a experiência da sessão e segue. <strong>Sem ressentimento. Sem insistência.</strong></p>
+          <div class="pstep-title">Você decide com informação real. Eu respeito qualquer decisão</div>
+          <p class="pstep-body">Se a experiência fez sentido e você quiser continuar, escolhemos juntas o plano mais adequado — e o valor da sessão diagnóstica já está descontado. Se não fizer sentido, você leva a clareza da sessão e segue. <strong>Sem pressão. Sem insistência.</strong></p>
         </div>
       </li>
     </ul>
 
     <div class="origin-note rv" style="margin-top:2rem">
-      <p><strong>Por que funciona assim:</strong> Trabalhar na integração entre mente e corpo exige que eu mantenha dois níveis de atenção simultâneos durante cada sessão: o que sua mente está comunicando e o que seu corpo está sinalizando. Isso é incompatível com volume. Por isso mantenho no máximo <strong>7 processos ativos por mês</strong>, como exigência clínica do método, não como estratégia de marketing. As 3 vagas restantes este mês são reais.</p>
+      <p><strong>Por que funciona assim:</strong> Trabalhar na integração entre mente e corpo exige que eu mantenha dois níveis de atenção simultâneos durante cada sessão: o que sua mente está comunicando e o que seu corpo está sinalizando. Isso é incompatível com volume. Por isso o número de processos simultâneos é limitado por design clínico, não por estratégia de marketing.</p>
     </div>
 
   </div>
@@ -1364,21 +1352,20 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
     </h2>
     <p class="apply-sub">Preencha o formulário de aplicação. Leio cada resposta pessoalmente e retorno em até 48 horas para candidaturas com alinhamento real.</p>
 
+    <div class="scarcity-note rv">
+      <p>Cada processo de Integração Soma-Cognitiva dura de 6 a 12 semanas. Enquanto um cliente está ativo, aquele espaço está ocupado. Novas vagas abrem conforme o processo do cliente se completa, não conforme a demanda. Cada mês abre um número limitado de vagas.</p>
+    </div>
+
     <div class="apply-cta-card">
       <div class="apply-cta-icon">✦</div>
       <h3 class="apply-cta-title">Formulário de Aplicação</h3>
-      <p class="apply-cta-desc">Algumas perguntas para eu entender onde você está agora e o que está buscando. <strong>Menos de 5 minutos.</strong> Suas informações são confidenciais e usadas exclusivamente para avaliar o alinhamento antes da conversa.</p>
+      <p class="apply-cta-desc">Algumas perguntas para eu entender onde você está agora e o que está buscando. <strong>Menos de 5 minutos.</strong> Suas informações são confidenciais e usadas exclusivamente para avaliar o alinhamento antes da Sessão Diagnóstica.</p>
       <div style="display:flex;justify-content:center">
         <a href="https://tally.so/r/3jvvN4" target="_blank" rel="noopener noreferrer" class="apply-cta-btn">
           Preencher o formulário de aplicação ›
         </a>
       </div>
       <p class="apply-cta-note">Informações confidenciais · Não compartilho com terceiros · Resposta em até 48h</p>
-    </div>
-
-    <div class="vagas-row">
-      <div class="dot"></div>
-      <span>Restam <strong>3 vagas</strong> disponíveis para atendimento individual este mês</span>
     </div>
 
   </div>
@@ -1414,23 +1401,23 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
         <button type="button" class="fi-q" data-faq-trigger aria-expanded="false"><span>Eu preciso ter feito terapia antes?</span><span class="fi-ico">+</span></button>
         <div class="fi-a" id="faq-3" role="region">
           <p>Não é obrigatório. Mas o processo funciona melhor, e mais rápido, para quem já tem uma base de consciência construída.</p>
-          <p>Se você já fez terapia, coaching ou trabalho de autoconhecimento, essa base é um ativo real. <strong>Você não vai precisar reconstruí-la.</strong> O Método Raiz Somática parte de onde você já está e integra o que falta: a conexão entre o que sua mente já entende e o que seu corpo ainda registra como padrão.</p>
+          <p>Se você já fez terapia, coaching ou trabalho de autoconhecimento, essa base é um ativo real. <strong>Você não vai precisar reconstruí-la.</strong> O Método Integração Soma-Cognitiva parte de onde você já está e integra o que falta: a conexão entre o que sua mente já entende e o que seu corpo ainda registra como padrão.</p>
         </div>
       </div>
 
       <div class="fi">
         <button type="button" class="fi-q" data-faq-trigger aria-expanded="false"><span>Qual a diferença entre isso e terapia somática?</span><span class="fi-ico">+</span></button>
         <div class="fi-a" id="faq-4" role="region">
-          <p>A terapia somática trabalha no corpo. O coaching trabalha na mente. <strong>O Método Raiz Somática trabalha no espaço entre os dois: na integração.</strong></p>
-          <p>Não descartamos o que sua mente construiu. Usamos sua consciência como mapa para guiar o trabalho corporal. A mente sabe o terreno. O corpo ainda guarda o padrão. O método cria a ponte entre os dois. É por isso que chamo de Reorganização Integrativa.</p>
+          <p>A terapia somática trabalha no corpo. O coaching trabalha na mente. <strong>O Método Integração Soma-Cognitiva trabalha no espaço entre os dois: na integração.</strong></p>
+          <p>Não descartamos o que sua mente construiu. Usamos sua consciência como mapa para guiar o trabalho corporal. A mente sabe o terreno. O corpo ainda guarda o padrão. O método cria a ponte entre os dois. É por isso que chamo de Integração Soma-Cognitiva.</p>
         </div>
       </div>
 
       <div class="fi">
-        <button type="button" class="fi-q" data-faq-trigger aria-expanded="false"><span>Por que só 7 vagas por mês?</span><span class="fi-ico">+</span></button>
+        <button type="button" class="fi-q" data-faq-trigger aria-expanded="false"><span>Por que são poucas vagas por mês?</span><span class="fi-ico">+</span></button>
         <div class="fi-a" id="faq-5" role="region">
           <p>Porque integração real exige presença real.</p>
-          <p>Em cada sessão, preciso acompanhar simultaneamente o que sua mente está processando e o que seu corpo está sinalizando. Dois fluxos de informação que precisam ser lidos e conectados em tempo real. Isso exige um nível de atenção que é incompatível com volume. <strong>Sete processos ativos é o máximo que consigo manter com a profundidade que o método exige.</strong> Não é escassez artificial. É limite clínico.</p>
+          <p>Cada processo dura de 6 a 12 semanas. Enquanto um processo está ativo, aquele espaço está ocupado. Novas vagas abrem conforme o processo de cada cliente se completa — não conforme a demanda. <strong>O número de vagas por mês é limitado por design clínico, não por estratégia de marketing.</strong> Preencha o formulário para acessar a lista de espera e ser notificada quando uma vaga abrir.</p>
         </div>
       </div>
 
@@ -1438,8 +1425,31 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
         <button type="button" class="fi-q" data-faq-trigger aria-expanded="false"><span>Já tentei muita coisa. Por que isso seria diferente?</span><span class="fi-ico">+</span></button>
         <div class="fi-a" id="faq-6" role="region">
           <p>Entendo essa dúvida. Ela é legítima.</p>
-          <p>A resposta mais honesta: tudo que você já tentou provavelmente trabalhou em uma metade do sistema: ou a mente (terapia, coaching, cursos) ou o corpo (yoga, meditação, breathwork). E cada uma dessas abordagens construiu algo real. <strong>O que nenhuma fez foi conectar as duas metades.</strong></p>
-          <p>O Método Raiz Somática é a ponte que faltava. Não substitui o que você já fez. Conecta. O que você construiu até hoje é a base. O que fazemos juntas é completar.</p>
+          <div class="gap-diagram" aria-label="Diagrama: o espaço entre mente e corpo">
+            <div class="gap-col gap-mente">
+              <div class="gap-col-title">Mundo da Mente</div>
+              <ul class="gap-list">
+                <li>Terapia</li><li>Coaching</li><li>PNL</li>
+                <li>Psicanálise</li><li>TCC</li><li>Constelação</li>
+              </ul>
+              <div class="gap-col-quote">"Entenda mais"</div>
+            </div>
+            <div class="gap-center">
+              <div class="gap-label">GAP</div>
+              <div class="gap-arrow">◄────►</div>
+              <div class="gap-sublabel">Ninguém<br>está<br>aqui</div>
+            </div>
+            <div class="gap-col gap-corpo">
+              <div class="gap-col-title">Mundo do Corpo</div>
+              <ul class="gap-list">
+                <li>Yoga</li><li>Somática</li><li>Breathwork</li>
+                <li>Meditação</li><li>Bioenergética</li><li>Dança terapêutica</li>
+              </ul>
+              <div class="gap-col-quote">"Sinta mais"</div>
+            </div>
+          </div>
+          <p>A resposta mais honesta: tudo que você já tentou provavelmente trabalhou em <strong>uma metade</strong> do sistema — ou a mente (terapia, cursos, livros) ou o corpo (yoga, meditação, breathwork). E cada uma dessas abordagens construiu algo verdadeiro. O que nenhuma fez foi <strong>conectar as duas metades.</strong></p>
+          <p>O Método Integração Soma-Cognitiva trabalha exatamente nesse espaço de integração. Não é mais uma abordagem. É a conexão que faltava entre todas as que você já fez.</p>
         </div>
       </div>
 
@@ -1465,8 +1475,8 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
 
     <div class="before-after rv">
       <div class="ba-head">
-        <div class="ba-h">Antes da Reorganização Integrativa</div>
-        <div class="ba-h">Depois da Reorganização Integrativa</div>
+        <div class="ba-h">Antes da Integração Soma-Cognitiva</div>
+        <div class="ba-h">Depois da Integração Soma-Cognitiva</div>
       </div>
       <div class="ba-row">
         <div class="ba-c">Você acorda com tensão no peito, sem motivo aparente. Sua mente sabe que "está tudo bem". Seu corpo discorda.</div>
@@ -1496,12 +1506,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
 
     <a href="#aplicar" class="btn btn-sage-lg rv">Aplicar agora</a>
 
-    <div class="scarcity sc-6 rv" style="margin-top:2rem">
-      <p>Eu não "abro vagas" como um lançamento.<br>Vagas se abrem naturalmente quando um processo de integração se completa e uma cliente conquista a autonomia que buscava.</p>
-      <span class="sc-proof">Este mês, 3 mulheres completaram seus processos.<br>3 espaços estão disponíveis.</span>
-      <div class="vagas-bar-wrap" style="margin-top:1rem">
-        <div class="vagas-bar-label"><strong>3 de 7 vagas</strong> disponíveis este mês</div>
-        <div class="vagas-bar-track"><div class="vagas-bar-fill"></div></div>
+    
       </div>
     </div>
 
@@ -1516,7 +1521,7 @@ footer p{font-size:.72rem;color:rgba(248,245,240,.2)}
 <!-- FOOTER -->
 <footer aria-label="Rodapé do site">
   <div class="ft-logo">se<em>heilen</em></div>
-  <p>© 2026 Seheilen Toyama · Método Raiz Somática · Todos os direitos reservados</p>
+  <p>© 2026 Seheilen Toyama · Método Integração Soma-Cognitiva · Todos os direitos reservados</p>
 </footer>
 
 
