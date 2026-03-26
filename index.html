@@ -12,7 +12,6 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://seheilen.com.br/">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://seheilen.com.br/">
 <meta property="og:title" content="Seheilen Toyama — Método Raiz Somática | Reorganização Integrativa">
@@ -23,13 +22,11 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Seheilen Toyama">
 
-<!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Seheilen Toyama — Método Raiz Somática">
 <meta name="twitter:description" content="Para mulheres que chegaram ao teto da terapia. Reorganização Integrativa — 7 vagas por mês.">
 <meta name="twitter:image" content="https://seheilen.com.br/og-image.jpg">
 
-<!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -53,19 +50,18 @@
 }
 </script>
 
-<!-- PERFORMANCE: preconnect para Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"></noscript>
 <style>
 /* ── RESET & TOKENS ─────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  /* Brand colours */
-  --sage:#6B7F5A; --sage-l:#8FA07A; --sage-pale:#EEF2EB; --sage-deep:#4A5C3A;
+  /* Brand colours - Ajustadas levemente para Contraste Acessível (WCAG AA) */
+  --sage:#5C704B; --sage-l:#8FA07A; --sage-pale:#EEF2EB; --sage-deep:#3B4D2B;
   --cream:#F8F5F0; --warm:#FDFBF8; --dark:#2A2520;
-  --mid:#5C5248; --soft:#9A9088; --border:#E8E2DA;
+  --mid:#4D443B; --soft:#7A726A; --border:#E8E2DA;
   --gold:#B8935A; --gold-l:#D4B07A; --shadow:rgba(42,37,32,.09);
   /* Gradient tokens */
   --g1:#B0D090; --g2:#7AAD5C; --g3:#5A8A40; --g4:#3D6B28;
@@ -82,12 +78,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);l
 
 /* ── NAV — zero distraction ─────────── */
 nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;background:rgba(253,251,248,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
-.logo{font-family:'Cormorant Garamond',serif;font-size:1.42rem;font-weight:300;letter-spacing:.07em;color:var(--dark)}
+.logo{font-family:'Lora',serif;font-size:1.42rem;font-weight:400;letter-spacing:.07em;color:var(--dark)}
 .logo em{font-style:italic;color:var(--sage)}
 
 /* ── LAYOUT ─────────────────────────── */
 .col{max-width:660px;margin:0 auto;padding:0 6%}
-.col-md{max-width:860px;margin:0 auto;padding:0 6%}
+.col-md{max-width:960px;margin:0 auto;padding:0 6%}
 
 /* ── TYPE SYSTEM ────────────────────── */
 .kicker{font-size:.69rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);display:inline-flex;align-items:center;gap:9px}
@@ -99,32 +95,28 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .kicker.lt{color:rgba(238,242,235,.68)}
 .kicker.lt::before,.kicker.lt::after{background:rgba(238,242,235,.45)}
 
-.h1{font-family:'Cormorant Garamond',serif;font-weight:300;line-height:1.1;color:var(--dark)}
+.h1{font-family:'Lora',serif;font-weight:400;line-height:1.1;color:var(--dark)}
 .h1 em{font-style:italic;color:var(--sage)}
 .h1 strong{font-weight:600}
-.h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.85rem,2.8vw,2.65rem);font-weight:300;line-height:1.3;color:var(--dark)}
+.h2{font-family:'Lora',serif;font-size:clamp(1.85rem,2.8vw,2.65rem);font-weight:400;line-height:1.3;color:var(--dark)}
 .h2 em{font-style:italic;color:var(--sage)}
 .h2.lt{color:var(--cream)}
 .h2.lt em{color:var(--gold-l)}
 
-/* Kim Krause: body prose — generous line-height, intimate weight */
 .prose{font-size:1.05rem;color:var(--mid);line-height:1.97;font-weight:400;margin-bottom:1.5rem}
 .prose strong{color:var(--dark);font-weight:500}
 .prose em{font-style:italic}
 .prose.lt{color:rgba(248,245,240,.80)}
 .prose.lt strong{color:var(--cream)}
 
-/* Todd Brown: logical body — slightly tighter, more direct */
 .body{font-size:.97rem;color:var(--mid);line-height:1.9;font-weight:400;margin-bottom:1.25rem}
 .body strong{color:var(--dark);font-weight:500}
 .body.lt{color:rgba(248,245,240,.6)}
 .body.lt strong{color:var(--cream)}
 
-/* KK signature: transition sentence — the emotional pivot */
-.trans{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:300;line-height:1.65;color:var(--dark);font-style:italic;border-left:2px solid var(--sage);padding-left:1.25rem;margin:2.5rem 0}
+.trans{font-family:'Lora',serif;font-size:1.45rem;font-weight:400;line-height:1.65;color:var(--dark);font-style:italic;border-left:2px solid var(--sage);padding-left:1.25rem;margin:2.5rem 0}
 
-/* TB signature: bold claim — the logical anchor */
-.claim{font-family:'Cormorant Garamond',serif;font-size:clamp(1.35rem,2.1vw,1.8rem);font-weight:400;color:var(--dark);line-height:1.55;font-style:italic;margin:2.25rem 0;padding:2rem 2.25rem;background:var(--cream);border:1px solid var(--border);border-radius:16px;border-left:3px solid var(--sage)}
+.claim{font-family:'Lora',serif;font-size:clamp(1.35rem,2.1vw,1.8rem);font-weight:400;color:var(--dark);line-height:1.55;font-style:italic;margin:2.25rem 0;padding:2rem 2.25rem;background:var(--cream);border:1px solid var(--border);border-radius:16px;border-left:3px solid var(--sage)}
 .claim em{font-style:normal;color:var(--sage)}
 .claim.lt{background:rgba(248,245,240,.05);border-color:rgba(248,245,240,.1);color:rgba(248,245,240,.88)}
 .claim.lt em{color:var(--gold-l)}
@@ -132,10 +124,8 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .rule{width:42px;height:1px;background:var(--gold);margin:2.5rem 0}
 .rule.ctr{margin:2.5rem auto}
 
-/* Gradient tokens unified into single :root above */
-
-/* BUTTON RESET — applies to both <a> and <button type="button"> */
-.btn,button.btn,.oc-btn,.apply-cta-btn,.nav-cta{
+/* BUTTON RESET — para botoes padrao */
+.btn,button.btn,.apply-cta-btn,.nav-cta{
   -webkit-appearance:none;
   appearance:none;
   display:inline-flex;
@@ -154,12 +144,7 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
   white-space:nowrap;
 }
 
-/* PRIMARY GRADIENT BUTTON */
-.btn-sage,
-.btn-sage-lg,
-.oc-btn,
-.apply-cta-btn,
-.nav-cta{
+.btn-sage,.btn-sage-lg,.apply-cta-btn,.nav-cta{
   background:linear-gradient(145deg,var(--g1) 0%,var(--g2) 35%,var(--g3) 70%,var(--g4) 100%);
   color:#fff;
   box-shadow:var(--btn-shadow);
@@ -168,30 +153,11 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .btn-sage-lg{padding:19px 52px;font-size:1.05rem;box-shadow:var(--btn-shadow-lg)}
 .nav-cta{padding:9px 22px;font-size:.79rem}
 .apply-cta-btn{padding:16px 36px;font-size:.95rem;box-shadow:var(--btn-shadow-lg);border:none !important;width:100%;max-width:420px;white-space:normal;display:inline-block;text-align:center;line-height:1.4}
-.oc-btn{width:100%;padding:12px 20px;font-size:.83rem}
 
-/* HOVER — all gradient buttons */
-.btn-sage:hover,
-.btn-sage-lg:hover,
-.oc-btn:hover,
-.apply-cta-btn:hover,
-.nav-cta:hover{
+.btn-sage:hover,.btn-sage-lg:hover,.apply-cta-btn:hover,.nav-cta:hover{
   background:linear-gradient(145deg,var(--g1h) 0%,var(--g2h) 35%,var(--g3h) 70%,var(--g4h) 100%);
   transform:translateY(-2px);
   box-shadow:var(--btn-shadow-hover);
-}
-
-/* .hi modifier is now a no-op since all oc-btns share the same style */
-.oc-btn.hi{box-shadow:var(--btn-shadow-lg)}
-/* Card central: padding-top compensa a badge para alinhar preço com cards laterais */
-.oc.best{padding-top:2.25rem}
-/* Espaçador invisível nos cards laterais — mesma altura da badge do card central */
-.oc:not(.best)::before{
-  content:'';
-  display:block;
-  height:26px;/* altura exata da .oc-badge: padding 4px*2 + font-size .67rem (~14px) + folga */
-  margin-bottom:.35rem;/* mesmo gap visual que o badge deixa */
-  visibility:hidden;
 }
 
 /* WHITE BUTTON */
@@ -214,17 +180,14 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .rv{opacity:0;transform:translateY(18px);transition:opacity .52s ease,transform .52s ease}
 .rv.in{opacity:1;transform:none}
 
-
 /* ══════════════════════════════════════
    01 · HERO
-   KK: intimate, identity-first headline
-   TB: mechanism pill below the fold
 ══════════════════════════════════════ */
 .hero{min-height:100vh;background:var(--cream);display:flex;align-items:center;padding:80px 0 64px}
 .hero-inner{text-align:center}
 .hero-right{display:none}
 .hero-pre{margin-bottom:1.75rem}
-.hero-hl{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,4.8vw,4.2rem);font-weight:300;line-height:1.2;color:var(--dark);margin-bottom:1.25rem}
+.hero-hl{font-family:'Lora',serif;font-size:clamp(1.8rem,3.2vw,2.8rem);font-weight:400;line-height:1.15;color:var(--dark);margin-bottom:1.25rem}
 .hero-hl em{font-style:italic;color:var(--sage)}
 .hero-hl strong{font-weight:600}
 /* KK sub: empathetic, not hypey */
@@ -236,24 +199,19 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .hero-urgency{margin-top:1.25rem}
 .hero-social{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:0;background:var(--warm);border:1px solid var(--border);border-radius:14px;overflow:hidden;max-width:520px;margin:0 auto}
 .hs-item{display:flex;flex-direction:column;align-items:center;padding:14px 22px;flex:1;text-align:center}
-.hs-num{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;color:var(--sage-deep);line-height:1}
+.hs-num{font-family:'Lora',serif;font-size:1.3rem;font-weight:400;color:var(--sage-deep);line-height:1}
 .hs-lbl{font-size:.78rem;color:#7A726A;margin-top:3px;letter-spacing:.03em;text-align:center}
 .hs-sep{width:1px;height:36px;background:var(--border);flex-shrink:0}
-/* .mini-provas removida conforme revisão UX */
 
 
 /* ══════════════════════════════════════
    02 · OPEN — KIM KRAUSE
-   Narrative, intimate, recognition.
-   Goal: "this is about me"
 ══════════════════════════════════════ */
 .open{background:var(--warm);padding:6rem 0}
 
 
 /* ══════════════════════════════════════
    03 · PAIN MIRROR — KIM KRAUSE
-   The recognition checklist.
-   Goal: "she sees exactly what I feel"
 ══════════════════════════════════════ */
 .pain{background:var(--cream);padding:5.5rem 0}
 .pain-list{list-style:none;border:1px solid var(--border);border-radius:18px;overflow:hidden;margin:2.5rem 0}
@@ -262,14 +220,11 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .pain-arrow{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:linear-gradient(145deg,#B0D090 0%,#7AAD5C 50%,#3D6B28 100%);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#fff;margin-top:2px;font-weight:700;box-shadow:0 2px 6px rgba(58,107,40,.25);font-family:'DM Sans',sans-serif}
 .pain-item strong{color:var(--dark);font-weight:500}
 /* KK: the callout that bridges to the argument */
-.pain-bridge{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.22rem;color:var(--sage-deep);line-height:1.72;border-left:2px solid var(--sage);padding:1.5rem 1.75rem;background:var(--warm);border-radius:0 14px 14px 0;margin:2rem 0}
+.pain-bridge{font-family:'Lora',serif;font-style:italic;font-size:1.22rem;color:var(--sage-deep);line-height:1.72;border-left:2px solid var(--sage);padding:1.5rem 1.75rem;background:var(--warm);border-radius:0 14px 14px 0;margin:2rem 0}
 
 
 /* ══════════════════════════════════════
    04 · PIVOT — THE SEAMLESS HANDOFF
-   KK emotional close → TB logical open.
-   This is where the two voices merge.
-   One paragraph with each DNA.
 ══════════════════════════════════════ */
 .pivot{background:var(--warm);padding:5.5rem 0}
 .pivot-divider{width:44px;height:1px;background:var(--gold);margin:2.5rem 0}
@@ -277,17 +232,15 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 
 /* ══════════════════════════════════════
    05 · VILLAIN — TODD BROWN
-   Root cause. The 4-point logical case.
-   Goal: "now I understand WHY"
 ══════════════════════════════════════ */
 .villain{background:var(--dark);padding:6rem 0}
-.villain-hl{font-family:'Cormorant Garamond',serif;font-size:clamp(1.85rem,2.9vw,2.7rem);font-weight:300;color:var(--cream);line-height:1.35;text-align:center;max-width:640px;margin:0 auto 3rem}
+.villain-hl{font-family:'Lora',serif;font-size:clamp(1.85rem,2.9vw,2.7rem);font-weight:400;color:var(--cream);line-height:1.35;text-align:center;max-width:640px;margin:0 auto 3rem}
 .villain-hl em{font-style:italic;color:var(--gold-l)}
 .villain-hl strong{font-weight:600;color:#fff}
 .why-list{list-style:none;border:1px solid rgba(248,245,240,.09);border-radius:18px;overflow:hidden}
 .why-row{display:grid;grid-template-columns:52px 1fr;border-bottom:1px solid rgba(248,245,240,.07)}
 .why-row:last-child{border-bottom:none}
-.why-n{background:rgba(248,245,240,.04);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:300;color:var(--gold-l);padding:1.5rem 0}
+.why-n{background:rgba(248,245,240,.04);display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-size:1.25rem;font-weight:400;color:var(--gold-l);padding:1.5rem 0}
 .why-c{padding:1.5rem 1.75rem 1.5rem 1.5rem}
 .why-title{font-size:1rem;font-weight:500;color:var(--cream);margin-bottom:.3rem;letter-spacing:.02em}
 .why-body{font-size:.97rem;color:rgba(248,245,240,.5);line-height:1.75;font-weight:400}
@@ -301,16 +254,13 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 
 /* ══════════════════════════════════════
    06 · UNIQUE MECHANISM — TODD BROWN
-   The longest, most important section.
-   Goal: "this is the thing that does
-   the thing — and nothing else does it"
 ══════════════════════════════════════ */
 .mech{background:var(--cream);padding:6rem 0}
 .origin-note{background:var(--warm);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;padding:1.25rem 1.5rem;margin:1.25rem 0 2rem}
 .origin-note p{font-size:.86rem;color:var(--mid);line-height:1.78;font-weight:400}
 .origin-note p strong{color:var(--dark);font-weight:500}
 .mech-reveal{background:var(--warm);border:1px solid var(--border);border-radius:20px;padding:2.75rem 3rem;margin:3rem 0;text-align:center}
-.mech-reveal-hl{font-family:'Cormorant Garamond',serif;font-size:clamp(1.45rem,2.3vw,1.95rem);font-weight:400;color:var(--dark);line-height:1.35;margin-bottom:.7rem}
+.mech-reveal-hl{font-family:'Lora',serif;font-size:clamp(1.45rem,2.3vw,1.95rem);font-weight:400;color:var(--dark);line-height:1.35;margin-bottom:.7rem}
 .mech-reveal-hl em{font-style:italic;color:var(--sage)}
 .mech-reveal-sub{font-size:.88rem;color:#7A726A;line-height:1.7;font-weight:400;max-width:460px;margin:0 auto}
 /* 3 parts of the mechanism */
@@ -318,10 +268,10 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .mpart{display:grid;grid-template-columns:80px 1fr;border-bottom:1px solid var(--border)}
 .mpart:last-child{border-bottom:none}
 .mpart-n{background:var(--sage-pale);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2.25rem .5rem;gap:5px}
-.mpart-num{font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:300;color:var(--sage);line-height:1}
+.mpart-num{font-family:'Lora',serif;font-size:2.1rem;font-weight:400;color:var(--sage);line-height:1}
 .mpart-tag{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);opacity:.55;text-align:center;line-height:1.3}
 .mpart-c{padding:2.25rem 2.25rem 2.25rem 2rem}
-.mpart-title{font-family:'Cormorant Garamond',serif;font-size:1.22rem;font-weight:400;color:var(--dark);margin-bottom:.55rem}
+.mpart-title{font-family:'Lora',serif;font-size:1.22rem;font-weight:400;color:var(--dark);margin-bottom:.55rem}
 .mpart-body{font-size:.97rem;color:var(--mid);line-height:1.82;font-weight:400}
 .mpart-body strong{color:var(--dark);font-weight:500}
 /* VS comparison */
@@ -332,7 +282,7 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .vs-tag{font-size:.67rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;margin-bottom:.85rem}
 .vs-old .vs-tag{color:var(--soft)}
 .vs-new .vs-tag{color:var(--sage-deep)}
-.vs-title{font-family:'Cormorant Garamond',serif;font-size:1.08rem;font-weight:400;margin-bottom:.6rem}
+.vs-title{font-family:'Lora',serif;font-size:1.08rem;font-weight:400;margin-bottom:.6rem}
 .vs-old .vs-title{color:var(--mid)}
 .vs-new .vs-title{color:var(--dark)}
 .vs-list{list-style:none;display:flex;flex-direction:column;gap:7px}
@@ -343,9 +293,7 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 
 
 /* ══════════════════════════════════════
-   07 · PROOF — after mechanism (TB order)
-   KK voice in the testimonials.
-   TB result callouts below each one.
+   07 · PROOF
 ══════════════════════════════════════ */
 .proof{background:var(--warm);padding:5.5rem 0}
 .tcard{background:var(--cream);border:1px solid var(--border);border-radius:18px;padding:2.4rem 2.25rem;margin-bottom:16px}
@@ -354,21 +302,20 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .t-av{width:44px;height:44px;border-radius:50%;background:var(--sage-pale);display:flex;align-items:center;justify-content:center;font-size:.86rem;color:var(--sage);font-weight:500;border:1.5px solid var(--border);flex-shrink:0}
 .t-name{font-size:.86rem;font-weight:500;color:var(--dark);margin-bottom:2px}
 .t-meta{font-size:.75rem;color:#7A726A;margin-bottom:6px;letter-spacing:.02em}
-.t-quote-mark{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--sage-pale);line-height:1;margin-bottom:.25rem;display:block;user-select:none}
+.t-quote-mark{font-family:'Lora',serif;font-size:2.2rem;color:var(--sage-pale);line-height:1;margin-bottom:.25rem;display:block;user-select:none}
 /* KK: italicized, intimate */
-.t-body{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.09rem;line-height:1.8;color:var(--dark);font-weight:400}
+.t-body{font-family:'Lora',serif;font-style:italic;font-size:1.09rem;line-height:1.8;color:var(--dark);font-weight:400}
 .t-body strong{font-style:normal;font-weight:600;color:var(--sage-deep)}
 /* TB: result callout */
 .t-result{margin-top:1rem;padding:.7rem 1rem;background:rgba(107,127,90,.08);border-radius:8px;border-left:2px solid var(--sage);font-size:.81rem;color:var(--sage-deep);font-weight:400;line-height:1.5}
 
 
 /* ══════════════════════════════════════
-   08 · QUALIFICATION — TODD BROWN
-   Exclusivity creates desire
+   08 · QUALIFICATION
 ══════════════════════════════════════ */
 .qualify{background:var(--cream);padding:5.5rem 0}
-.q-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:2.5rem;align-items:start}
-.q-card{border-radius:18px;padding:2.25rem 2rem;height:100%}
+.q-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:2.5rem;align-items:start}
+.q-card{border-radius:20px;padding:2.5rem;height:100%}
 .q-yes{background:var(--sage-pale);border:1px solid rgba(107,127,90,.22)}
 .q-no{background:rgba(42,37,32,.03);border:1px solid var(--border)}
 .q-tag{font-size:.67rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:1.25rem;display:flex;align-items:center;gap:8px}
@@ -378,49 +325,113 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .q-yes .q-tag::before{background:var(--sage)}
 .q-no .q-tag::before{background:var(--border)}
 .q-list{list-style:none;display:flex;flex-direction:column;gap:0}
-.q-list li{display:flex;align-items:flex-start;gap:10px;font-size:.9rem;color:var(--mid);line-height:1.65;font-weight:400;padding:10px 0;border-bottom:1px solid rgba(0,0,0,.05)}
+.q-list li{display:flex;align-items:flex-start;gap:12px;font-size:.95rem;color:var(--mid);line-height:1.65;font-weight:400;padding:12px 0;border-bottom:1px solid rgba(0,0,0,.05)}
 .q-yes .q-list li{border-bottom-color:rgba(107,127,90,.1)}
 .q-list li:last-child{border-bottom:none;padding-bottom:0}
 .q-list li strong{color:var(--dark);font-weight:500}
-.q-ico{flex-shrink:0;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;margin-top:2px}
+.q-ico{flex-shrink:0;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;margin-top:3px}
 .q-yes .q-ico{background:linear-gradient(145deg,#B0D090 0%,#7AAD5C 50%,#3D6B28 100%);color:#fff;box-shadow:0 2px 6px rgba(58,107,40,.22)}
 .q-no .q-ico{background:rgba(42,37,32,.06);color:var(--soft)}
 .qualify-close{background:var(--warm);border-left:3px solid var(--sage);border-radius:0 14px 14px 0;padding:1.5rem 1.75rem;margin-top:2rem}
-.qualify-close p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.15rem;color:var(--sage-deep);line-height:1.7;font-weight:300}
+.qualify-close p{font-family:'Lora',serif;font-style:italic;font-size:1.15rem;color:var(--sage-deep);line-height:1.7;font-weight:400}
 .qualify-close p strong{font-style:normal;font-weight:600}
 
 
 /* ══════════════════════════════════════
-   09 · OFFER — TODD BROWN
-   Clean, logical, after mechanism
+   09 · OFFER (CARTÕES CLICÁVEIS INTEIROS & SUAVES)
 ══════════════════════════════════════ */
 .offer{background:var(--dark);padding:6rem 0}
 .offer-head{text-align:center;margin-bottom:4rem}
-.offer-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;align-items:stretch;justify-items:stretch;max-width:700px;margin:0 auto}
-.oc{background:rgba(248,245,240,.05);border:1px solid rgba(248,245,240,.1);border-radius:18px;padding:2.25rem 2rem;text-align:center;position:relative;display:flex;flex-direction:column}
-.oc.best{border:2px solid var(--sage-l);background:rgba(107,127,90,.07);position:relative;z-index:1;box-shadow:0 6px 24px rgba(74,92,58,.18)}
+.offer-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:stretch;justify-items:stretch;max-width:860px;margin:0 auto}
+
+.oc{
+  background:rgba(248,245,240,.05);
+  border:1px solid rgba(248,245,240,.1);
+  border-radius:18px;
+  padding:2.5rem 2rem;
+  text-align:center;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  text-decoration:none;
+  color:inherit;
+  cursor:pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+.oc.best{
+  border:2px solid var(--sage-l);
+  background:rgba(107,127,90,.07);
+  position:relative;
+  z-index:1;
+  box-shadow:0 6px 24px rgba(74,92,58,.18);
+  padding-top:2.5rem;
+}
+
+.oc:hover{
+  transform:translateY(-6px);
+  border-color:rgba(143,160,122,.4);
+  background:rgba(248,245,240,.08);
+}
+.oc.best:hover{
+  border-color:var(--gold-l);
+  box-shadow:0 16px 40px rgba(184,147,90,.12);
+  background:rgba(107,127,90,.1);
+}
+
 .oc-badge-diag{display:inline-block;background:var(--gold);color:#fff;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;padding:4px 14px;border-radius:100px;white-space:nowrap;margin-bottom:.65rem}
 .oc-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--sage);color:#fff;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;padding:4px 16px;border-radius:100px;white-space:nowrap}
 .oc-type{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,245,240,.3);margin-bottom:.65rem;min-height:2.2rem;display:flex;align-items:center;justify-content:center}
-.oc-price{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--cream);line-height:1;margin-top:.5rem}
+.oc-price{font-family:'Lora',serif;font-size:2.8rem;font-weight:400;color:var(--cream);line-height:1;margin-top:.5rem}
 .oc-price sup{font-size:1rem;vertical-align:top;margin-top:9px}
 .oc-unit{font-size:.82rem;color:rgba(248,245,240,.78);margin-top:3px;margin-bottom:.4rem}
 .oc-per{font-size:.79rem;color:var(--sage-l);font-weight:500;margin-bottom:1.3rem}
-.oc-desc{font-size:.95rem;color:rgba(248,245,240,.72);line-height:1.65;font-weight:400;margin-bottom:1.5rem;flex:1}
+.oc-desc{font-size:.95rem;color:rgba(248,245,240,.72);line-height:1.65;font-weight:400;margin-bottom:2rem;flex:1}
 .oc-desc strong{color:rgba(248,245,240,.90);font-weight:500}
+
+.oc-btn{
+  width:100%;
+  padding:14px 20px;
+  font-size:.85rem;
+  border-radius:100px;
+  font-family:'DM Sans',sans-serif;
+  font-weight:600;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  transition:all .3s ease;
+  margin-top:auto;
+  display:inline-block;
+  background:rgba(143,160,122,.15);
+  border:1px solid rgba(143,160,122,.3);
+  color:var(--sage-pale);
+}
+.oc.best .oc-btn{
+  background:rgba(184,147,90,.15);
+  border:1px solid rgba(184,147,90,.4);
+  color:var(--gold-l);
+}
+
+.oc:hover .oc-btn{
+  background:var(--sage-l);
+  color:#fff;
+  border-color:var(--sage-l);
+}
+.oc.best:hover .oc-btn{
+  background:var(--gold-l);
+  color:var(--dark);
+  border-color:var(--gold-l);
+}
+
 .entry-note{background:rgba(107,127,90,.1);border:1px solid rgba(107,127,90,.2);border-radius:14px;padding:1.75rem 2rem;margin-top:2.5rem;text-align:center}
 .entry-note p{font-size:.88rem;color:rgba(248,245,240,.78);line-height:1.75;font-weight:400}
 .entry-note strong{color:var(--gold-l);font-weight:500}
 
 
 /* ══════════════════════════════════════
-   10 · OBJECTION — KK empathy + TB logic
-   Best of both: feel first, calculate after
+   10 · OBJECTION
 ══════════════════════════════════════ */
 .obj{background:var(--warm);padding:6rem 0}
-.obj-lede{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:300;color:var(--dark);line-height:1.35;margin-bottom:2.5rem}
+.obj-lede{font-family:'Lora',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:400;color:var(--dark);line-height:1.35;margin-bottom:2.5rem}
 .obj-lede em{font-style:italic;color:var(--sage)}
-/* Cost table (TB) */
 .coi{background:var(--cream);border:1px solid var(--border);border-radius:18px;overflow:hidden;margin:2.5rem 0}
 .coi-head{display:grid;grid-template-columns:1fr 1fr}
 .coi-h{padding:.8rem 1.25rem;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);background:rgba(42,37,32,.03);font-weight:500}
@@ -432,42 +443,40 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .coi-cell strong{color:var(--dark);font-weight:500}
 .coi-cell.g{color:var(--sage-deep)}
 .coi-cell.g strong{color:var(--sage-deep);font-weight:600}
-/* KK pull quote */
 .anchor-calc{background:rgba(184,147,90,.08);border:1px solid rgba(184,147,90,.18);border-radius:14px;padding:1.5rem 1.75rem;margin:1.5rem 0}
 .anchor-calc p{font-size:.95rem;color:var(--mid);line-height:1.75;font-weight:400}
 .anchor-calc p strong{color:var(--dark);font-weight:500}
-.pull{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.18rem;color:var(--sage-deep);line-height:1.72;border-left:2px solid var(--sage);padding-left:1.25rem;margin:2.5rem 0}
+.pull{font-family:'Lora',serif;font-style:italic;font-size:1.18rem;color:var(--sage-deep);line-height:1.72;border-left:2px solid var(--sage);padding-left:1.25rem;margin:2.5rem 0}
 
 
 /* ══════════════════════════════════════
-   11 · AUTHORITY — KK intimate voice
-   Brief, personal, after proof (TB order)
+   11 · AUTHORITY
 ══════════════════════════════════════ */
 .authority{background:var(--cream);padding:5.5rem 0}
 .auth-inner{display:grid;grid-template-columns:180px 1fr;gap:2.5rem;align-items:start}
-.portrait{border-radius:18px;overflow:hidden;background:linear-gradient(155deg,#C8D9B8 0%,#9ABE80 50%,#6B9A50 100%);aspect-ratio:3/4;position:relative}
-.portrait-mid{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+/* UX FIX: Aplicado border-radius e overflow hidden para a imagem */
+.portrait{border-radius:18px;overflow:hidden;position:relative;aspect-ratio:3/4;}
 .portrait-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(42,37,32,.88) 0%,transparent 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.25rem}
-.portrait-name{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;color:#fff;font-style:italic}
+.portrait-name{font-family:'Lora',serif;font-size:1.05rem;font-weight:400;color:#fff;font-style:italic}
 .portrait-cred{font-size:.78rem;color:rgba(255,255,255,.55);letter-spacing:.05em;margin-top:2px}
 .auth-text{font-size:.97rem;color:var(--mid);line-height:1.9;font-weight:400;margin-bottom:1rem}
 .auth-text strong{color:var(--dark);font-weight:500}
-.auth-pull{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--sage-deep);line-height:1.7;border-left:2px solid var(--sage);padding-left:1.1rem;margin:1.5rem 0}
+.auth-pull{font-family:'Lora',serif;font-style:italic;font-size:1.1rem;color:var(--sage-deep);line-height:1.7;border-left:2px solid var(--sage);padding-left:1.1rem;margin:1.5rem 0}
 .certs{display:flex;flex-wrap:wrap;gap:7px;margin-top:1.25rem}
 .cert{background:var(--sage-pale);border:1px solid rgba(107,127,90,.2);border-radius:100px;padding:4px 13px;font-size:.72rem;color:var(--sage-deep);letter-spacing:.04em}
 
 
 /* ══════════════════════════════════════
-   12 · PROCESS — TB friction removal
+   12 · PROCESS
 ══════════════════════════════════════ */
 .process{background:var(--warm);padding:5.5rem 0}
 .proc-list{list-style:none;border:1px solid var(--border);border-radius:18px;overflow:hidden;margin-top:2.5rem}
 .pstep{display:grid;grid-template-columns:64px 1fr;border-bottom:1px solid var(--border)}
 .pstep:last-child{border-bottom:none}
 .pstep-n{background:var(--sage-pale);display:flex;align-items:center;justify-content:center}
-.pstep-n span{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:300;color:var(--sage)}
+.pstep-n span{font-family:'Lora',serif;font-size:1.55rem;font-weight:400;color:var(--sage)}
 .pstep-c{padding:1.75rem 2rem}
-.pstep-title{font-family:'Cormorant Garamond',serif;font-size:1.08rem;font-weight:400;color:var(--dark);margin-bottom:.4rem}
+.pstep-title{font-family:'Lora',serif;font-size:1.08rem;font-weight:400;color:var(--dark);margin-bottom:.4rem}
 .pstep-body{font-size:.97rem;color:var(--mid);line-height:1.78;font-weight:400}
 .pstep-body strong{color:var(--dark);font-weight:500}
 
@@ -480,12 +489,12 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .apply-inner{max-width:620px;margin:0 auto;padding:0 6%;text-align:center}
 .apply-kicker{display:inline-flex;align-items:center;gap:9px;font-size:.67rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(238,242,235,.68);margin-bottom:.75rem}
 .apply-kicker::before,.apply-kicker::after{content:'';width:18px;height:1px;background:rgba(238,242,235,.40)}
-.apply-hl{font-family:'Cormorant Garamond',serif;font-size:clamp(2.1rem,3.4vw,2.9rem);font-weight:300;color:#fff;line-height:1.28;margin-bottom:1.1rem}
+.apply-hl{font-family:'Lora',serif;font-size:clamp(2.1rem,3.4vw,2.9rem);font-weight:400;color:#fff;line-height:1.28;margin-bottom:1.1rem}
 .apply-hl em{font-style:italic;opacity:.78}
 .apply-sub{font-size:.95rem;color:rgba(238,242,235,.75);line-height:1.85;font-weight:400;margin-bottom:2.5rem;max-width:460px;margin-left:auto;margin-right:auto}
 .apply-cta-card{background:var(--warm);border-radius:22px;padding:2.75rem 2.5rem;text-align:center;margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto}
 .apply-cta-icon{font-size:1.4rem;color:var(--sage);margin-bottom:1rem;display:block}
-.apply-cta-title{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:400;color:var(--dark);margin-bottom:.75rem}
+.apply-cta-title{font-family:'Lora',serif;font-size:1.45rem;font-weight:400;color:var(--dark);margin-bottom:.75rem}
 .apply-cta-desc{font-size:.9rem;color:var(--mid);line-height:1.78;font-weight:400;margin-bottom:1.75rem;max-width:380px;margin-left:auto;margin-right:auto}
 .apply-cta-desc strong{color:var(--dark);font-weight:500}
 .apply-cta-note{font-size:.78rem;color:var(--soft);line-height:1.55;margin-top:1rem;display:block}
@@ -514,12 +523,9 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 
 /* ══════════════════════════════════════
    15 · CLOSE
-   KK: poetic, identity
-   TB: logical summary
-   Combined: conviction + clarity
 ══════════════════════════════════════ */
 .close{background:var(--warm);padding:5.5rem 0;text-align:center}
-.close-quote{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--mid);line-height:1.85;max-width:520px;margin:0 auto 2rem;font-weight:400}
+.close-quote{font-family:'Lora',serif;font-size:1.25rem;font-style:italic;color:var(--mid);line-height:1.85;max-width:520px;margin:0 auto 2rem;font-weight:400}
 .close-quote strong{font-style:normal;color:var(--dark);font-weight:600}
 .close-logic{font-size:.97rem;color:var(--mid);line-height:1.9;font-weight:400;max-width:560px;margin:0 auto 2.5rem}
 .close-logic strong{color:var(--dark);font-weight:500}
@@ -530,7 +536,7 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 
 /* Ilusão Cognitiva */
 .ilusao-cognitiva{margin:2rem 0;padding:1.5rem 2rem;background:rgba(184,147,90,.06);border-left:2px solid var(--gold);border-radius:0 12px 12px 0}
-.ic-frase{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--mid);line-height:1.75;font-weight:300;margin-bottom:.6rem}
+.ic-frase{font-family:'Lora',serif;font-size:1.3rem;font-style:italic;color:var(--mid);line-height:1.75;font-weight:300;margin-bottom:.6rem}
 .ic-nome{font-size:1rem;color:var(--dark);font-weight:300;margin-bottom:.35rem}
 .ic-detalhe{font-size:1rem;color:var(--mid);font-weight:300}
 
@@ -542,24 +548,24 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .gap-col-title{font-size:.67rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--mid);margin-bottom:.75rem}
 .gap-list{list-style:none;display:flex;flex-direction:column;gap:4px}
 .gap-list li{font-size:.82rem;color:var(--mid);font-weight:400;padding:1px 0}
-.gap-col-quote{font-style:italic;font-size:.79rem;color:#7A726A;margin-top:.9rem;font-family:'Cormorant Garamond',serif}
+.gap-col-quote{font-style:italic;font-size:.79rem;color:#7A726A;margin-top:.9rem;font-family:'Lora',serif}
 .gap-center{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:.75rem 1rem;background:var(--sage-pale);border-left:1px solid var(--border);border-right:1px solid var(--border)}
 .gap-label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--sage-deep);margin-bottom:.4rem}
 .gap-arrow{font-size:.75rem;color:var(--sage);margin-bottom:.4rem}
 .gap-sublabel{font-size:.78rem;color:var(--soft);text-align:center;line-height:1.5;letter-spacing:.04em;text-transform:uppercase}
 
-/* Scarcity note (simplified) */
+/* Scarcity note */
 .scarcity-note{background:rgba(42,37,32,.03);border:1px solid var(--border);border-radius:10px;padding:1rem 1.5rem;margin:1.25rem 0}
 .scarcity-note p{font-size:.83rem;color:#fff;line-height:1.72;font-weight:400;margin:0;text-align:center}
 
 /* Armadilha da Consciência */
 .armadilha{background:var(--cream);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 18px 18px 0;padding:2.25rem 2.5rem;margin:2.5rem 0}
 .armadilha-kicker{font-size:.69rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:.6rem}
-.armadilha-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.2vw,1.85rem);font-weight:400;color:var(--dark);line-height:1.25;margin-bottom:1.25rem;font-style:italic}
+.armadilha-title{font-family:'Lora',serif;font-size:clamp(1.4rem,2.2vw,1.85rem);font-weight:400;color:var(--dark);line-height:1.25;margin-bottom:1.25rem;font-style:italic}
 .armadilha p{font-size:.97rem;color:var(--mid);line-height:1.88;font-weight:400;margin-bottom:.9rem}
 .armadilha p:last-child{margin-bottom:0}
 .armadilha p strong{color:var(--dark);font-weight:500}
-.armadilha-break{border-top:1px solid var(--border);padding-top:1rem !important;margin-top:1.25rem !important;font-style:italic;color:var(--sage-deep) !important;font-family:'Cormorant Garamond',serif;font-size:1.175rem !important}
+.armadilha-break{border-top:1px solid var(--border);padding-top:1rem !important;margin-top:1.25rem !important;font-style:italic;color:var(--sage-deep) !important;font-family:'Lora',serif;font-size:1.175rem !important}
 .armadilha-ilusao{border-top:1px solid var(--border);margin-top:1.5rem;padding-top:1.5rem}
 
 /* GAP standalone section */
@@ -569,7 +575,7 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 /* OC bonus block inside card */
 .oc-bonus{background:rgba(184,147,90,.08);border:1px solid rgba(184,147,90,.25);border-radius:10px;padding:.85rem 1rem;margin:.75rem 0 1.25rem;text-align:left}
 .oc-bonus-tag{display:block;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:.3rem}
-.oc-bonus-name{display:block;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--cream);margin-bottom:.2rem}
+.oc-bonus-name{display:block;font-family:'Lora',serif;font-size:1.1rem;font-weight:400;color:var(--cream);margin-bottom:.2rem}
 .oc-bonus-desc{display:block;font-size:.82rem;color:rgba(248,245,240,.5);line-height:1.5;font-weight:400}
 
 /* Bonus section */
@@ -577,7 +583,7 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .bonus-card{background:var(--warm);border:1px solid var(--border);border-radius:22px;overflow:hidden;max-width:680px;margin:0 auto}
 .bonus-header{background:var(--sage-deep);padding:2.5rem 2.5rem 2rem;text-align:center}
 .bonus-tag{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(238,242,235,.6);font-weight:600;margin-bottom:.75rem}
-.bonus-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:300;color:var(--cream);line-height:1.1;margin-bottom:.4rem}
+.bonus-title{font-family:'Lora',serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:400;color:var(--cream);line-height:1.1;margin-bottom:.4rem}
 .bonus-title em{font-style:italic;color:var(--gold-l)}
 .bonus-subtitle{font-size:.88rem;color:rgba(238,242,235,.55);font-weight:300}
 .bonus-body{padding:2.25rem 2.5rem}
@@ -613,16 +619,14 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 
 /* FOOTER */
 footer{background:var(--dark);padding:2.25rem 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-.ft-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;color:var(--cream);letter-spacing:.07em}
+.ft-logo{font-family:'Lora',serif;font-size:1.3rem;font-weight:400;color:var(--cream);letter-spacing:.07em}
 .ft-logo em{font-style:italic;color:var(--gold-l)}
 footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 
-/* ── SCANABILITY — Melhoria 26 ─────────
-   Frases-âncora, respiros, destaques visuais
-──────────────────────────────────────── */
+/* ── SCANABILITY ── */
 
-/* Frase-âncora — parada visual para scanners */
-.anchor-phrase{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2vw,1.7rem);font-weight:600;color:var(--sage-deep);line-height:1.4;background:var(--sage-pale);border-radius:14px;padding:1.5rem 2rem;margin:2.5rem 0;text-align:center}
+/* Frase-âncora */
+.anchor-phrase{font-family:'Lora',serif;font-size:clamp(1.3rem,2vw,1.7rem);font-weight:600;color:var(--sage-deep);line-height:1.4;background:var(--sage-pale);border-radius:14px;padding:1.5rem 2rem;margin:2.5rem 0;text-align:center}
 .anchor-phrase em{font-style:italic;color:var(--sage)}
 
 /* Espaçamento generoso entre seções */
@@ -659,7 +663,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 
 /* Hooks manifesto */
 .hooks{display:flex;flex-direction:column;gap:10px;margin:2.5rem auto;max-width:560px}
-.hook-line{font-family:'Cormorant Garamond',serif;font-size:1.08rem;font-style:italic;color:var(--mid);line-height:1.6;padding:.75rem 1.25rem;background:var(--cream);border-left:2px solid var(--gold);border-radius:0 10px 10px 0;font-weight:400}
+.hook-line{font-family:'Lora',serif;font-size:1.08rem;font-style:italic;color:var(--mid);line-height:1.6;padding:.75rem 1.25rem;background:var(--cream);border-left:2px solid var(--gold);border-radius:0 10px 10px 0;font-weight:400}
 
 /* Anti-categoria */
 .anticat{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:18px;overflow:hidden;margin:2.5rem 0}
@@ -679,13 +683,13 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 .tri-h{padding:.9rem 1.1rem;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;border-right:1px solid var(--border)}
 .tri-h:last-child{border-right:none}
 .tri-h.old{color:var(--soft)}
-.tri-h.body-col{display:none}/* coluna corpo removida */
+.tri-h.body-col{display:none}
 .tri-h.new{color:var(--sage-deep);background:rgba(107,127,90,.06)}
 .tri-row{display:grid;grid-template-columns:1fr 1.3fr;border-top:1px solid var(--border)}
 .tri-c{padding:1rem 1.1rem;color:var(--mid);line-height:1.55;font-weight:300;border-right:1px solid var(--border)}
 .tri-c:last-child{border-right:none}
 .tri-c.old{color:var(--soft)}
-.tri-c.body-col{display:none}/* coluna corpo removida */
+.tri-c.body-col{display:none}
 .tri-c.new{color:var(--sage-deep);background:rgba(107,127,90,.04);font-weight:400}
 .result-row .tri-c{font-weight:500;font-size:.83rem}
 .result-row .tri-c.old{color:var(--soft)}
@@ -694,41 +698,27 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 /* Manifesto */
 .manifesto{background:var(--sage-deep);padding:6rem 0}
 .manifesto-body{display:flex;flex-direction:column;gap:1.5rem;margin-top:2rem}
-.manifesto-body p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.05rem,1.8vw,1.25rem);font-weight:400;color:rgba(238,242,235,.85);line-height:1.85}
+.manifesto-body p{font-family:'Lora',serif;font-size:clamp(1.05rem,1.8vw,1.25rem);font-weight:400;color:rgba(238,242,235,.85);line-height:1.85}
 .manifesto-body p strong{color:#fff;font-weight:500}
 .manifesto .kicker.line-l{color:rgba(238,242,235,.5)}
 .manifesto .kicker.line-l::before{background:rgba(238,242,235,.3)}
 .manifesto-close{color:rgba(238,242,235,.92) !important;font-style:italic;border-top:1px solid rgba(238,242,235,.15);padding-top:1.5rem;margin-top:.5rem}
 
-/* ── ESCASSEZ — 6 posições ─────────────
-   Tom: elegante, sóbrio, factual.
-   Nunca agressivo. Sempre verdadeiro.
-──────────────────────────────────────── */
+/* ── ESCASSEZ ───────────── */
 .scarcity{border-radius:14px;padding:1.25rem 1.75rem;margin:2rem 0;font-size:.88rem;line-height:1.72;font-weight:300}
 .scarcity p{margin:0}
 .scarcity strong{font-weight:500}
 
-/* Pos 1 — removida conforme revisão UX (sc-1 bloco retirado da página) */
-
-/* Pos 2 — nota técnica, ritmo natural */
 .sc-2{background:var(--cream);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;color:var(--mid)}
 .sc-2 strong{color:var(--dark)}
-
-/* Pos 3 — emocional, prontidão */
 .sc-3{background:var(--sage-pale);border:1px solid rgba(107,127,90,.2);color:var(--sage-deep);text-align:center}
-.sc-3 .sc-anchor{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;font-style:italic;display:block;margin-top:.6rem}
-
-/* Pos 4 — parágrafo reflexivo, custo de adiar */
+.sc-3 .sc-anchor{font-family:'Lora',serif;font-size:1.2rem;font-weight:600;font-style:italic;display:block;margin-top:.6rem}
 .sc-4{color:var(--mid);border-top:1px solid var(--border);padding-top:1.75rem;margin-top:2rem;border-radius:0;background:none;padding-left:0;padding-right:0}
 .sc-4 strong{color:var(--dark)}
-
-/* Pos 5 — CTA intermediário minimalista */
 .sc-5{background:none;border:none;border-radius:0;padding:0;text-align:center;margin:0}
-.sc-5 p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--mid);margin-bottom:1.25rem}
-
-/* Pos 6 — rodapé emocional, prova social */
+.sc-5 p{font-family:'Lora',serif;font-style:italic;font-size:1.05rem;color:var(--mid);margin-bottom:1.25rem}
 .sc-6{background:var(--sage-pale);border:1px solid rgba(107,127,90,.22);border-radius:16px;padding:2rem 2.25rem;text-align:center;color:var(--sage-deep)}
-.sc-6 .sc-proof{font-family:'Cormorant Garamond',serif;font-size:1.18rem;font-weight:600;display:block;margin:.75rem 0;color:var(--sage-deep)}
+.sc-6 .sc-proof{font-family:'Lora',serif;font-size:1.18rem;font-weight:600;display:block;margin:.75rem 0;color:var(--sage-deep)}
 .sc-6 p{font-size:.9rem;color:var(--mid);line-height:1.72}
 
 /* RESPONSIVE — mobile breakpoint */
@@ -751,13 +741,16 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
   .gap-arrow{margin:0}
   .bonus-items{grid-template-columns:1fr}
   .bonus-body,.bonus-header{padding:1.75rem 1.5rem}
+
   /* ── MOBILE LEGIBILITY — PÚBLICO 45+ ── */
   html{font-size:18px}
   body{font-size:18px}
   .prose,.body,.pstep-body,.auth-text,.oc-desc,.t-body,.close-logic,
   .manifesto-body p,.armadilha p,.ic-frase,.bonus-body p{font-size:1rem;line-height:1.92}
   .h2,.obj-lede{font-size:clamp(1.7rem,5.5vw,2.4rem)}
-  .hero-hl{font-size:clamp(2rem,7vw,3rem)}
+  
+  .hero-hl{font-size:clamp(1.8rem,3.2vw,2.8rem)}
+  
   .villain-hl{font-size:clamp(1.6rem,5.5vw,2.2rem)}
   .armadilha-title{font-size:1.35rem}
   .kicker,.kicker.lt,.oc-type{font-size:.78rem;letter-spacing:.1em}
@@ -767,14 +760,14 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
   .fi-q span:first-child,.why-title,.pstep-title{font-size:1rem}
   .btn,.btn-sage,.btn-sage-lg,.oc-btn,.apply-cta-btn{min-height:52px;font-size:1rem;padding:15px 28px}
   .fi-ico{width:36px;height:36px;font-size:1.1rem;display:flex;align-items:center;justify-content:center}
-  /* Espaçamento seções mobile — público 45+ */
+  
   .open,.pain,.pivot,.mech,.proof,.qualify,
   .obj,.authority,.process,.faq,.close,
   .gap-section,.bonus-section,.manifesto{
     padding-top:4.5rem;
     padding-bottom:4.5rem;
   }
-  /* Cormorant Garamond mobile — traços finos mínimo 400 */
+  
   .t-body,.claim,.armadilha-break,.armadilha-title,.ic-frase,
   .anchor-phrase,.auth-pull,.close-quote,.bonus-title,.apply-hl{
     font-weight:400;
@@ -785,22 +778,16 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </head>
 <body>
 
-<!-- Skip navigation link for keyboard/screen reader users -->
 <a href="#conteudo-principal" class="skip-link" style="position:absolute;top:-40px;left:0;background:var(--sage-deep);color:#fff;padding:8px 16px;z-index:999;border-radius:0 0 8px 0;font-size:.85rem;transition:top .2s" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">Ir para o conteúdo principal</a>
 
 <div id="prog" role="progressbar" aria-label="Progresso de leitura da página" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-<!-- NAV: navegação principal -->
 <nav aria-label="Navegação principal">
   <div class="logo" aria-label="Seheilen — Página inicial">se<em>heilen</em></div>
 </nav>
 
 <main id="conteudo-principal">
 
-
-<!-- ████████████████████████████████████████
-     01 · HERO
-████████████████████████████████████████ -->
 <section class="hero" aria-label="Apresentação — Método Integração Soma-Cognitiva">
   <div class="col hero-inner">
 
@@ -831,21 +818,14 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
       <div class="hs-item"><span class="hs-num">6 anos</span><span class="hs-lbl">de prática clínica em integração soma-cognitiva</span></div>
     </div>
 
-
-
-
-
   </div>
 </section>
 
 
-<!-- ████████████████████████████████████████
-     02 · OPEN
-████████████████████████████████████████ -->
 <section class="open" aria-label="Abertura — Identificação com a leitora">
   <div class="col">
 
-    <p class="prose rv" style="font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-style:italic;color:var(--dark);line-height:1.68;margin-bottom:2rem">"Você construiu muita coisa. Tem consciência, tem recursos, se conhece. E ainda assim… algo continua travando."</p>
+    <p class="prose rv" style="font-family:'Lora',serif;font-size:1.45rem;font-style:italic;color:var(--dark);line-height:1.68;margin-bottom:2rem">"Você construiu muita coisa. Tem consciência, tem recursos, se conhece. E ainda assim… algo continua travando."</p>
 
     <p class="prose rv">Você não é alguém que foge dos problemas. Você os enfrenta. Lê, pesquisa, faz terapia, busca ajuda. <strong>Você se esforça muito.</strong></p>
 
@@ -863,11 +843,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     03 · PAIN MIRROR — KIM KRAUSE
-     The recognition list.
-     Goal: each item = "yes, that's me"
-████████████████████████████████████████ -->
 <section class="pain" aria-label="Espelho da dor — Reconhecimento dos padrões">
   <div class="col">
 
@@ -892,13 +867,8 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     04 · PIVOT
-████████████████████████████████████████ -->
 <section class="pivot" aria-label="Pivot — A verdade que ninguém te contou">
   <div class="col">
-
-    
 
     <div class="rule ctr rv"></div>
 
@@ -923,7 +893,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
       <p>A armadilha não é a consciência em si. É a consciência desconectada do corpo. E enquanto as duas metades não forem integradas, o ciclo continua.</p>
       <p class="armadilha-break">O <strong>Método Integração Soma-Cognitiva</strong> é o processo que quebra esse ciclo, integrando o que sua mente entende com o que seu corpo ainda repete.</p>
       <div class="armadilha-ilusao">
-        <p class="ic-frase">Quanto mais você entende seus padrões, mais acha que está perto de resolvê-los. Mas na verdade está apenas refinando a narrativa enquanto o corpo continua operando no mesmo estado.</p>
+        <p class="ic-frase">Aprofundando mais sobre os seus padrões, mais você acha que está perto de resolvê-los. Mas na verdade está apenas refinando a narrativa enquanto o corpo continua operando no mesmo estado.</p>
         <p class="ic-nome">Isso se chama <strong>Ilusão Cognitiva.</strong></p>
         <p class="ic-detalhe">O inimigo não é a mente. O inimigo é a <strong>desconexão</strong>.</p>
       </div>
@@ -937,8 +907,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-
-<!-- GAP DIAGRAM — standalone section before villain -->
 <section class="gap-section" aria-label="O espaço entre mente e corpo">
   <div class="col">
     <div class="kicker ctr rv" style="justify-content:center;margin-bottom:1.25rem">O mapa do problema</div>
@@ -974,9 +942,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     05 · VILLAIN
-████████████████████████████████████████ -->
 <section class="villain" aria-label="Causa raiz — Por que o entendimento não muda o comportamento">
   <div class="col">
 
@@ -1027,9 +992,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     06 · MECANISMO ÚNICO
-████████████████████████████████████████ -->
 <section class="mech" aria-label="Mecanismo único — O que é a Integração Soma-Cognitiva">
   <div class="col">
 
@@ -1048,7 +1010,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 
     <div class="mech-reveal rv">
       <div class="mech-reveal-hl">O Método Integração Soma-Cognitiva trabalha em <em>3 camadas simultâneas de integração</em></div>
-      <p class="mech-reveal-sub">Cada camada conecta o que sua mente já construiu com o que seu corpo ainda precisa processar. Nenhuma sozinha é suficiente. A combinação das três é o que cria reorganização, não apenas mais consciência.</p>
+      <p class="mech-reveal-sub">Cada camada conecta o que sua mente já construiu com o que seu corpo ainda precisa processar. Nenhuma sozinha é suficiente. A combination das três é o que cria reorganização, não apenas mais consciência.</p>
     </div>
 
     <ul class="mparts rv">
@@ -1095,7 +1057,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
       É nessa conexão que a mudança acontece.
     </div>
 
-    <!-- Anti-categoria -->
     <div class="anticat rv">
       <div class="anticat-item no"><span class="anticat-ico">✗</span><div><strong>Não é terapia</strong> : não trabalhamos com diagnóstico, narrativa do passado ou mais entendimento. Você já tem entendimento suficiente.</div></div>
       <div class="anticat-item no"><span class="anticat-ico">✗</span><div><strong>Não é consultoria</strong> : não trabalhamos com metas, planos de ação ou autorresponsabilidade. Seu problema não é falta de direção.</div></div>
@@ -1104,13 +1065,10 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
       <div class="anticat-item yes"><span class="anticat-ico">✓</span><div><strong>É Integração Soma-Cognitiva</strong> : o único processo que cria a ponte entre o que sua mente já entende e o que seu corpo ainda registra como padrão.</div></div>
     </div>
 
-
-
-    <!-- Tabela 3 colunas ISC -->
     <div class="tri-table rv">
       <div class="tri-head">
-        <div class="tri-h old">O que a mente faz<br><span style="font-weight:300;opacity:.7">(e você já fez)</span></div>
-        <div class="tri-h body-col">O que o corpo faz<br><span style="font-weight:300;opacity:.7">(e você ainda não acessou)</span></div>
+        <div class="tri-h old">O que a mente faz<br><span style="font-weight:400;opacity:.7">(e você já fez)</span></div>
+        <div class="tri-h body-col">O que o corpo faz<br><span style="font-weight:400;opacity:.7">(e você ainda não acessou)</span></div>
         <div class="tri-h new">O que a INTEGRAÇÃO faz<br><span>Soma-Cognitiva</span></div>
       </div>
       <div class="tri-row">
@@ -1135,17 +1093,10 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
       </div>
     </div>
 
-
-
-    
-
   </div>
 </section>
 
 
-<!-- ████████████████████████████████████████
-     07 · PROOF
-████████████████████████████████████████ -->
 <section class="proof" aria-label="Depoimentos — O mecanismo em ação">
   <div class="col">
 
@@ -1187,15 +1138,8 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-
-
-
-<!-- ████████████████████████████████████████
-     08 · QUALIFICATION — TODD BROWN
-     Exclusivity creates desire
-████████████████████████████████████████ -->
 <section class="qualify" aria-label="Qualificação — Para quem é este processo">
-  <div class="col">
+  <div class="col-md">
 
     <div class="kicker line-l rv">Antes de aplicar</div>
     <h2 class="h2 rv" style="margin:.5rem 0 .75rem">Esse processo funciona<br>para um <em>perfil específico</em></h2>
@@ -1232,12 +1176,8 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     09 · OFFER — TODD BROWN
-     After mechanism. Clean and logical.
-████████████████████████████████████████ -->
 <section class="offer" aria-label="Investimento — Como começar o Método Integração Soma-Cognitiva">
-  <div class="col">
+  <div class="col-md">
 
     <div class="offer-head rv">
       <div class="kicker lt" style="justify-content:center;margin-bottom:1.1rem">O investimento</div>
@@ -1246,7 +1186,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
     </div>
 
     <div class="offer-cards rv">
-      <div class="oc">
+      <a href="#aplicar" class="oc best">
         <div class="oc-badge-diag">🎯 Comece aqui</div>
         <div class="oc-type">Sessão Diagnóstica</div>
         <div class="oc-price"><sup>R$</sup>197</div>
@@ -1257,32 +1197,35 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
           <span class="oc-bonus-name">essencialMENTE</span>
           <span class="oc-bonus-desc">Curso de 5 semanas para acelerar sua jornada de integração. Gratuito para novas clientes</span>
         </div>
-        <button type="button" class="oc-btn">Agendar sessão diagnóstica</button>
-      </div>
-      <div class="oc">
+        <span class="oc-btn hi">Agendar sessão diagnóstica</span>
+      </a>
+
+      <a href="#aplicar" class="oc">
         <div class="oc-type">Experiência Integrativa</div>
         <div class="oc-price"><sup>R$</sup>750</div>
         <div class="oc-unit">Sessão avulsa · 60–75 min</div>
         <p class="oc-desc">Para sentir mente e corpo trabalhando juntos, provavelmente pela primeira vez, antes de qualquer compromisso. <strong>Se decidir continuar, o valor é abatido integralmente no plano.</strong></p>
-        <button type="button" class="oc-btn">Quero experimentar</button>
-      </div>
-      <div class="oc best">
+        <span class="oc-btn">Quero experimentar</span>
+      </a>
+
+      <a href="#aplicar" class="oc best">
         <div class="oc-badge">Mais efetivo</div>
         <div class="oc-type">Integração Consistente</div>
         <div class="oc-price"><sup>R$</sup>1.200</div>
         <div class="oc-unit">2 sessões / mês</div>
         <div class="oc-per">R$ 600 por sessão</div>
         <p class="oc-desc">Sessões de <strong>60 a 75 minutos</strong>, com ritmo que permite <strong>profundidade e integração</strong> entre encontros, quando mente e corpo precisam de tempo para sincronizar.</p>
-        <button type="button" class="oc-btn hi">Aplicar agora</button>
-      </div>
-      <div class="oc">
+        <span class="oc-btn hi">Aplicar agora</span>
+      </a>
+
+      <a href="#aplicar" class="oc">
         <div class="oc-type">Reorganização Acelerada</div>
         <div class="oc-price"><sup>R$</sup>1.800</div>
         <div class="oc-unit">4 sessões / mês</div>
         <div class="oc-per">R$ 450 por sessão</div>
         <p class="oc-desc">Sessões de <strong>60 a 75 minutos</strong>, para quem quer <strong>acompanhamento próximo e reorganização mais rápida</strong> com suporte contínuo.</p>
-        <button type="button" class="oc-btn">Aplicar agora</button>
-      </div>
+        <span class="oc-btn">Aplicar agora</span>
+      </a>
     </div>
 
     <div class="entry-note rv">
@@ -1293,7 +1236,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- BÔNUS ESSENCIALMENTE -->
 <section class="bonus-section" aria-label="Bônus — essencialMENTE">
   <div class="col">
     <div class="bonus-card rv">
@@ -1317,11 +1259,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     10 · OBJECTION — KK empathy + TB logic
-     Feel the understanding first.
-     Calculate the cost after.
-████████████████████████████████████████ -->
 <section class="obj" aria-label="Objeção de preço — O cálculo certo">
   <div class="col">
 
@@ -1367,8 +1304,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 
     <div class="pull rv">Eu não estou te pedindo para gastar dinheiro. Estou te convidando por um preço muito acessível a completar o que você começou. Integrar corpo e mente, se tornando mais segura com você.</div>
 
-    
-
     <p class="body rv">E existe uma porta de entrada sem risco: <strong>a sessão diagnóstica de R$ 197</strong>. Você experimenta a integração uma vez, sente o que acontece quando mente e corpo trabalham juntos, avalia por conta própria. Se não fizer sentido, você não perde nada. Se fizer, e confio que faz, você entra no processo sabendo como será, com esse valor abatido. E o que escuto com frequência: por que não você e este método antes?
 
 <strong>Bônus:</strong> o Essencialmente é curso exclusivo para minhas clientes que estou incluindo gratuitamente para você atingir seus objetivos de forma mais rápida.</p>
@@ -1377,9 +1312,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     MANIFESTO — No que eu acredito
-████████████████████████████████████████ -->
 <section class="manifesto" aria-label="Manifesto — No que eu acredito">
   <div class="col">
 
@@ -1398,10 +1330,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     11 · AUTHORITY — KK intimate voice
-     Brief, personal, warm. After proof.
-████████████████████████████████████████ -->
 <section class="authority" aria-label="Autoridade — Conheça Seheilen Toyama">
   <div class="col">
 
@@ -1409,15 +1337,9 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
     <h2 class="h2 rv" style="margin:.5rem 0 2.5rem">Conheça a <em>Seheilen Toyama</em></h2>
 
     <div class="auth-inner rv">
-      <div class="portrait">
-        <div class="portrait-mid">
-          <svg width="90" height="125" viewBox="0 0 90 125" fill="none" style="opacity:.14" aria-hidden="true" focusable="false" role="presentation">
-            <path d="M45 115c-1-20-3-42 0-57 1-15-1-30 1-47" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M45 75c-12-6-26-17-31-33-3-9 0-18 7-22 9-5 20 2 25 14 5 12 5 28-1 41z" fill="white"/>
-            <path d="M45 56c13-7 27-17 32-33 3-9 0-18-7-22-9-5-20 2-25 14-5 12-2 30 0 41z" fill="white"/>
-            <circle cx="46" cy="7" r="5" fill="white"/>
-          </svg>
-        </div>
+      <div class="portrait" style="background: none;">
+        <img src="https://seheilen.com.br/seheilen.jpg" alt="Foto de Seheilen Toyama" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 18px;">
+        
         <div class="portrait-overlay">
           <div class="portrait-name">Seheilen Toyama</div>
           <div class="portrait-cred">Especialista em Integração Soma-Cognitiva · Criadora do Método Integração Soma-Cognitiva · ICF</div>
@@ -1442,9 +1364,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     12 · PROCESS — TB friction removal
-████████████████████████████████████████ -->
 <section class="process" aria-label="Processo — O que acontece depois da aplicação">
   <div class="col">
 
@@ -1491,9 +1410,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     13 · APPLICATION CTA
-████████████████████████████████████████ -->
 <section class="apply" id="aplicar">
   <div class="apply-inner">
 
@@ -1524,9 +1440,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     14 · FAQ
-████████████████████████████████████████ -->
 <section class="faq" aria-label="Perguntas frequentes">
   <div class="faq-inner">
     <div class="kicker" style="justify-content:center;margin-bottom:1.1rem">Dúvidas frequentes</div>
@@ -1588,9 +1501,6 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-<!-- ████████████████████████████████████████
-     15 · CLOSE
-████████████████████████████████████████ -->
 <section class="close" aria-label="Fechamento — Decisão final">
   <div class="col">
 
@@ -1642,20 +1552,17 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </section>
 
 
-</main><!-- /conteudo-principal -->
-
-<!-- FOOTER -->
-<footer aria-label="Rodapé do site">
+</main><footer aria-label="Rodapé do site">
   <div class="ft-logo">se<em>heilen</em></div>
   <p>© 2026 Seheilen Toyama · Método Integração Soma-Cognitiva · Todos os direitos reservados</p>
 </footer>
 
 
 <script>
-/* ── SCRIPTS — posicionados após o conteúdo para não bloquear renderização ── */
+/* ── SCRIPTS ── */
 (function(){
 
-/* PROGRESS BAR — leitura da página */
+/* PROGRESS BAR */
 window.addEventListener('scroll',()=>{
   const h=document.documentElement;
   const pct=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
@@ -1666,7 +1573,7 @@ window.addEventListener('scroll',()=>{
   }
 },{passive:true});
 
-/* SCROLL REVEAL — IntersectionObserver com fallback */
+/* SCROLL REVEAL */
 if('IntersectionObserver' in window){
   const io=new IntersectionObserver(entries=>{
     entries.forEach((e,i)=>{
@@ -1675,11 +1582,10 @@ if('IntersectionObserver' in window){
   },{threshold:.07,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 } else {
-  /* Fallback para browsers sem IntersectionObserver */
   document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
 }
 
-/* FAQ ACCORDION — event delegation (sem inline onclick) */
+/* FAQ ACCORDION */
 function toggleFaq(btn){
   var ico=btn.querySelector('.fi-ico');
   var ans=btn.nextElementSibling;
@@ -1694,12 +1600,10 @@ function toggleFaq(btn){
     btn.setAttribute('aria-expanded','true');
   }
 }
-/* Delegação de eventos — sem onclick inline */
 document.addEventListener('click',function(e){
   const btn=e.target.closest('[data-faq-trigger]');
   if(btn)toggleFaq(btn);
 });
-/* Suporte a teclado: Enter e Space também acionam */
 document.addEventListener('keydown',function(e){
   if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-faq-trigger]')){
     e.preventDefault();
@@ -1707,7 +1611,7 @@ document.addEventListener('keydown',function(e){
   }
 });
 
-/* SMOOTH ANCHOR — offset para nav fixo */
+/* SMOOTH ANCHOR (intercepta todos os links para #, inclusive os cartões) */
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{
     const target=document.querySelector(a.getAttribute('href'));
@@ -1718,16 +1622,9 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   });
 });
 
-/* OFFER BUTTONS — scroll para seção aplicar */
-document.querySelectorAll('.oc-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const aplicar=document.getElementById('aplicar');
-    if(aplicar)aplicar.scrollIntoView({behavior:'smooth'});
-  });
-});
-
 })();
-/* MOBILE CTA BAR — aparece após hero, some no #aplicar */
+
+/* MOBILE CTA BAR */
 (function(){
   var bar=document.getElementById('mobileCta');
   if(!bar)return;
@@ -1746,7 +1643,7 @@ document.querySelectorAll('.oc-btn').forEach(btn=>{
   },{passive:true});
 })();
 </script>
-<!-- CTA FIXO MOBILE — aparece após hero, some na seção #aplicar -->
+
 <div class="mobile-cta-bar" id="mobileCta" aria-hidden="true">
   <a href="#aplicar" class="btn btn-sage" style="width:100%;max-width:400px;text-align:center">
     Aplicar agora ›
