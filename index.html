@@ -303,10 +303,8 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .t-name{font-size:.86rem;font-weight:500;color:var(--dark);margin-bottom:2px}
 .t-meta{font-size:.75rem;color:#7A726A;margin-bottom:6px;letter-spacing:.02em}
 .t-quote-mark{font-family:'Lora',serif;font-size:2.2rem;color:var(--sage-pale);line-height:1;margin-bottom:.25rem;display:block;user-select:none}
-/* KK: italicized, intimate */
 .t-body{font-family:'Lora',serif;font-style:italic;font-size:1.09rem;line-height:1.8;color:var(--dark);font-weight:400}
 .t-body strong{font-style:normal;font-weight:600;color:var(--sage-deep)}
-/* TB: result callout */
 .t-result{margin-top:1rem;padding:.7rem 1rem;background:rgba(107,127,90,.08);border-radius:8px;border-left:2px solid var(--sage);font-size:.81rem;color:var(--sage-deep);font-weight:400;line-height:1.5}
 
 
@@ -454,9 +452,8 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 ══════════════════════════════════════ */
 .authority{background:var(--cream);padding:5.5rem 0}
 .auth-inner{display:grid;grid-template-columns:180px 1fr;gap:2.5rem;align-items:start}
-/* UX FIX: Aplicado border-radius e overflow hidden para a imagem */
-.portrait{border-radius:18px;overflow:hidden;position:relative;aspect-ratio:3/4;}
-.portrait-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(42,37,32,.88) 0%,transparent 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.25rem}
+.portrait{border-radius:18px;overflow:hidden;background:linear-gradient(155deg,#C8D9B8 0%,#9ABE80 50%,#6B9A50 100%);aspect-ratio:3/4;position:relative}
+.portrait-mid{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
 .portrait-name{font-family:'Lora',serif;font-size:1.05rem;font-weight:400;color:#fff;font-style:italic}
 .portrait-cred{font-size:.78rem;color:rgba(255,255,255,.55);letter-spacing:.05em;margin-top:2px}
 .auth-text{font-size:.97rem;color:var(--mid);line-height:1.9;font-weight:400;margin-bottom:1rem}
@@ -1010,7 +1007,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 
     <div class="mech-reveal rv">
       <div class="mech-reveal-hl">O Método Integração Soma-Cognitiva trabalha em <em>3 camadas simultâneas de integração</em></div>
-      <p class="mech-reveal-sub">Cada camada conecta o que sua mente já construiu com o que seu corpo ainda precisa processar. Nenhuma sozinha é suficiente. A combination das três é o que cria reorganização, não apenas mais consciência.</p>
+      <p class="mech-reveal-sub">Cada camada conecta o que sua mente já construiu com o que seu corpo ainda precisa processar. Nenhuma sozinha é suficiente. A combinação das três é o que cria reorganização, não apenas mais consciência.</p>
     </div>
 
     <ul class="mparts rv">
@@ -1279,7 +1276,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 
     <div class="coi rv">
       <div class="coi-head">
-        <div class="coi-h">Custo de continuar com as duas metades desconectadas</div>
+        <div class="coi-h">Custo de continuing com as duas metades desconectadas</div>
         <div class="coi-h">Custo de integrar</div>
       </div>
       <div class="coi-rows">
@@ -1338,12 +1335,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 
     <div class="auth-inner rv">
       <div class="portrait" style="background: none;">
-        <img src="https://seheilen.com.br/seheilen.jpg" alt="Foto de Seheilen Toyama" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 18px;">
-        
-        <div class="portrait-overlay">
-          <div class="portrait-name">Seheilen Toyama</div>
-          <div class="portrait-cred">Especialista em Integração Soma-Cognitiva · Criadora do Método Integração Soma-Cognitiva · ICF</div>
-        </div>
+        <img src="seheilen.jpg" alt="Foto de Seheilen Toyama" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 18px;">
       </div>
       <div>
         <p class="auth-text rv">Eu não criei o Método Integração Soma-Cognitiva a partir de uma teoria. Criei porque precisei.</p>
