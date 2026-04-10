@@ -217,12 +217,6 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .why-body{font-size:.97rem;color:rgba(248,245,240,.5);line-height:1.75;font-weight:400}
 .why-body strong{color:rgba(248,245,240,.90);font-weight:500}
 
-/* Scientists (if present) */
-.sci-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:3rem;border-radius:14px;overflow:hidden;background:rgba(248,245,240,.06)}
-.sci{background:rgba(248,245,240,.04);padding:1.75rem 1.4rem;text-align:center}
-.sci-name{font-size:.85rem;color:var(--gold-l);font-weight:500;margin-bottom:.4rem;letter-spacing:.03em}
-.sci-text{font-size:.85rem;color:rgba(248,245,240,.43);line-height:1.55;font-weight:300}
-
 /* ══════════════════════════════════════
    06 · UNIQUE MECHANISM
 ══════════════════════════════════════ */
@@ -244,23 +238,6 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .mpart-title{font-family:'Lora',serif;font-size:1.22rem;font-weight:400;color:var(--dark);margin-bottom:.55rem}
 .mpart-body{font-size:.97rem;color:var(--mid);line-height:1.82;font-weight:400}
 .mpart-body strong{color:var(--dark);font-weight:500}
-
-/* VS comparison (if present) */
-.vs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:2.5rem 0}
-.vs-card{border-radius:16px;padding:2rem 1.75rem}
-.vs-old{background:rgba(42,37,32,.04);border:1px solid var(--border)}
-.vs-new{background:var(--sage-pale);border:1px solid rgba(107,127,90,.22)}
-.vs-tag{font-size:.67rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;margin-bottom:.85rem}
-.vs-old .vs-tag{color:var(--soft)}
-.vs-new .vs-tag{color:var(--sage-deep)}
-.vs-title{font-family:'Lora',serif;font-size:1.08rem;font-weight:400;margin-bottom:.6rem}
-.vs-old .vs-title{color:var(--mid)}
-.vs-new .vs-title{color:var(--dark)}
-.vs-list{list-style:none;display:flex;flex-direction:column;gap:7px}
-.vs-list li{font-size:.84rem;color:var(--mid);display:flex;gap:8px;align-items:flex-start;line-height:1.55;font-weight:400}
-.vs-old .vs-list li::before{content:'✗';color:var(--soft);flex-shrink:0;margin-top:1px}
-.vs-new .vs-list li::before{content:'✓';color:var(--sage);font-weight:600;flex-shrink:0;margin-top:1px}
-.vs-new .vs-list li strong{color:var(--dark);font-weight:500}
 
 /* ══════════════════════════════════════
    07 · PROOF
@@ -846,7 +823,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
     
     <div class="mech-reveal rv">
       <div class="mech-reveal-hl">O Método Integração Soma-Cognitiva trabalha em <em>3 camadas simultâneas de integração</em></div>
-      <p class="mech-reveal-sub">Cada camada conecta o que sua mente já construiu com o que seu corpo ainda precisa processar. Nenhuma sozinha é suficiente. A combinação das três é o que cria reorganização, não apenas mais consciência.</p>
+      <p class="mech-reveal-sub">Cada camada conecta o que sua mente já construiu com o que seu corpo ainda precisa processar. Nenhuma sozinha é suficiente. A combination das três é o que cria reorganização, não apenas mais consciência.</p>
     </div>
 
     <ul class="mparts rv">
@@ -1108,8 +1085,9 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
     <div class="kicker line-l rv">Quem está do outro lado</div>
     <h2 class="h2 rv" style="margin:.5rem 0 2.5rem">Conheça a <em>Seheilen Toyama</em></h2>
     <div class="auth-inner rv">
-      <div class="portrait">
-        <div style="width:100%;height:100%;background:linear-gradient(155deg,#C8D9B8 0%,#9ABE80 50%,#6B9A50 100%)"></div>
+      
+      <div class="portrait" style="background: none;">
+        <img src="seheilen.jpg" alt="Foto de Seheilen Toyama" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 18px;">
       </div>
       <div>
         <p class="auth-text rv">Eu não criei o Método Integração Soma-Cognitiva a partir de uma teoria. Criei porque precisei.</p>
