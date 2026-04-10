@@ -58,17 +58,11 @@
 /* ── RESET & TOKENS ─────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  /* Brand colours - Ajustadas levemente para Contraste Acessível (WCAG AA) */
   --sage:#5C704B; --sage-l:#8FA07A; --sage-pale:#EEF2EB; --sage-deep:#3B4D2B;
   --cream:#F8F5F0; --warm:#FDFBF8; --dark:#2A2520;
   --mid:#4D443B; --soft:#7A726A; --border:#E8E2DA;
   --gold:#B8935A; --gold-l:#D4B07A; --shadow:rgba(42,37,32,.09);
-  /* Gradient tokens */
   --g1:#B0D090; --g2:#7AAD5C; --g3:#5A8A40; --g4:#3D6B28;
-  --g1h:#C0E0A0; --g2h:#8ABD6C; --g3h:#6A9A50; --g4h:#4D7B38;
-  --btn-shadow:0 4px 18px rgba(58,107,40,.28),inset 0 1px 0 rgba(255,255,255,.18);
-  --btn-shadow-lg:0 6px 24px rgba(58,107,40,.32),inset 0 1px 0 rgba(255,255,255,.18);
-  --btn-shadow-hover:0 10px 32px rgba(58,107,40,.42),inset 0 1px 0 rgba(255,255,255,.2);
 }
 html{font-size:16px;scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);line-height:1.6;overflow-x:hidden}
@@ -124,40 +118,21 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .rule{width:42px;height:1px;background:var(--gold);margin:2.5rem 0}
 .rule.ctr{margin:2.5rem auto}
 
-/* BUTTON RESET — para botoes padrao */
+/* BUTTON RESET */
 .btn,button.btn,.apply-cta-btn,.nav-cta{
-  -webkit-appearance:none;
-  appearance:none;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  border:none;
-  border-radius:100px;
-  font-family:'DM Sans',sans-serif;
-  font-weight:500;
-  cursor:pointer;
-  transition:all .3s;
-  text-decoration:none;
-  text-align:center;
-  letter-spacing:.04em;
-  line-height:1;
-  white-space:nowrap;
+  -webkit-appearance:none;appearance:none;display:inline-flex;align-items:center;justify-content:center;
+  border:none;border-radius:100px;font-family:'DM Sans',sans-serif;font-weight:500;cursor:pointer;
+  transition:all .3s;text-decoration:none;text-align:center;letter-spacing:.04em;line-height:1;white-space:nowrap;
 }
-
 .btn-sage,.btn-sage-lg,.apply-cta-btn,.nav-cta{
-  background: var(--sage-deep);
-  color:#fff;
-  box-shadow: 0 2px 10px rgba(42,37,32,.12), inset 0 1px 0 rgba(255,255,255,.07);
+  background: var(--sage-deep);color:#fff;box-shadow: 0 2px 10px rgba(42,37,32,.12), inset 0 1px 0 rgba(255,255,255,.07);
 }
 .btn-sage{padding:15px 38px;font-size:.93rem}
 .btn-sage-lg{padding:19px 52px;font-size:1.05rem;box-shadow: 0 2px 14px rgba(42,37,32,.14), inset 0 1px 0 rgba(255,255,255,.07)}
 .nav-cta{padding:9px 22px;font-size:.79rem}
-.apply-cta-btn{padding:16px 36px;font-size:.95rem;box-shadow: 0 2px 14px rgba(42,37,32,.14), inset 0 1px 0 rgba(255,255,255,.07);border:none !important;width:100%;max-width:420px;white-space:normal;display:inline-block;text-align:center;line-height:1.4}
-
+.apply-cta-btn{padding:16px 36px;font-size:.95rem;box-shadow: 0 2px 14px rgba(42,37,32,.14), inset 0 1px 0 rgba(255,255,255,.07);width:100%;max-width:420px;white-space:normal;line-height:1.4}
 .btn-sage:hover,.btn-sage-lg:hover,.apply-cta-btn:hover,.nav-cta:hover{
-  background: #2e3d1f;
-  transform:translateY(-1px);
-  box-shadow: 0 5px 20px rgba(42,37,32,.18), inset 0 1px 0 rgba(255,255,255,.09);
+  background: #2e3d1f;transform:translateY(-1px);box-shadow: 0 5px 20px rgba(42,37,32,.18), inset 0 1px 0 rgba(255,255,255,.09);
 }
 
 /* WHITE BUTTON */
@@ -190,10 +165,8 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .hero-hl{font-family:'Lora',serif;font-size:clamp(1.8rem,3.2vw,2.8rem);font-weight:400;line-height:1.15;color:var(--dark);margin-bottom:1.25rem}
 .hero-hl em{font-style:italic;color:var(--sage)}
 .hero-hl strong{font-weight:600}
-/* KK sub: empathetic, not hypey */
 .hero-sub{font-size:1.07rem;color:var(--mid);line-height:1.88;font-weight:400;max-width:580px;margin:0 auto 1rem}
 .hero-sub strong{color:var(--dark);font-weight:500}
-/* TB mechanism tease — planted below the empathy */
 .mech-pill{display:inline-flex;align-items:center;gap:10px;background:var(--sage-pale);border:1px solid rgba(107,127,90,.22);border-radius:12px;padding:13px 20px;font-size:.85rem;color:var(--sage-deep);margin:1.25rem 0 2rem;font-weight:400}
 .mech-pill strong{font-weight:600}
 .hero-urgency{margin-top:1.25rem}
@@ -203,37 +176,35 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .hs-lbl{font-size:.78rem;color:#7A726A;margin-top:3px;letter-spacing:.03em;text-align:center}
 .hs-sep{width:1px;height:36px;background:var(--border);flex-shrink:0}
 
+/* SECTIONS PADDING BASE */
+.open,.pain,.pivot,.villain,.mech,.proof,.qualify,.offer,.obj,.authority,.process,.faq,.close,.gap-section,.bonus-section,.manifesto{padding:6rem 0}
 
 /* ══════════════════════════════════════
-   02 · OPEN — KIM KRAUSE
+   02 · OPEN
 ══════════════════════════════════════ */
-.open{background:var(--warm);padding:6rem 0}
-
+.open{background:var(--warm)}
 
 /* ══════════════════════════════════════
-   03 · PAIN MIRROR — KIM KRAUSE
+   03 · PAIN MIRROR
 ══════════════════════════════════════ */
-.pain{background:var(--cream);padding:5.5rem 0}
+.pain{background:var(--cream)}
 .pain-list{list-style:none;border:1px solid var(--border);border-radius:18px;overflow:hidden;margin:2.5rem 0}
 .pain-item{display:flex;align-items:flex-start;gap:16px;padding:1.4rem 2rem;border-bottom:1px solid var(--border);font-size:1rem;color:var(--mid);line-height:1.65;font-weight:400}
 .pain-item:last-child{border-bottom:none}
 .pain-arrow{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#fff;margin-top:2px;font-weight:700;box-shadow:0 1px 4px rgba(42,37,32,.15);font-family:'DM Sans',sans-serif}
 .pain-item strong{color:var(--dark);font-weight:500}
-/* KK: the callout that bridges to the argument */
 .pain-bridge{font-family:'Lora',serif;font-style:italic;font-size:1.22rem;color:var(--sage-deep);line-height:1.72;border-left:2px solid var(--sage);padding:1.5rem 1.75rem;background:var(--warm);border-radius:0 14px 14px 0;margin:2rem 0}
 
-
 /* ══════════════════════════════════════
-   04 · PIVOT — THE SEAMLESS HANDOFF
+   04 · PIVOT
 ══════════════════════════════════════ */
-.pivot{background:var(--warm);padding:5.5rem 0}
+.pivot{background:var(--warm)}
 .pivot-divider{width:44px;height:1px;background:var(--gold);margin:2.5rem 0}
 
-
 /* ══════════════════════════════════════
-   05 · VILLAIN — TODD BROWN
+   05 · VILLAIN
 ══════════════════════════════════════ */
-.villain{background:var(--dark);padding:6rem 0}
+.villain{background:var(--dark)}
 .villain-hl{font-family:'Lora',serif;font-size:clamp(1.85rem,2.9vw,2.7rem);font-weight:400;color:var(--cream);line-height:1.35;text-align:center;max-width:640px;margin:0 auto 3rem}
 .villain-hl em{font-style:italic;color:var(--gold-l)}
 .villain-hl strong{font-weight:600;color:#fff}
@@ -245,17 +216,17 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .why-title{font-size:1rem;font-weight:500;color:var(--cream);margin-bottom:.3rem;letter-spacing:.02em}
 .why-body{font-size:.97rem;color:rgba(248,245,240,.5);line-height:1.75;font-weight:400}
 .why-body strong{color:rgba(248,245,240,.90);font-weight:500}
-/* Scientists */
+
+/* Scientists (if present) */
 .sci-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:3rem;border-radius:14px;overflow:hidden;background:rgba(248,245,240,.06)}
 .sci{background:rgba(248,245,240,.04);padding:1.75rem 1.4rem;text-align:center}
 .sci-name{font-size:.85rem;color:var(--gold-l);font-weight:500;margin-bottom:.4rem;letter-spacing:.03em}
 .sci-text{font-size:.85rem;color:rgba(248,245,240,.43);line-height:1.55;font-weight:300}
 
-
 /* ══════════════════════════════════════
-   06 · UNIQUE MECHANISM — TODD BROWN
+   06 · UNIQUE MECHANISM
 ══════════════════════════════════════ */
-.mech{background:var(--cream);padding:6rem 0}
+.mech{background:var(--cream)}
 .origin-note{background:var(--warm);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;padding:1.25rem 1.5rem;margin:1.25rem 0 2rem}
 .origin-note p{font-size:.86rem;color:var(--mid);line-height:1.78;font-weight:400}
 .origin-note p strong{color:var(--dark);font-weight:500}
@@ -263,7 +234,6 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .mech-reveal-hl{font-family:'Lora',serif;font-size:clamp(1.45rem,2.3vw,1.95rem);font-weight:400;color:var(--dark);line-height:1.35;margin-bottom:.7rem}
 .mech-reveal-hl em{font-style:italic;color:var(--sage)}
 .mech-reveal-sub{font-size:.88rem;color:#7A726A;line-height:1.7;font-weight:400;max-width:460px;margin:0 auto}
-/* 3 parts of the mechanism */
 .mparts{list-style:none;border:1px solid var(--border);border-radius:18px;overflow:hidden;margin:2.5rem 0}
 .mpart{display:grid;grid-template-columns:80px 1fr;border-bottom:1px solid var(--border)}
 .mpart:last-child{border-bottom:none}
@@ -274,7 +244,8 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .mpart-title{font-family:'Lora',serif;font-size:1.22rem;font-weight:400;color:var(--dark);margin-bottom:.55rem}
 .mpart-body{font-size:.97rem;color:var(--mid);line-height:1.82;font-weight:400}
 .mpart-body strong{color:var(--dark);font-weight:500}
-/* VS comparison */
+
+/* VS comparison (if present) */
 .vs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:2.5rem 0}
 .vs-card{border-radius:16px;padding:2rem 1.75rem}
 .vs-old{background:rgba(42,37,32,.04);border:1px solid var(--border)}
@@ -291,11 +262,10 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .vs-new .vs-list li::before{content:'✓';color:var(--sage);font-weight:600;flex-shrink:0;margin-top:1px}
 .vs-new .vs-list li strong{color:var(--dark);font-weight:500}
 
-
 /* ══════════════════════════════════════
    07 · PROOF
 ══════════════════════════════════════ */
-.proof{background:var(--warm);padding:5.5rem 0}
+.proof{background:var(--warm)}
 .tcard{background:var(--cream);border:1px solid var(--border);border-radius:18px;padding:2.4rem 2.25rem;margin-bottom:16px}
 .tcard:last-child{margin-bottom:0}
 .t-top{display:flex;align-items:center;gap:12px;margin-bottom:1.25rem}
@@ -307,11 +277,10 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .t-body strong{font-style:normal;font-weight:600;color:var(--sage-deep)}
 .t-result{margin-top:1rem;padding:.7rem 1rem;background:rgba(107,127,90,.08);border-radius:8px;border-left:2px solid var(--sage);font-size:.81rem;color:var(--sage-deep);font-weight:400;line-height:1.5}
 
-
 /* ══════════════════════════════════════
    08 · QUALIFICATION
 ══════════════════════════════════════ */
-.qualify{background:var(--cream);padding:5.5rem 0}
+.qualify{background:var(--cream)}
 .q-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:2.5rem;align-items:start}
 .q-card{border-radius:20px;padding:2.5rem;height:100%}
 .q-yes{background:var(--sage-pale);border:1px solid rgba(107,127,90,.22)}
@@ -334,47 +303,24 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .qualify-close p{font-family:'Lora',serif;font-style:italic;font-size:1.15rem;color:var(--sage-deep);line-height:1.7;font-weight:400}
 .qualify-close p strong{font-style:normal;font-weight:600}
 
-
 /* ══════════════════════════════════════
-   09 · OFFER (CARTÕES CLICÁVEIS INTEIROS & SUAVES)
+   09 · OFFER
 ══════════════════════════════════════ */
-.offer{background:var(--dark);padding:6rem 0}
+.offer{background:var(--dark)}
 .offer-head{text-align:center;margin-bottom:4rem}
 .offer-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:stretch;justify-items:stretch;max-width:860px;margin:0 auto}
 
 .oc{
-  background:rgba(248,245,240,.05);
-  border:1px solid rgba(248,245,240,.1);
-  border-radius:18px;
-  padding:2.5rem 2rem;
-  text-align:center;
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  text-decoration:none;
-  color:inherit;
-  cursor:pointer;
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  background:rgba(248,245,240,.05);border:1px solid rgba(248,245,240,.1);border-radius:18px;padding:2.5rem 2rem;
+  text-align:center;position:relative;display:flex;flex-direction:column;text-decoration:none;color:inherit;
+  cursor:pointer;transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
 .oc.best{
-  border:2px solid var(--sage-l);
-  background:rgba(107,127,90,.07);
-  position:relative;
-  z-index:1;
-  box-shadow:0 6px 24px rgba(74,92,58,.18);
-  padding-top:2.5rem;
+  border:2px solid var(--sage-l);background:rgba(107,127,90,.07);position:relative;z-index:1;
+  box-shadow:0 6px 24px rgba(74,92,58,.18);padding-top:2.5rem;
 }
-
-.oc:hover{
-  transform:translateY(-6px);
-  border-color:rgba(143,160,122,.4);
-  background:rgba(248,245,240,.08);
-}
-.oc.best:hover{
-  border-color:var(--gold-l);
-  box-shadow:0 16px 40px rgba(184,147,90,.12);
-  background:rgba(107,127,90,.1);
-}
+.oc:hover{transform:translateY(-6px);border-color:rgba(143,160,122,.4);background:rgba(248,245,240,.08);}
+.oc.best:hover{border-color:var(--gold-l);box-shadow:0 16px 40px rgba(184,147,90,.12);background:rgba(107,127,90,.1);}
 
 .oc-badge-diag{display:inline-block;background:var(--gold);color:#fff;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;padding:4px 14px;border-radius:100px;white-space:nowrap;margin-bottom:.65rem}
 .oc-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--sage);color:#fff;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;padding:4px 16px;border-radius:100px;white-space:nowrap}
@@ -387,47 +333,28 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .oc-desc strong{color:rgba(248,245,240,.90);font-weight:500}
 
 .oc-btn{
-  width:100%;
-  padding:14px 20px;
-  font-size:.85rem;
-  border-radius:100px;
-  font-family:'DM Sans',sans-serif;
-  font-weight:600;
-  letter-spacing:.04em;
-  text-transform:uppercase;
-  transition:all .3s ease;
-  margin-top:auto;
-  display:inline-block;
-  background:rgba(143,160,122,.15);
-  border:1px solid rgba(143,160,122,.3);
-  color:var(--sage-pale);
+  width:100%;padding:14px 20px;font-size:.85rem;border-radius:100px;font-family:'DM Sans',sans-serif;font-weight:600;
+  letter-spacing:.04em;text-transform:uppercase;transition:all .3s ease;margin-top:auto;display:inline-block;
+  background:rgba(143,160,122,.15);border:1px solid rgba(143,160,122,.3);color:var(--sage-pale);
 }
-.oc.best .oc-btn{
-  background:rgba(184,147,90,.15);
-  border:1px solid rgba(184,147,90,.4);
-  color:var(--gold-l);
-}
-
-.oc:hover .oc-btn{
-  background:var(--sage-l);
-  color:#fff;
-  border-color:var(--sage-l);
-}
-.oc.best:hover .oc-btn{
-  background:var(--gold-l);
-  color:var(--dark);
-  border-color:var(--gold-l);
-}
+.oc.best .oc-btn{background:rgba(184,147,90,.15);border:1px solid rgba(184,147,90,.4);color:var(--gold-l);}
+.oc:hover .oc-btn{background:var(--sage-l);color:#fff;border-color:var(--sage-l);}
+.oc.best:hover .oc-btn{background:var(--gold-l);color:var(--dark);border-color:var(--gold-l);}
 
 .entry-note{background:rgba(107,127,90,.1);border:1px solid rgba(107,127,90,.2);border-radius:14px;padding:1.75rem 2rem;margin-top:2.5rem;text-align:center}
 .entry-note p{font-size:.88rem;color:rgba(248,245,240,.78);line-height:1.75;font-weight:400}
 .entry-note strong{color:var(--gold-l);font-weight:500}
 
+/* OC bonus block */
+.oc-bonus{background:rgba(184,147,90,.08);border:1px solid rgba(184,147,90,.25);border-radius:10px;padding:.85rem 1rem;margin:.75rem 0 1.25rem;text-align:left}
+.oc-bonus-tag{display:block;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:.3rem}
+.oc-bonus-name{display:block;font-family:'Lora',serif;font-size:1.1rem;font-weight:400;color:var(--cream);margin-bottom:.2rem}
+.oc-bonus-desc{display:block;font-size:.82rem;color:rgba(248,245,240,.5);line-height:1.5;font-weight:400}
 
 /* ══════════════════════════════════════
    10 · OBJECTION
 ══════════════════════════════════════ */
-.obj{background:var(--warm);padding:6rem 0}
+.obj{background:var(--warm)}
 .obj-lede{font-family:'Lora',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:400;color:var(--dark);line-height:1.35;margin-bottom:2.5rem}
 .obj-lede em{font-style:italic;color:var(--sage)}
 .coi{background:var(--cream);border:1px solid var(--border);border-radius:18px;overflow:hidden;margin:2.5rem 0}
@@ -446,11 +373,10 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .anchor-calc p strong{color:var(--dark);font-weight:500}
 .pull{font-family:'Lora',serif;font-style:italic;font-size:1.18rem;color:var(--sage-deep);line-height:1.72;border-left:2px solid var(--sage);padding-left:1.25rem;margin:2.5rem 0}
 
-
 /* ══════════════════════════════════════
    11 · AUTHORITY
 ══════════════════════════════════════ */
-.authority{background:var(--cream);padding:5.5rem 0}
+.authority{background:var(--cream)}
 .auth-inner{display:grid;grid-template-columns:180px 1fr;gap:2.5rem;align-items:start}
 .portrait{border-radius:18px;overflow:hidden;background:linear-gradient(155deg,#C8D9B8 0%,#9ABE80 50%,#6B9A50 100%);aspect-ratio:3/4;position:relative}
 .portrait-mid{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
@@ -462,11 +388,10 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .certs{display:flex;flex-wrap:wrap;gap:7px;margin-top:1.25rem}
 .cert{background:var(--sage-pale);border:1px solid rgba(107,127,90,.2);border-radius:100px;padding:4px 13px;font-size:.72rem;color:var(--sage-deep);letter-spacing:.04em}
 
-
 /* ══════════════════════════════════════
    12 · PROCESS
 ══════════════════════════════════════ */
-.process{background:var(--warm);padding:5.5rem 0}
+.process{background:var(--warm)}
 .proc-list{list-style:none;border:1px solid var(--border);border-radius:18px;overflow:hidden;margin-top:2.5rem}
 .pstep{display:grid;grid-template-columns:64px 1fr;border-bottom:1px solid var(--border)}
 .pstep:last-child{border-bottom:none}
@@ -476,7 +401,6 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .pstep-title{font-family:'Lora',serif;font-size:1.08rem;font-weight:400;color:var(--dark);margin-bottom:.4rem}
 .pstep-body{font-size:.97rem;color:var(--mid);line-height:1.78;font-weight:400}
 .pstep-body strong{color:var(--dark);font-weight:500}
-
 
 /* ══════════════════════════════════════
    13 · APPLICATION CTA
@@ -498,11 +422,10 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .vagas-row{display:flex;align-items:center;justify-content:center;gap:9px;font-size:.8rem;color:rgba(238,242,235,.68)}
 .vagas-row strong{color:rgba(238,242,235,.74)}
 
-
 /* ══════════════════════════════════════
    14 · FAQ
 ══════════════════════════════════════ */
-.faq{background:var(--cream);padding:5.5rem 0}
+.faq{background:var(--cream)}
 .faq-inner{max-width:660px;margin:0 auto;padding:0 6%}
 .faq-box{margin-top:2.25rem;border:1px solid var(--border);border-radius:18px;overflow:hidden}
 .fi{border-bottom:1px solid var(--border)}
@@ -517,11 +440,10 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .fi-a p:last-child{margin-bottom:0}
 .fi-a strong{color:var(--dark);font-weight:500}
 
-
 /* ══════════════════════════════════════
    15 · CLOSE
 ══════════════════════════════════════ */
-.close{background:var(--warm);padding:5.5rem 0;text-align:center}
+.close{background:var(--warm);text-align:center}
 .close-quote{font-family:'Lora',serif;font-size:1.25rem;font-style:italic;color:var(--mid);line-height:1.85;max-width:520px;margin:0 auto 2rem;font-weight:400}
 .close-quote strong{font-style:normal;color:var(--dark);font-weight:600}
 .close-logic{font-size:.97rem;color:var(--mid);line-height:1.9;font-weight:400;max-width:560px;margin:0 auto 2.5rem}
@@ -531,14 +453,15 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .close-urgency p strong{font-weight:600;color:var(--sage-deep)}
 .rule-gold{width:42px;height:1px;background:var(--gold);margin:2.5rem auto}
 
-/* Ilusão Cognitiva */
+/* Miscelânea */
 .ilusao-cognitiva{margin:2rem 0;padding:1.5rem 2rem;background:rgba(184,147,90,.06);border-left:2px solid var(--gold);border-radius:0 12px 12px 0}
 .ic-frase{font-family:'Lora',serif;font-size:1.3rem;font-style:italic;color:var(--mid);line-height:1.75;font-weight:300;margin-bottom:.6rem}
 .ic-nome{font-size:1rem;color:var(--dark);font-weight:300;margin-bottom:.35rem}
 .ic-detalhe{font-size:1rem;color:var(--mid);font-weight:300}
 
 /* GAP Diagram */
-.gap-diagram{display:grid;grid-template-columns:1fr auto 1fr;gap:0;margin:1.25rem 0 1.5rem;border:1px solid var(--border);border-radius:14px;overflow:hidden;font-size:.84rem}
+.gap-section{background:var(--warm)}
+.gap-diagram{display:grid;grid-template-columns:1fr auto 1fr;gap:0;margin:1.25rem 0 1.5rem;border:1px solid var(--border);border-radius:14px;overflow:hidden;font-size:.84rem;max-width:640px;margin-left:auto;margin-right:auto}
 .gap-col{padding:1.25rem 1.1rem}
 .gap-mente{background:rgba(42,37,32,.03);border-right:1px solid var(--border)}
 .gap-corpo{background:rgba(42,37,32,.03)}
@@ -551,11 +474,9 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .gap-arrow{font-size:.75rem;color:var(--sage);margin-bottom:.4rem}
 .gap-sublabel{font-size:.78rem;color:var(--soft);text-align:center;line-height:1.5;letter-spacing:.04em;text-transform:uppercase}
 
-/* Scarcity note */
 .scarcity-note{background:rgba(42,37,32,.03);border:1px solid var(--border);border-radius:10px;padding:1rem 1.5rem;margin:1.25rem 0}
 .scarcity-note p{font-size:.83rem;color:#fff;line-height:1.72;font-weight:400;margin:0;text-align:center}
 
-/* Armadilha da Consciência */
 .armadilha{background:var(--cream);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 18px 18px 0;padding:2.25rem 2.5rem;margin:2.5rem 0}
 .armadilha-kicker{font-size:.69rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:.6rem}
 .armadilha-title{font-family:'Lora',serif;font-size:clamp(1.4rem,2.2vw,1.85rem);font-weight:400;color:var(--dark);line-height:1.25;margin-bottom:1.25rem;font-style:italic}
@@ -565,18 +486,8 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .armadilha-break{border-top:1px solid var(--border);padding-top:1rem !important;margin-top:1.25rem !important;font-style:italic;color:var(--sage-deep) !important;font-family:'Lora',serif;font-size:1.175rem !important}
 .armadilha-ilusao{border-top:1px solid var(--border);margin-top:1.5rem;padding-top:1.5rem}
 
-/* GAP standalone section */
-.gap-section{background:var(--warm);padding:5rem 0}
-.gap-diagram{display:grid;grid-template-columns:1fr auto 1fr;gap:0;margin:1.25rem 0 1.5rem;border:1px solid var(--border);border-radius:14px;overflow:hidden;font-size:.84rem;max-width:640px;margin-left:auto;margin-right:auto}
-
-/* OC bonus block inside card */
-.oc-bonus{background:rgba(184,147,90,.08);border:1px solid rgba(184,147,90,.25);border-radius:10px;padding:.85rem 1rem;margin:.75rem 0 1.25rem;text-align:left}
-.oc-bonus-tag{display:block;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:.3rem}
-.oc-bonus-name{display:block;font-family:'Lora',serif;font-size:1.1rem;font-weight:400;color:var(--cream);margin-bottom:.2rem}
-.oc-bonus-desc{display:block;font-size:.82rem;color:rgba(248,245,240,.5);line-height:1.5;font-weight:400}
-
 /* Bonus section */
-.bonus-section{background:var(--sage-pale);padding:5rem 0}
+.bonus-section{background:var(--sage-pale)}
 .bonus-card{background:var(--warm);border:1px solid var(--border);border-radius:22px;overflow:hidden;max-width:680px;margin:0 auto}
 .bonus-header{background:var(--sage-deep);padding:2.5rem 2.5rem 2rem;text-align:center}
 .bonus-tag{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(238,242,235,.6);font-weight:600;margin-bottom:.75rem}
@@ -590,57 +501,10 @@ nav{position:fixed;inset:0 0 auto;z-index:100;height:58px;display:flex;align-ite
 .bonus-ico{color:var(--sage);font-size:.65rem;margin-top:4px;flex-shrink:0}
 .bonus-note{font-size:.88rem !important;font-style:italic;color:#7A726A !important;border-top:1px solid var(--border);padding-top:1rem;margin-top:.5rem !important}
 
-/* ══════════════════════════════════════
-   MOBILE — PÚBLICO 45+ — FONTES MAIORES
-══════════════════════════════════════ */
-
-/* MOBILE CTA BAR */
-.mobile-cta-bar{display:none}
-@media(max-width:760px){
-  .mobile-cta-bar{
-    position:fixed;bottom:0;left:0;right:0;z-index:99;
-    padding:10px 6%;
-    background:rgba(253,251,248,.97);
-    backdrop-filter:blur(16px);
-    -webkit-backdrop-filter:blur(16px);
-    border-top:1px solid var(--border);
-    box-shadow:0 -4px 20px rgba(42,37,32,.08);
-    display:flex;justify-content:center;
-    transform:translateY(100%);
-    transition:transform .3s ease;
-  }
-  .mobile-cta-bar.visible{transform:translateY(0)}
-  footer{padding-bottom:80px}
-}
-@media(min-width:761px){.mobile-cta-bar{display:none!important}}
-
-/* FOOTER */
-footer{background:var(--dark);padding:2.25rem 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-.ft-logo{font-family:'Lora',serif;font-size:1.3rem;font-weight:400;color:var(--cream);letter-spacing:.07em}
-.ft-logo em{font-style:italic;color:var(--gold-l)}
-footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
-
-/* ── SCANABILITY ── */
-
-/* Frase-âncora */
+/* Scanability / Manifesto */
 .anchor-phrase{font-family:'Lora',serif;font-size:clamp(1.3rem,2vw,1.7rem);font-weight:600;color:var(--sage-deep);line-height:1.4;background:var(--sage-pale);border-radius:14px;padding:1.5rem 2rem;margin:2.5rem 0;text-align:center}
 .anchor-phrase em{font-style:italic;color:var(--sage)}
 
-/* Espaçamento generoso entre seções */
-.hero,.open,.pain,.pivot,.villain,.mech,.proof,.qualify,.offer,.obj,.authority,.process,.apply,.faq,.close{padding-top:6rem;padding-bottom:6rem}
-.hero{padding-top:80px}
-
-/* Vagas progress bar */
-.vagas-bar-wrap{display:flex;flex-direction:column;gap:6px;align-items:center;margin-top:1.5rem}
-.vagas-bar-label{font-size:.78rem;color:#7A726A;letter-spacing:.04em}
-.vagas-bar-label strong{color:var(--sage-deep)}
-.vagas-bar-track{width:200px;height:6px;background:var(--border);border-radius:100px;overflow:hidden}
-.vagas-bar-fill{height:100%;width:43%;background:linear-gradient(90deg,var(--g2),var(--g3));border-radius:100px}
-
-/* Mpart icon symbols */
-.mpart-icon{font-size:1rem;margin-bottom:.4rem;display:block;line-height:1;color:var(--sage);font-weight:600}
-
-/* Antes/depois table */
 .before-after{border:1px solid var(--border);border-radius:18px;overflow:hidden;margin:2.5rem 0;font-size:.88rem}
 .ba-head{display:grid;grid-template-columns:1fr 1fr;background:rgba(42,37,32,.03)}
 .ba-h{padding:.85rem 1.25rem;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;border-right:1px solid var(--border)}
@@ -650,19 +514,11 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 .ba-c{padding:1rem 1.25rem;line-height:1.55;font-weight:400;border-right:1px solid var(--border);color:var(--soft)}
 .ba-c:last-child{border-right:none;color:var(--sage-deep);background:rgba(107,127,90,.04);font-weight:400}
 
-/* Frase-chave destacada dentro do depoimento */
 .t-highlight{display:inline;font-family:inherit;font-style:inherit;font-size:inherit;font-weight:600;color:var(--dark);background:none;border:none;padding:0;margin:0}
-.integration-moment{background:var(--warm);border:1px solid var(--border);border-left:3px solid var(--sage);border-radius:0 18px 18px 0;padding:2rem 2.25rem;margin:2.5rem 0}
-.im-kicker{font-size:.69rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:1rem}
-.integration-moment p{font-size:.95rem;color:var(--mid);line-height:1.85;font-weight:400;margin-bottom:.9rem}
-.integration-moment p:last-child{margin-bottom:0}
-.integration-moment p strong{color:var(--dark);font-weight:500}
 
-/* Hooks manifesto */
 .hooks{display:flex;flex-direction:column;gap:10px;margin:2.5rem auto;max-width:560px}
 .hook-line{font-family:'Lora',serif;font-size:1.08rem;font-style:italic;color:var(--mid);line-height:1.6;padding:.75rem 1.25rem;background:var(--cream);border-left:2px solid var(--gold);border-radius:0 10px 10px 0;font-weight:400}
 
-/* Anti-categoria */
 .anticat{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:18px;overflow:hidden;margin:2.5rem 0}
 .anticat-item{display:flex;align-items:flex-start;gap:14px;padding:1.25rem 1.75rem;border-bottom:1px solid var(--border);font-size:.93rem;color:var(--mid);line-height:1.6;font-weight:400}
 .anticat-item:last-child{border-bottom:none}
@@ -674,26 +530,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 .anticat-item strong{color:var(--dark);font-weight:500}
 .anticat-item.yes strong{color:var(--sage-deep)}
 
-/* 3-column tri-table */
-.tri-table{border:1px solid var(--border);border-radius:18px;overflow:hidden;margin:2.5rem 0;font-size:.84rem}
-.tri-head{display:grid;grid-template-columns:1fr 1.3fr;background:rgba(42,37,32,.03)}
-.tri-h{padding:.9rem 1.1rem;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;border-right:1px solid var(--border)}
-.tri-h:last-child{border-right:none}
-.tri-h.old{color:var(--soft)}
-.tri-h.body-col{display:none}
-.tri-h.new{color:var(--sage-deep);background:rgba(107,127,90,.06)}
-.tri-row{display:grid;grid-template-columns:1fr 1.3fr;border-top:1px solid var(--border)}
-.tri-c{padding:1rem 1.1rem;color:var(--mid);line-height:1.55;font-weight:300;border-right:1px solid var(--border)}
-.tri-c:last-child{border-right:none}
-.tri-c.old{color:var(--soft)}
-.tri-c.body-col{display:none}
-.tri-c.new{color:var(--sage-deep);background:rgba(107,127,90,.04);font-weight:400}
-.result-row .tri-c{font-weight:500;font-size:.83rem}
-.result-row .tri-c.old{color:var(--soft)}
-.result-row .tri-c.new{color:var(--sage-deep)}
-
-/* Manifesto */
-.manifesto{background:var(--sage-deep);padding:6rem 0}
+.manifesto{background:var(--sage-deep)}
 .manifesto-body{display:flex;flex-direction:column;gap:1.5rem;margin-top:2rem}
 .manifesto-body p{font-family:'Lora',serif;font-size:clamp(1.05rem,1.8vw,1.25rem);font-weight:400;color:rgba(238,242,235,.85);line-height:1.85}
 .manifesto-body p strong{color:#fff;font-weight:500}
@@ -701,76 +538,112 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 .manifesto .kicker.line-l::before{background:rgba(238,242,235,.3)}
 .manifesto-close{color:rgba(238,242,235,.92) !important;font-style:italic;border-top:1px solid rgba(238,242,235,.15);padding-top:1.5rem;margin-top:.5rem}
 
-/* ── ESCASSEZ ───────────── */
-.scarcity{border-radius:14px;padding:1.25rem 1.75rem;margin:2rem 0;font-size:.88rem;line-height:1.72;font-weight:300}
-.scarcity p{margin:0}
-.scarcity strong{font-weight:500}
+/* ══════════════════════════════════════
+   MOBILE — RESPONSIVE OVERRIDES
+══════════════════════════════════════ */
+.mobile-cta-bar{display:none}
 
-.sc-2{background:var(--cream);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;color:var(--mid)}
-.sc-2 strong{color:var(--dark)}
-.sc-3{background:var(--sage-pale);border:1px solid rgba(107,127,90,.2);color:var(--sage-deep);text-align:center}
-.sc-3 .sc-anchor{font-family:'Lora',serif;font-size:1.2rem;font-weight:600;font-style:italic;display:block;margin-top:.6rem}
-.sc-4{color:var(--mid);border-top:1px solid var(--border);padding-top:1.75rem;margin-top:2rem;border-radius:0;background:none;padding-left:0;padding-right:0}
-.sc-4 strong{color:var(--dark)}
-.sc-5{background:none;border:none;border-radius:0;padding:0;text-align:center;margin:0}
-.sc-5 p{font-family:'Lora',serif;font-style:italic;font-size:1.05rem;color:var(--mid);margin-bottom:1.25rem}
-.sc-6{background:var(--sage-pale);border:1px solid rgba(107,127,90,.22);border-radius:16px;padding:2rem 2.25rem;text-align:center;color:var(--sage-deep)}
-.sc-6 .sc-proof{font-family:'Lora',serif;font-size:1.18rem;font-weight:600;display:block;margin:.75rem 0;color:var(--sage-deep)}
-.sc-6 p{font-size:.9rem;color:var(--mid);line-height:1.72}
-
-/* RESPONSIVE — mobile breakpoint */
 @media(max-width:900px){
   .offer-cards{grid-template-columns:1fr}
 }
+
 @media(max-width:760px){
-  .vs,.q-grid,.coi-head,.coi-row,.auth-inner,.row2,.sci-bar{grid-template-columns:1fr}
-  .coi-h:first-child,.coi-cell:first-child{border-right:none;border-bottom:1px solid var(--border)}
-  .portrait{aspect-ratio:4/3;max-height:220px}
+  .mobile-cta-bar{
+    display:flex; position:fixed;bottom:0;left:0;right:0;z-index:99;
+    padding:10px 6%; background:rgba(253,251,248,.97); backdrop-filter:blur(16px);
+    border-top:1px solid var(--border); box-shadow:0 -4px 20px rgba(42,37,32,.08);
+    justify-content:center; transform:translateY(100%); transition:transform .3s ease;
+  }
+  .mobile-cta-bar.visible{transform:translateY(0)}
+  footer{padding-bottom:80px}
+
+  /* Structural Resets */
+  .vs,.q-grid,.auth-inner,.sci-bar{grid-template-columns:1fr}
   .sci-bar{grid-template-columns:1fr 1fr}
   .mpart{grid-template-columns:60px 1fr}
-  .tri-head,.tri-row{grid-template-columns:1fr}
-  .tri-h.body-col,.tri-c.body-col{display:none}
-  .tri-h,.tri-c{border-right:none;border-bottom:1px solid var(--border)}
-  .tri-h:last-child,.tri-c:last-child{border-bottom:none}
-  /* GAP + bonus */
+  .portrait{aspect-ratio:4/3;max-height:220px}
   .gap-diagram{grid-template-columns:1fr}
-  .gap-center{flex-direction:row;padding:.6rem 1rem;justify-content:center;gap:1rem}
+  .gap-center{flex-direction:row;padding:.8rem 1rem;justify-content:center;gap:1rem}
   .gap-arrow{margin:0}
   .bonus-items{grid-template-columns:1fr}
-  .bonus-body,.bonus-header{padding:1.75rem 1.5rem}
 
-  /* ── MOBILE LEGIBILITY — PÚBLICO 45+ ── */
-  html{font-size:18px}
-  body{font-size:18px}
+  /* BASE FONT: 16px to prevent breaking layouts */
+  html{font-size:16px}
+  body{font-size:16px}
+
+  /* Typography Scales */
   .prose,.body,.pstep-body,.auth-text,.oc-desc,.t-body,.close-logic,
-  .manifesto-body p,.armadilha p,.ic-frase,.bonus-body p{font-size:1rem;line-height:1.92}
-  .h2,.obj-lede{font-size:clamp(1.7rem,5.5vw,2.4rem)}
-  
-  .hero-hl{font-size:clamp(1.8rem,3.2vw,2.8rem)}
-  
-  .villain-hl{font-size:clamp(1.6rem,5.5vw,2.2rem)}
+  .manifesto-body p,.armadilha p,.ic-frase,.bonus-body p{font-size:1.05rem;line-height:1.75}
+  .h2,.obj-lede{font-size:clamp(1.7rem,6vw,2.2rem)}
+  .hero-hl{font-size:clamp(1.8rem,7vw,2.4rem)}
+  .villain-hl{font-size:clamp(1.6rem,6vw,2.2rem)}
   .armadilha-title{font-size:1.35rem}
-  .kicker,.kicker.lt,.oc-type{font-size:.78rem;letter-spacing:.1em}
+  .kicker,.kicker.lt,.oc-type{font-size:.75rem;letter-spacing:.08em}
   .oc-price{font-size:2.4rem}
-  .oc-per,.oc-unit,.t-result{font-size:.88rem}
-  .pain-item p,.fi-a p,.why-body,.q-list li,.pstep-body,.t-body{font-size:.97rem;line-height:1.88}
-  .fi-q span:first-child,.why-title,.pstep-title{font-size:1rem}
-  .btn,.btn-sage,.btn-sage-lg,.oc-btn,.apply-cta-btn{min-height:52px;font-size:1rem;padding:15px 28px}
-  .fi-ico{width:36px;height:36px;font-size:1.1rem;display:flex;align-items:center;justify-content:center}
-  
-  .open,.pain,.pivot,.mech,.proof,.qualify,
-  .obj,.authority,.process,.faq,.close,
-  .gap-section,.bonus-section,.manifesto{
-    padding-top:4.5rem;
-    padding-bottom:4.5rem;
+  .pain-item p,.fi-a p,.why-body,.q-list li{font-size:1rem;line-height:1.75}
+  .btn,.btn-sage,.btn-sage-lg,.oc-btn,.apply-cta-btn{min-height:52px;font-size:1rem;padding:15px 24px}
+  .fi-ico{width:36px;height:36px;font-size:1.1rem}
+
+  /* Paddings Ajustados */
+  .open,.pain,.pivot,.mech,.proof,.qualify,.obj,.authority,.process,.faq,.close,.gap-section,.bonus-section,.manifesto{padding:4rem 0}
+
+  /* FIX 1: Elementos Sociais (Hero) */
+  .hero-social{flex-direction:column;max-width:100%;border-radius:14px}
+  .hs-sep{width:100%;height:1px}
+
+  /* FIX 2: Redução de caixas grandes no mobile */
+  .claim { padding: 1.5rem; }
+  .pain-item { padding: 1.25rem 1rem; }
+  .pain-bridge { padding: 1.25rem; border-radius: 0 14px 14px 0; }
+  .why-c { padding: 1.25rem 1rem; }
+  .origin-note { padding: 1.25rem; }
+  .mech-reveal { padding: 1.75rem 1.25rem; }
+  .mpart-c { padding: 1.5rem 1.25rem; }
+  .mpart-n { padding: 1.5rem 0.5rem; }
+  .tcard { padding: 1.5rem 1.25rem; }
+  .q-card { padding: 1.75rem 1.25rem; }
+  .qualify-close { padding: 1.25rem; }
+  .oc { padding: 1.75rem 1.25rem; }
+  .oc.best { padding-top: 2rem; }
+  .entry-note { padding: 1.25rem; }
+  .anchor-calc { padding: 1.25rem; }
+  .pstep-c { padding: 1.5rem 1.25rem; }
+  .apply-cta-card { padding: 1.75rem 1.25rem; }
+  .armadilha { padding: 1.5rem 1.25rem; }
+  .anticat-item { padding: 1.25rem 1rem; }
+  .bonus-body,.bonus-header{padding:1.75rem 1.25rem}
+  .fi-q{padding:1.3rem 1.25rem}
+  .fi-a{padding:0 1.25rem}
+
+  /* FIX 3: Tabelas empilhadas com data-label */
+  .before-after .ba-head { display: none; }
+  .before-after .ba-row { grid-template-columns: 1fr; }
+  .before-after .ba-c { border-right: none; border-bottom: 1px solid var(--border); padding: 1.25rem; }
+  .before-after .ba-c:last-child { border-bottom: none; }
+  .before-after .ba-c::before {
+    content: attr(data-label);
+    display: block; font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 600; margin-bottom: .5rem;
   }
-  
-  .t-body,.claim,.armadilha-break,.armadilha-title,.ic-frase,
-  .anchor-phrase,.auth-pull,.close-quote,.bonus-title,.apply-hl{
-    font-weight:400;
-    font-size:max(1.05rem, 1em);
+  .before-after .ba-c:first-child::before { color: var(--soft); }
+  .before-after .ba-c:last-child::before { color: var(--sage-deep); }
+
+  .coi-head { display: none; }
+  .coi-row { grid-template-columns: 1fr; }
+  .coi-cell { padding: 2.5rem 1.25rem 1.25rem; position: relative; border-right: none; border-bottom: 1px solid var(--border); }
+  .coi-cell:last-child { border-bottom: none; }
+  .coi-cell::before {
+    content: attr(data-label);
+    display: block; font-size: .65rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 600;
+    position: absolute; top: 1rem; left: 1.25rem;
   }
+  .coi-cell:first-child::before { color: var(--soft); }
+  .coi-cell:last-child::before { color: var(--sage-deep); }
 }
+
+footer{background:var(--dark);padding:2.25rem 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.ft-logo{font-family:'Lora',serif;font-size:1.3rem;font-weight:400;color:var(--cream);letter-spacing:.07em}
+.ft-logo em{font-style:italic;color:var(--gold-l)}
+footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
 </style>
 </head>
 <body>
@@ -818,35 +691,23 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
   </div>
 </section>
 
-
 <section class="open" aria-label="Abertura — Identificação com a leitora">
   <div class="col">
-
     <p class="prose rv" style="font-family:'Lora',serif;font-size:1.45rem;font-style:italic;color:var(--dark);line-height:1.68;margin-bottom:2rem">"Você construiu muita coisa. Tem consciência, tem recursos, se conhece. E ainda assim… algo continua travando."</p>
-
     <p class="prose rv">Você não é alguém que foge dos problemas. Você os enfrenta. Lê, pesquisa, faz terapia, busca ajuda. <strong>Você se esforça muito.</strong></p>
-
     <p class="prose rv">E é exatamente por isso que o que vou te dizer agora vai fazer mais sentido do que qualquer coisa que você já ouviu sobre seus padrões.</p>
-
     <p class="prose rv">Você sabe <strong>de onde vieram seus padrões.</strong> Consegue nomear o que sente, identificar os gatilhos e descrever o ciclo que se repete. Você se dedicou muito para construir essa base de consciência. <strong>Ela existe e não foi em vão.</strong></p>
-
     <p class="prose rv">Mas na hora de sustentar uma decisão, de colocar um limite, de agir sem precisar de aprovação, de confiar em si mesma depois de tomar uma decisão importante, algo para. Uma voz que duvida. Um corpo que trava. Uma sensação que você conhece muito bem.</p>
-
     <div class="trans rv">Por que eu entendo tudo isso… e ainda assim não consigo mudar?</div>
-
     <p class="prose rv">Essa pergunta tem uma resposta. <strong>E ela é mais simples, e mais profunda do que você imagina.</strong></p>
-
   </div>
 </section>
 
-
 <section class="pain" aria-label="Espelho da dor — Reconhecimento dos padrões">
   <div class="col">
-
     <div class="kicker line-l rv">Você se reconhece aqui?</div>
     <h2 class="h2 rv" style="margin:.5rem 0 1rem">Responda com honestidade</h2>
     <p class="body rv" style="margin-bottom:0">Nos últimos meses, ou anos, você tem vivido com alguma dessas sensações?</p>
-
     <ul class="pain-list rv">
       <li class="pain-item"><span class="pain-arrow">›</span><span>Você toma uma decisão importante e, horas depois, <strong>começa a duvidar se foi certa</strong> , mesmo quando racionalmente você sabe que foi</span></li>
       <li class="pain-item"><span class="pain-arrow">›</span><span>Você consegue ver claramente os padrões que te travam, mas <strong>na hora H o corpo age por conta própria</strong> : ansiedade, travamento, resposta automática que você não escolheu</span></li>
@@ -855,28 +716,21 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
       <li class="pain-item"><span class="pain-arrow">›</span><span>Você fez terapias e mais cursos. E chegou a um ponto em que <strong>entender mais não parece estar mudando mais nada</strong></span></li>
       <li class="pain-item"><span class="pain-arrow">›</span><span>Existe uma parte de você que sente que <strong>sua vida está sempre um passo atrás</strong> do que poderia estar. Não por falta do seu esforço, mas por algo que você ainda não conseguiu alcançar</span></li>
     </ul>
-
     <div class="pain-bridge rv">
       Se você se reconheceu em dois ou mais desses pontos, o que vem a seguir vai explicar exatamente por que isso acontece e o que pode ser feito para melhorar sua vida.
     </div>
-
   </div>
 </section>
 
-
 <section class="pivot" aria-label="Pivot — A verdade que ninguém te contou">
   <div class="col">
-
     <div class="rule ctr rv"></div>
-
     <p class="prose rv">Aqui está o que ninguém te disse ainda, e que muda completamente a forma como você entende tudo que já tentou:</p>
-
     <div class="claim rv">
       "Entendimento e mudança de comportamento são processados em sistemas neurológicos completamente diferentes. Você pode ter consciência perfeita de um padrão, e o sistema que controla o comportamento automático simplesmente não receber essa informação."
     </div>
-
     <p class="prose rv">Não é falta de esforço. <strong>É que você trabalhou brilhantemente em metade do sistema: a metade da mente.</strong> Mas existe uma segunda metade, a do corpo, que nunca foi conectada à primeira. E é exatamente nesse espaço entre as duas que seus padrões encontram abrigo.</p>
-
+    
     <div class="anchor-phrase rv">
       Sua mente já fez a parte dela.<br>
       <em>Agora falta integrar a parte do corpo.</em>
@@ -895,19 +749,15 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         <p class="ic-detalhe">O inimigo não é a mente. O inimigo é a <strong>desconexão</strong>.</p>
       </div>
     </div>
-
     <p class="prose rv">Sua mente fez a parte dela. Fez bem. Criou consciência, nomeou padrões, construiu entendimento. <strong>Esse trabalho não foi perdido. Ele é a base.</strong> Mas a base sozinha não sustenta a mudança. O que falta é integrar essa base com o que seu corpo ainda registra como padrão ativo.</p>
-
     <p class="prose rv">Isso é o que vou mostrar agora. Não como teoria abstrata, mas como um mecanismo específico, com nome, com respaldo científico, e com um processo que trabalha diretamente nesse espaço de integração.</p>
-
   </div>
 </section>
-
 
 <section class="gap-section" aria-label="O espaço entre mente e corpo">
   <div class="col">
     <div class="kicker ctr rv" style="justify-content:center;margin-bottom:1.25rem">O mapa do problema</div>
-    <h2 class="h2 tc rv" style="margin-bottom:.5rem">Tudo que você já tentou trabalhou<br>em <em>apenas um lado</em></h2>
+    <h2 class="h2 tc rv" style="margin-bottom:.5rem; text-align:center;">Tudo que você já tentou trabalhou<br>em <em>apenas um lado</em></h2>
     <p class="body rv" style="text-align:center;max-width:500px;margin:0 auto 2rem;color:var(--mid)">E existe um espaço entre os dois lados onde nenhuma abordagem chega. É exatamente onde seus padrões sobrevivem.</p>
 
     <div class="gap-diagram rv" aria-label="Diagrama: o espaço entre mente e corpo">
@@ -933,24 +783,19 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         <div class="gap-col-quote">"Sinta mais"</div>
       </div>
     </div>
-
     <p class="body rv" style="text-align:center;max-width:520px;margin:1.75rem auto 0;color:var(--mid)">O <strong>Método Integração Soma-Cognitiva</strong> trabalha nesse espaço onde as duas metades finalmente se conectam.</p>
   </div>
 </section>
 
-
-<section class="villain" aria-label="Causa raiz — Por que o entendimento não muda o comportamento">
+<section class="villain" aria-label="Causa raiz">
   <div class="col">
-
     <div class="kicker lt ctr rv" style="justify-content:center;margin-bottom:1.5rem">A causa raiz que ninguém integra</div>
-
     <h2 class="villain-hl rv">
       Não é falta de consciência.<br>
       É falta de <em>integração</em>.<br>
       O problema está no espaço entre<br>
       mente e corpo: a solução <strong>Integração Soma-Cognitiva.</strong>
     </h2>
-
     <p class="body lt rv" style="text-align:center;max-width:540px;margin:0 auto 2.5rem">Quatro razões pelas quais entender um padrão não o dissolve, e por que a integração entre mente e corpo é o que faltava:</p>
 
     <ul class="why-list rv">
@@ -966,45 +811,39 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         <div class="why-n">2</div>
         <div class="why-c">
           <div class="why-title">O estado do corpo decide o que é possível fazer, e não a sua intenção</div>
-          <p class="why-body">O nível de alerta do seu sistema nervoso determina quais comportamentos são possíveis, antes mesmo de você decidir qualquer coisa. Quando interpreta uma situação como ameaça, entra em modo de proteção. <strong>Nenhuma decisão racional ultrapassa esse bloqueio.</strong> É por isso que você pode ensaiar um limite mentalmente, e na hora, o coração acelera, a garganta fecha, e você recua. Pode soar como fraqueza, mas é a desconexão entre intenção e estado. <strong>Só a integração resolve isso na base.</strong></p>
+          <p class="why-body">O nível de alerta do seu sistema nervoso determina quais comportamentos são possíveis, antes mesmo de você decidir qualquer coisa. Quando interpreta uma situação como ameaça, entra em modo de proteção. <strong>Nenhuma decisão racional ultrapassa esse bloqueio.</strong></p>
         </div>
       </li>
       <li class="why-row">
         <div class="why-n">3</div>
         <div class="why-c">
           <div class="why-title">Ciclos incompletos se repetem até que mente e corpo os fechem juntos</div>
-          <p class="why-body">Todo padrão que persiste é um ciclo que não se fechou. A mente consegue identificar onde o ciclo abriu. <strong>Só a integração entre o que a mente entende e o que o corpo registra consegue completá-lo.</strong> Sem completar, ele reinicia, independente de quanto você o compreenda.</p>
+          <p class="why-body">Todo padrão que persiste é um ciclo que não se fechou. A mente consegue identificar onde o ciclo abriu. <strong>Só a integração entre o que a mente entende e o que o corpo registra consegue completá-lo.</strong> Sem completar, ele reinicia.</p>
         </div>
       </li>
       <li class="why-row">
         <div class="why-n">4</div>
         <div class="why-c">
           <div class="why-title">Mudança sustentável exige um novo estado, e não uma nova decisão</div>
-          <p class="why-body">Você já tomou a decisão de ser diferente muitas vezes. E provavelmente foi diferente por alguns dias. Depois voltou. Porque decisão muda intenção e intenção sozinha não muda estado. <strong>Quando o estado base do sistema se reorganiza, a mudança não precisa ser renovada. Ela passa a ser o ponto de partida.</strong></p>
+          <p class="why-body">Você já tomou a decisão de ser diferente muitas vezes. E provavelmente foi diferente por alguns dias. Depois voltou. Porque decisão muda intenção e intenção sozinha não muda estado. <strong>Quando o estado base do sistema se reorganiza, a mudança não precisa ser renovada.</strong></p>
         </div>
       </li>
     </ul>
-
   </div>
 </section>
 
-
-<section class="mech" aria-label="Mecanismo único — O que é a Integração Soma-Cognitiva">
+<section class="mech" aria-label="Mecanismo único">
   <div class="col">
-
     <div class="kicker line-l rv">O Mecanismo Exclusivo</div>
     <h2 class="h2 rv" style="margin:.5rem 0 1rem">O que é a Integração Soma-Cognitiva <em>e por que é diferente</em> de tudo que você já tentou</h2>
-
+    
     <div class="origin-note rv">
-      <p>A <strong>Integração Soma-Cognitiva</strong> foi criada a partir de 6 anos de prática clínica, combinando integração soma-cognitiva, neurociência aplicada e regulação do sistema nervoso, depois de identificar um padrão específico: clientes com consciência que não conseguiam integrar o que entendiam com o seu corpo. O conceito nomeia a estrutura que vive no espaço entre mente e corpo, onde outras abordagens não chegam.</p>
+      <p>A <strong>Integração Soma-Cognitiva</strong> foi criada a partir de 6 anos de prática clínica, combinando integração soma-cognitiva, neurociência aplicada e regulação do sistema nervoso, depois de identificar um padrão específico: clientes com consciência que não conseguiam integrar o que entendiam com o seu corpo.</p>
     </div>
 
     <p class="body rv">A Integração Soma-Cognitiva é a base interna de padrões registrados no espaço entre o que sua mente entende e o que seu corpo teimosamente repete, e que determina como você age, decide e sustenta sua vida. <strong>É um sistema reorganizável.</strong></p>
-
     <p class="body rv">Quando essa base está desorganizada, com mente e corpo operando em direções opostas sem conexão, você pode ter toda a consciência do mundo e ainda assim não conseguir sustentar mudanças.</p>
-
-    <p class="body rv">Quando mente e corpo finalmente operam como um sistema único, a mudança flui e para de depender de esforço. <strong>Você age diferente porque está diferente por dentro. Porque os dois sistemas que antes operavam de forma independente agora trabalham juntos.</strong></p>
-
+    
     <div class="mech-reveal rv">
       <div class="mech-reveal-hl">O Método Integração Soma-Cognitiva trabalha em <em>3 camadas simultâneas de integração</em></div>
       <p class="mech-reveal-sub">Cada camada conecta o que sua mente já construiu com o que seu corpo ainda precisa processar. Nenhuma sozinha é suficiente. A combinação das três é o que cria reorganização, não apenas mais consciência.</p>
@@ -1019,7 +858,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         </div>
         <div class="mpart-c">
           <div class="mpart-title">Localização Integrada: onde a mente sabe e o corpo guarda</div>
-          <p class="mpart-body">Identificamos, no corpo e na mente ao mesmo tempo, onde o padrão está registrado e o que está impedindo o ciclo de se completar. <strong>Não descartamos o que você já entende. Usamos seu entendimento como mapa para localizar no corpo exatamente onde o padrão ainda vive.</strong></p>
+          <p class="mpart-body">Identificamos, no corpo e na mente ao mesmo tempo, onde o padrão está registrado e o que está impedindo o ciclo de se completar. <strong>Não descartamos o que você já entende. Usamos seu entendimento como mapa.</strong></p>
         </div>
       </li>
       <li class="mpart">
@@ -1030,7 +869,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         </div>
         <div class="mpart-c">
           <div class="mpart-title">Sincronização Soma-Cognitiva: conectar o que você entende com o que seu corpo registra</div>
-          <p class="mpart-body">A maioria das abordagens administra o estado. Nós sincronizamos mente e corpo na base: <strong>o nível a partir do qual você opera por padrão.</strong> Enquanto os dois operam desconectados, nenhuma mudança se sustenta. Quando se sincronizam, a mudança tem base.</p>
+          <p class="mpart-body">A maioria das abordagens administra o estado. Nós sincronizamos mente e corpo na base: <strong>o nível a partir do qual você opera por padrão.</strong> Enquanto os dois operam desconectados, nenhuma mudança se sustenta.</p>
         </div>
       </li>
       <li class="mpart">
@@ -1041,17 +880,13 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         </div>
         <div class="mpart-c">
           <div class="mpart-title">Reorganização Estrutural: quando mente e corpo operam como um sistema único</div>
-          <p class="mpart-body">Quando o ciclo se completa, com mente e corpo trabalhando juntos, o padrão perde a força de repetição. <strong>Não porque você decidiu ser diferente. Porque o sistema inteiro foi reorganizado.</strong> É a diferença entre administrar um sintoma indefinidamente e integrar a causa de uma vez.</p>
+          <p class="mpart-body">Quando o ciclo se completa, com mente e corpo trabalhando juntos, o padrão perde a força de repetição. <strong>Não porque você decidiu ser diferente. Porque o sistema inteiro foi reorganizado.</strong></p>
         </div>
       </li>
     </ul>
 
     <div class="claim rv">
       "Toda abordagem que você já tentou construiu metade da sua estrutura interna: a metade da consciência. O Método Integração Soma-Cognitiva constrói a outra metade, a do corpo, e conecta as duas. <em>É nessa conexão que a mudança acontece.</em>"
-    </div>
-
-    <div class="anchor-phrase rv">
-      É nessa conexão que a mudança acontece.
     </div>
 
     <div class="anticat rv">
@@ -1061,21 +896,18 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
       <div class="anticat-item no"><span class="anticat-ico">✗</span><div><strong>Não é esotérico</strong> : o método é fundamentado em neurociência aplicada, regulação do sistema nervoso e integração soma-cognitiva. Cada sessão tem direção clínica clara.</div></div>
       <div class="anticat-item yes"><span class="anticat-ico">✓</span><div><strong>É Integração Soma-Cognitiva</strong> : o único processo que cria a ponte entre o que sua mente já entende e o que seu corpo ainda registra como padrão.</div></div>
     </div>
-
   </div>
 </section>
 
-
-<section class="proof" aria-label="Depoimentos — O mecanismo em ação">
+<section class="proof" aria-label="Depoimentos">
   <div class="col">
-
     <div class="kicker line-l rv">O mecanismo em ação</div>
     <h2 class="h2 rv" style="margin:.5rem 0 2.5rem">O que acontece quando mente e corpo <em>finalmente se encontram</em></h2>
-
+    
     <div class="tcard rv">
       <div class="t-top">
         <div class="t-av">MN</div>
-        <div><div class="t-name">M. Nogueira</div><div class="t-meta">Gestora · São Paulo · 6 anos de terapia anterior</div><span class="t-quote-mark">"</span></div>
+        <div><div class="t-name">M. Nogueira</div><div class="t-meta">Gestora · São Paulo · 6 anos de terapia anterior</div></div>
       </div>
       <p class="t-body">Na terceira sessão, aconteceu algo que nunca tinha experimentado em 6 anos de terapia. Enquanto trabalhávamos um padrão específico,
       <span class="t-highlight">senti fisicamente no peito e na garganta: esse era o momento exato em que o ciclo se completou. Lidar com aquela sensação, e depois disso, o padrão simplesmente parou.</span> Não precisei mais decidir. Eu estava diferente, e para muito melhor.</p>
@@ -1085,9 +917,9 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
     <div class="tcard rv">
       <div class="t-top">
         <div class="t-av">PN</div>
-        <div><div class="t-name">P. Nunes</div><div class="t-meta">Advogada · Rio de Janeiro · 4 anos de terapia + coaching</div><span class="t-quote-mark">"</span></div>
+        <div><div class="t-name">P. Nunes</div><div class="t-meta">Advogada · Rio de Janeiro · 4 anos de terapia + coaching</div></div>
       </div>
-      <p class="t-body">Eu sabia exatamente por que adiava decisões: o medo de errar, a necessidade de aprovação, a origem de tudo isso. Tinha consciência perfeita do padrão. E essa consciência não foi inútil. Ela me trouxe até aqui. Mas saber não estava mudando nada, porque minha mente e meu corpo estavam operando em paralelo.
+      <p class="t-body">Eu sabia exatamente por que adiava decisões. Tinha consciência perfeita do padrão. E essa consciência não foi inútil. Mas saber não estava mudando nada.
       <span class="t-highlight">O que o Método Integração Soma-Cognitiva fez foi integrar o que eu já entendia com o que meu corpo ainda registrava como ameaça. Quando as duas partes se conectaram, o ciclo se completou.</span> Depois disso, tomei em três meses decisões que carregava sem conseguir por anos.</p>
       <div class="t-result">Resultado: tomou decisões de carreira em aberto há mais de 2 anos, dentro de 12 semanas de processo.</div>
     </div>
@@ -1095,32 +927,28 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
     <div class="tcard rv">
       <div class="t-top">
         <div class="t-av">CA</div>
-        <div><div class="t-name">C. Almeida</div><div class="t-meta">Empreendedora · Belo Horizonte · 5 anos de terapia + cursos</div><span class="t-quote-mark">"</span></div>
+        <div><div class="t-name">C. Almeida</div><div class="t-meta">Empreendedora · Belo Horizonte · 5 anos de terapia + cursos</div></div>
       </div>
-      <p class="t-body">Era cética. Já tinha investido muito em processos que trouxeram entendimento sem mudança, e estava cansada e descrente. Mas o que diferencia o trabalho da Seheilen é que ela não descarta o que você já construiu. Ela usa isso como fundação para conectar com o corpo.
-      <span class="t-highlight">Na segunda sessão, enquanto eu descrevia um padrão que conhecia por muito tempo, ela me guiou para sentir onde aquele sintoma vivia no corpo. Minha mente explodiu, e consegui reconhecer o que meu corpo estava tentando me mostrar.</span>
+      <p class="t-body">Era cética. Já tinha investido muito em processos que trouxeram entendimento sem mudança, e estava cansada e descrente. Mas o que diferencia o trabalho da Seheilen é que ela não descarta o que você já construiu.
+      <span class="t-highlight">Na segunda sessão, ela me guiou para sentir onde aquele sintoma vivia no corpo. Minha mente explodiu, e consegui reconhecer o que meu corpo estava tentando me mostrar.</span>
       Em menos de 30 dias, meu sistema nervoso parou de entrar em alerta automático em situações que antes me travavam completamente.</p>
       <div class="t-result">Resultado: redução significativa de resposta de alerta automático em situações de conflito, em menos de 30 dias.</div>
     </div>
-
   </div>
 </section>
 
-
-<section class="qualify" aria-label="Qualificação — Para quem é este processo">
+<section class="qualify" aria-label="Qualificação">
   <div class="col-md">
-
     <div class="kicker line-l rv">Antes de aplicar</div>
     <h2 class="h2 rv" style="margin:.5rem 0 .75rem">Esse processo funciona<br>para um <em>perfil específico</em></h2>
     <p class="body rv" style="margin-bottom:0">Preciso ser direta. O Método Integração Soma-Cognitiva tem resultados consistentes, mas apenas com quem preenche os critérios. Não aceito todas as candidatas, porque <strong>o processo entrega o que promete com um alinhamento honesto.</strong></p>
-
     <div class="q-grid">
       <div class="q-card q-yes rv">
         <div class="q-tag">Este processo é para você</div>
         <ul class="q-list">
-          <li><span class="q-ico">✓</span><span>Você tem <strong>histórico de autoconhecimento</strong> , terapia, mentorias, desenvolvimento pessoal, e sente que chegou ao limite do que o entendimento sozinho consegue fazer</span></li>
-          <li><span class="q-ico">✓</span><span>O problema não é falta de consciência. É <strong>sustentar</strong>: confiança, decisões, limites, direção, presença. Porque mente e corpo ainda não estão juntos</span></li>
-          <li><span class="q-ico">✓</span><span>Você está disposta a trabalhar na <strong>integração entre mente e corpo</strong> . Os exercícios soma-cognitivos entre sessões fazem parte do processo</span></li>
+          <li><span class="q-ico">✓</span><span>Você tem <strong>histórico de autoconhecimento</strong>, terapia, mentorias e sente que chegou ao limite do que o entendimento sozinho consegue fazer</span></li>
+          <li><span class="q-ico">✓</span><span>O problema não é falta de consciência. É <strong>sustentar</strong>: confiança, decisões, limites, direção.</span></li>
+          <li><span class="q-ico">✓</span><span>Você está disposta a trabalhar na <strong>integração entre mente e corpo</strong>.</span></li>
           <li><span class="q-ico">✓</span><span>Você entende que reorganização integrativa leva <strong>6 a 12 semanas</strong> , e está disponível para isso</span></li>
           <li><span class="q-ico">✓</span><span>Você quer <strong>estrutura interna integrada</strong> , não motivação que precisa ser renovada toda semana</span></li>
         </ul>
@@ -1132,35 +960,30 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
           <li><span class="q-ico">✗</span><span>Você não tem histórico de trabalho pessoal anterior. <strong>Este processo funciona melhor para quem tem base da consciência</strong></span></li>
           <li><span class="q-ico">✗</span><span>Você está em <strong>crise aguda</strong> e precisa de suporte psicológico ou psiquiátrico</span></li>
           <li><span class="q-ico">✗</span><span>Você espera que <strong>eu resolva</strong> em vez de você reorganizar com suporte especializado</span></li>
-          <li><span class="q-ico">✗</span><span>Você não está disponível para os <strong>exercícios práticos</strong> entre as sessões</span></li>
+          <li><span class="q-ico">✗</span><span>Você não está disponível para os exercícios práticos entre as sessões</span></li>
         </ul>
       </div>
     </div>
-
     <div class="qualify-close rv">
       <p>Se você se reconheceu no lado esquerdo, e não no direito, você é exatamente quem eu atendo. <strong>Você chegou ao teto da terapia. E o que vem depois é a integração.</strong></p>
     </div>
-
   </div>
 </section>
 
-
-<section class="offer" aria-label="Investimento — Como começar o Método Integração Soma-Cognitiva">
+<section class="offer" aria-label="Investimento">
   <div class="col-md">
-
     <div class="offer-head rv">
       <div class="kicker lt" style="justify-content:center;margin-bottom:1.1rem">O investimento</div>
       <h2 class="h2 lt" style="margin-bottom:.75rem">Como <em>completar a outra metade</em><br>do sistema</h2>
       <p class="body lt" style="text-align:center;max-width:480px;margin:0 auto">Quatro opções. Cada uma serve um estágio diferente. Escolha a que faz sentido para onde você está agora.</p>
     </div>
-
     <div class="offer-cards rv">
       <a href="https://prioridade.seheilen.com" class="oc best">
         <div class="oc-badge-diag">🎯 Comece aqui</div>
         <div class="oc-type">Sessão Descoberta</div>
         <div class="oc-price"><sup>R$</sup>197</div>
         <div class="oc-unit">Sessão individual · 30 min</div>
-        <p class="oc-desc">Uma sessão completa para identificar exatamente onde mente e corpo estão desconectados no seu padrão. <strong>Se depois escolher o plano mensal, os R$ 197 são abatidos integralmente e a sessão descoberta sai de graça.</strong></p>
+        <p class="oc-desc">Uma sessão completa para identificar exatamente onde mente e corpo estão desconectados no seu padrão. <strong>Se depois escolher o plano mensal, os R$ 197 são abatidos integralmente e a sessão sai de graça.</strong></p>
         <div class="oc-bonus">
           <span class="oc-bonus-tag">✦ Bônus incluído</span>
           <span class="oc-bonus-name">essencialMENTE</span>
@@ -1196,16 +1019,13 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         <span class="oc-btn">Aplicar agora</span>
       </a>
     </div>
-
     <div class="entry-note rv">
-      <p><strong>Não sabe por onde começar?</strong> A Sessão Descoberta é o primeiro passo. Em 30 minutos você identifica exatamente onde o padrão vive no seu sistema e sai com clareza sobre o que o processo pode fazer por você. Se escolher continuar, o value já está pago. <strong>Sem risco. Sem pressão. Sem compromisso além de uma sessão.</strong></p>
+      <p><strong>Não sabe por onde começar?</strong> A Sessão Descoberta é o primeiro passo. Em 30 minutos você identifica exatamente onde o padrão vive no seu sistema e sai com clareza sobre o que o processo pode fazer por você. Se escolher continuar, o valor já está pago. <strong>Sem risco. Sem pressão. Sem compromisso além de uma sessão.</strong></p>
     </div>
-
   </div>
 </section>
 
-
-<section class="bonus-section" aria-label="Bônus — essencialMENTE">
+<section class="bonus-section" aria-label="Bônus">
   <div class="col">
     <div class="bonus-card rv">
       <div class="bonus-header">
@@ -1227,65 +1047,51 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
   </div>
 </section>
 
-
-<section class="obj" aria-label="Objeção de preço — O cálculo certo">
+<section class="obj" aria-label="Objeção de preço">
   <div class="col">
-
     <div class="kicker line-l rv">Sobre o investimento</div>
     <h2 class="obj-lede rv">"É caro."<br><em>Eu entendo. Vamos calcular isso direito.</em></h2>
-
     <p class="prose rv">Não ouço isso com frequência, mas entendo.</p>
-
     <p class="prose rv">Você investiu muito antes. Terapia por anos. Cursos. Livros. Gastou tempo, energia e dinheiro. Então quando aparece mais uma proposta, a primeira reação é proteção. <strong>Isso é completamente racional.</strong></p>
-
     <p class="prose rv">Mas aqui está o que eu preciso te dizer: <strong>o lado bom é que esse investimento anterior não foi perdido.</strong></p>
-
     <p class="body rv">Ele construiu a metade mais importante do sistema: a base de consciência. Você já pagou pela metade mais difícil. O Método Integração Soma-Cognitiva é o investimento que completa esse ciclo, conectando o que sua mente já construiu com o que seu corpo ainda precisa processar.</p>
-
+    
     <div class="anchor-calc rv">
       <p>Se você faz terapia há <strong>3 anos a R$ 1.000/mês</strong>, já investiu mais de <strong>R$ 36.000</strong> construindo a base de consciência. Ela é sua e agora você está pronta para integrar. O Método Integração Soma-Cognitiva é uma fração desse valor, <strong>e é o investimento que conecta tudo que você construiu para que finalmente funcione.</strong></p>
     </div>
 
     <div class="coi rv">
       <div class="coi-head">
-        <div class="coi-h">Custo de continuar com as duas metades desconectadas</div>
+        <div class="coi-h">Custo de continuar com as metades desconectadas</div>
         <div class="coi-h">Custo de integrar</div>
       </div>
       <div class="coi-rows">
         <div class="coi-row">
-          <div class="coi-cell">Mais anos de terapia sem resultado diferente: <strong>R$ 800–1.200/mês para sempre</strong></div>
-          <div class="coi-cell g">A sessão para experimentar: <strong>R$ 197</strong></div>
+          <div class="coi-cell" data-label="Custo de continuar">Mais anos de terapia sem resultado diferente: <strong>R$ 800–1.200/mês para sempre</strong></div>
+          <div class="coi-cell g" data-label="Custo de integrar">A sessão para experimentar: <strong>R$ 197</strong></div>
         </div>
         <div class="coi-row">
-          <div class="coi-cell">Decisões não tomadas: <strong>custo invisível em carreira, relacionamentos e vida</strong></div>
-          <div class="coi-cell g">Processo de 6–12 semanas que <strong>fecha o ciclo</strong>, você continua se quiser.</div>
+          <div class="coi-cell" data-label="Custo de continuar">Decisões não tomadas: <strong>custo invisível em carreira, relacionamentos e vida</strong></div>
+          <div class="coi-cell g" data-label="Custo de integrar">Processo de 6–12 semanas que <strong>fecha o ciclo</strong>, você continua se quiser.</div>
         </div>
         <div class="coi-row">
-          <div class="coi-cell">Energia gasta mantendo padrões que você não consegue soltar, <strong>todo dia</strong></div>
-          <div class="coi-cell g">Sua nova base interna, <strong>você independente e se sustentando sozinha</strong></div>
+          <div class="coi-cell" data-label="Custo de continuar">Energia gasta mantendo padrões que você não consegue soltar, <strong>todo dia</strong></div>
+          <div class="coi-cell g" data-label="Custo de integrar">Sua nova base interna, <strong>você independente e se sustentando sozinha</strong></div>
         </div>
         <div class="coi-row">
-          <div class="coi-cell">Mais um ano <strong>um passo aquém</strong> do que você sabe que poderia estar</div>
-          <div class="coi-cell g">Um processo que <strong>fecha isso de uma vez</strong></div>
+          <div class="coi-cell" data-label="Custo de continuar">Mais um ano <strong>um passo aquém</strong> do que você sabe que poderia estar</div>
+          <div class="coi-cell g" data-label="Custo de integrar">Um processo que <strong>fecha isso de uma vez</strong></div>
         </div>
       </div>
     </div>
-
     <div class="pull rv">Eu não estou te pedindo para gastar dinheiro. Estou te convidando por um preço muito acessível a completar o que você começou. Integrar corpo e mente, se tornando mais segura com você.</div>
-
-    <p class="body rv">E existe uma porta de entrada sem risco: <strong>a sessão descoberta de R$ 197</strong>. Você experimenta a integração uma vez, sente o que acontece quando mente e corpo trabalham juntos, avalia por conta própria. Se não fizer sentido, você não perde nada. Se fizer, e confio que faz, você entra no processo sabendo como será, com esse valor abatido. E o que escuto com frequência: por que não você e este método antes?
-
-<strong>Bônus:</strong> o Essencialmente é curso exclusivo para minhas clientes que estou incluindo gratuitamente para você atingir seus objetivos de forma mais rápida.</p>
-
+    <p class="body rv">E existe uma porta de entrada sem risco: <strong>a sessão descoberta de R$ 197</strong>. Você experimenta a integração uma vez, sente o que acontece quando mente e corpo trabalham juntos, avalia por conta própria. Se não fizer sentido, você não perde nada. Se fizer, e confio que faz, você entra no processo sabendo como será, com esse valor abatido.</p>
   </div>
 </section>
 
-
-<section class="manifesto" aria-label="Manifesto — No que eu acredito">
+<section class="manifesto" aria-label="Manifesto">
   <div class="col">
-
     <div class="kicker line-l rv">No que eu acredito</div>
-
     <div class="manifesto-body rv">
       <p>Eu acredito que mulheres inteligentes não ficam presas por escolha própria.</p>
       <p>Ficam presas porque trabalharam apenas na metade do sistema, a mente, sem saber que a outra metade, o corpo, precisava ser integrada.</p>
@@ -1294,20 +1100,16 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
       <p>A mente e o corpo finalmente trabalhando juntos, você vai sentir fluindo e deixar de se forçar a ser quem você não é.</p>
       <p class="manifesto-close">Eu criei o Método Integração Soma-Cognitiva para ser a ponte que faltava entre essas duas metades. Para mulheres que querem independência, prontas para integrar e voltar à sua essência.</p>
     </div>
-
   </div>
 </section>
 
-
-<section class="authority" aria-label="Autoridade — Conheça Seheilen Toyama">
+<section class="authority" aria-label="Autoridade">
   <div class="col">
-
     <div class="kicker line-l rv">Quem está do outro lado</div>
     <h2 class="h2 rv" style="margin:.5rem 0 2.5rem">Conheça a <em>Seheilen Toyama</em></h2>
-
     <div class="auth-inner rv">
-      <div class="portrait" style="background: none;">
-        <img src="seheilen.jpg" alt="Foto de Seheilen Toyama" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 18px;">
+      <div class="portrait">
+        <div style="width:100%;height:100%;background:linear-gradient(155deg,#C8D9B8 0%,#9ABE80 50%,#6B9A50 100%)"></div>
       </div>
       <div>
         <p class="auth-text rv">Eu não criei o Método Integração Soma-Cognitiva a partir de uma teoria. Criei porque precisei.</p>
@@ -1323,18 +1125,14 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
-
-<section class="process" aria-label="Processo — O que acontece depois da aplicação">
+<section class="process" aria-label="Processo">
   <div class="col">
-
     <div class="kicker line-l rv">O que acontece depois</div>
     <h2 class="h2 rv" style="margin:.5rem 0 .5rem">Sem pressão. <em>Sem compromisso antes de uma conversa.</em></h2>
     <p class="body rv" style="margin-bottom:0">Como você investiu em processos que construíram consciência sem integração, quero que você saiba exatamente o que esperar, antes de preencher qualquer formulário.</p>
-
     <ul class="proc-list rv">
       <li class="pstep">
         <div class="pstep-n"><span>1</span></div>
@@ -1347,43 +1145,36 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         <div class="pstep-n"><span>2</span></div>
         <div class="pstep-c">
           <div class="pstep-title">Eu analiso e retorno em até 48h</div>
-          <p class="pstep-body">Leio cada formulário pessoalmente. Se houver alinhamento, agendamos a <strong>Sessão Descoberta</strong>, uma sessão individual de 30 minutos por R$ 197. Não é uma conversa introdutória, você terá a oportunidade de ver o começo de um trabalho e decidir se é para você.</p>
+          <p class="pstep-body">Leio cada formulário pessoalmente. Se houver alinhamento, agendamos a <strong>Sessão Descoberta</strong>, uma sessão individual de 30 minutos por R$ 197.</p>
         </div>
       </li>
       <li class="pstep">
         <div class="pstep-n"><span>3</span></div>
         <div class="pstep-c">
           <div class="pstep-title">A Sessão Descoberta, onde tudo começa</div>
-          <p class="pstep-body">Em 30 a 45 minutos você identificará o principal padrão registrado no seu sistema, sente o que acontece quando mente e corpo trabalham juntos, e sairá com clareza. <strong>É uma experiência de integração.</strong> Se quiser continuar, os R$ 197 são abatidos integralmente no plano escolhido.</p>
+          <p class="pstep-body">Em 30 a 45 minutos você identificará o principal padrão registrado no seu sistema e sente o que acontece quando mente e corpo trabalham juntos. Se quiser continuar, os R$ 197 são abatidos integralmente no plano escolhido.</p>
         </div>
       </li>
       <li class="pstep">
         <div class="pstep-n"><span>4</span></div>
         <div class="pstep-c">
           <div class="pstep-title">Você decide com a experiência vivida e eu respeitarei qualquer decisão</div>
-          <p class="pstep-body">Se a experiência fez sentido e você quiser continuar, escolhemos juntas o plano mais adequado e o valor da sessão descoberta será descontado. Se não fizer sentido, você leva a clareza da sessão e segue. <strong>Sem pressão e insistência.</strong></p>
+          <p class="pstep-body">Se a experiência fez sentido e você quiser continuar, escolhemos juntas o plano mais adequado. Se não fizer sentido, você leva a clareza da sessão e segue. <strong>Sem pressão e insistência.</strong></p>
         </div>
       </li>
     </ul>
-
     <div class="origin-note rv" style="margin-top:2rem">
-      <p><strong>Por que funciona assim:</strong> Trabalhar na integração entre mente e corpo exige que eu mantenha dois níveis de atenção simultâneos durante cada sessão: o que sua mente está comunicando e o que seu corpo está sinalizando. Isso é incompatível com volume. Por isso o número de clientes é limitado. É um processo único que demanda energia, presença e atenção plena. São vagas limitadas e só abrem quando um cliente fecha o processo, e detalhe: a maioria nunca quer fechar.</p>
+      <p><strong>Por que funciona assim:</strong> Trabalhar na integração entre mente e corpo exige que eu mantenha dois níveis de atenção simultâneos durante cada sessão. Isso é incompatível com volume. Por isso o número de clientes é limitado. São vagas limitadas e só abrem quando um cliente fecha o processo.</p>
     </div>
-
   </div>
 </section>
 
-
 <section class="apply" id="aplicar">
   <div class="apply-inner">
-
     <div class="apply-kicker">vagas limitadas · processo individual</div>
-    <h2 class="apply-hl">
-      Pronta para trabalhar<br>
-      onde o padrão <em>realmente vive</em>?
-    </h2>
+    <h2 class="apply-hl">Pronta para trabalhar<br>onde o padrão <em>realmente vive</em>?</h2>
     <p class="apply-sub">Preencha o formulário de aplicação. Leio cada resposta pessoalmente e retorno em até 48 horas para candidaturas com alinhamento.</p>
-
+    
     <div class="scarcity-note rv">
       <p>Cada processo de Integração Soma-Cognitiva dura de 6 a 12 semanas. Enquanto um cliente está ativo, aquele espaço está ocupado. Ainda assim, muitos clientes escolhem permanecer e novas vagas abrem conforme o cliente decide finalizar o processo. Não é conforme a demanda, as vagas abrem e priorizamos as ordens das aplicações.</p>
     </div>
@@ -1391,7 +1182,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
     <div class="apply-cta-card">
       <div class="apply-cta-icon">✦</div>
       <h3 class="apply-cta-title">Formulário de Aplicação</h3>
-      <p class="apply-cta-desc">Algumas perguntas para eu entender quem é você, onde está agora e o que está buscando. <strong>Menos de 5 minutos.</strong> Suas informações são confidenciais e usadas por mim para avaliar o alinhamento antes da Sessão Descoberta.</p>
+      <p class="apply-cta-desc">Algumas perguntas para eu entender quem é você, onde está agora e o que está buscando. <strong>Menos de 5 minutos.</strong> Suas informações são confidenciais.</p>
       <div style="display:flex;justify-content:center">
         <a href="https://prioridade.seheilen.com" target="_blank" rel="noopener noreferrer" class="apply-cta-btn">
           Preencher o formulário de aplicação ›
@@ -1399,22 +1190,19 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
       </div>
       <p class="apply-cta-note">Informações confidenciais · Resposta em até 48h</p>
     </div>
-
   </div>
 </section>
-
 
 <section class="faq" aria-label="Perguntas frequentes">
   <div class="faq-inner">
     <div class="kicker" style="justify-content:center;margin-bottom:1.1rem">Dúvidas frequentes</div>
-    <h2 class="h2 tc" style="margin-bottom:0">Perguntas <em>antes de aplicar</em></h2>
+    <h2 class="h2 tc" style="margin-bottom:0; text-align:center;">Perguntas <em>antes de aplicar</em></h2>
     <div class="faq-box">
 
       <div class="fi">
         <button type="button" class="fi-q" data-faq-trigger aria-expanded="false" aria-controls="faq-1"><span>Isso funciona online?</span><span class="fi-ico">+</span></button>
         <div class="fi-a" id="faq-1" role="region">
           <p><strong>Sim. 100% dos atendimentos são online</strong> e os resultados são consistentes nesse formato. A integração soma-cognitiva não depende de contato físico. Depende de atenção direcionada ao que está acontecendo no seu sistema nervoso em tempo, e isso funciona perfeitamente por vídeo.</p>
-          <p>A maioria das clientes está no Brasil, mas atendo mulheres que falam inglês em qualquer lugar do mundo.</p>
         </div>
       </div>
 
@@ -1422,7 +1210,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         <button type="button" class="fi-q" data-faq-trigger aria-expanded="false" aria-controls="faq-2"><span>Quanto tempo leva para sentir resultado?</span><span class="fi-ico">+</span></button>
         <div class="fi-a" id="faq-2" role="region">
           <p>A maioria das clientes relata mudanças perceptíveis entre a 3ª e a 6ª sessão. Não mudanças motivacionais que duram uma semana. <strong>Mudanças estruturais que se sustentam.</strong></p>
-          <p>O processo completo de reorganização integrativa leva de 6 a 12 semanas. Mas a experiência de sentir mente e corpo trabalhando juntos, muitas vezes pela primeira vez, geralmente acontece já na sessão inicial.</p>
+          <p>O processo completo de reorganização integrativa leva de 6 a 12 semanas. Mas a experiência de sentir mente e corpo trabalhando juntos geralmente acontece já na sessão inicial.</p>
         </div>
       </div>
 
@@ -1430,7 +1218,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         <button type="button" class="fi-q" data-faq-trigger aria-expanded="false" aria-controls="faq-3"><span>Eu preciso ter feito terapia antes?</span><span class="fi-ico">+</span></button>
         <div class="fi-a" id="faq-3" role="region">
           <p>Não é obrigatório. Mas o processo funciona melhor, e mais rápido, para quem já tem uma base de consciência construída.</p>
-          <p>Porém disponibilizo o Essencialmente, um curso desenvolvido exclusivamente para clientes para que o método seja mais simples, fácil e rápido. É um acelerador, se você decidir experimentar. <strong>O Método Integração Soma-Cognitiva</strong> parte de onde você está e por si só integra a conexão entre sua mente e o seu corpo.</p>
+          <p>Porém disponibilizo o Essencialmente, um curso desenvolvido exclusivamente para clientes para que o método seja mais simples, fácil e rápido.</p>
         </div>
       </div>
 
@@ -1446,7 +1234,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         <button type="button" class="fi-q" data-faq-trigger aria-expanded="false" aria-controls="faq-5"><span>Por que são poucas vagas por mês?</span><span class="fi-ico">+</span></button>
         <div class="fi-a" id="faq-5" role="region">
           <p>Porque integração exige minha presença.</p>
-          <p>Cada processo dura de 6 a 12 semanas. A atenção plena nas sessões demanda muita energia, e enquanto um processo está ativo, aquele lugar está ocupado. Novas vagas abrem conforme o cliente decide completar o processo, e não conforme a demanda. <strong>O número de vagas por mês é limitado devido às minhas horas de atendimento e meus estudos.</strong> Preencha o formulário para acessar a lista de espera e ser notificada quando sua vaga abrir.</p>
+          <p>Cada processo dura de 6 a 12 semanas. A atenção plena nas sessões demanda muita energia, e enquanto um processo está ativo, aquele lugar está ocupado. Preencha o formulário para acessar a lista de espera e ser notificada quando sua vaga abrir.</p>
         </div>
       </div>
 
@@ -1454,7 +1242,7 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         <button type="button" class="fi-q" data-faq-trigger aria-expanded="false" aria-controls="faq-6"><span>Já tentei muita coisa. Por que isso seria diferente?</span><span class="fi-ico">+</span></button>
         <div class="fi-a" id="faq-6" role="region">
           <p>Entendo essa dúvida. Ela é legítima.</p>
-          <p>A resposta mais honesta: tudo que você já tentou provavelmente trabalhou em <strong>uma metade</strong> do sistema. A mente (terapia, cursos, livros) ou o corpo (yoga, meditação, breathwork). O que nenhuma fez foi <strong>conectar as duas metades.</strong></p>
+          <p>A resposta mais honesta: tudo que você já tentou provavelmente trabalhou em <strong>uma metade</strong> do sistema. A mente ou o corpo. O que nenhuma fez foi <strong>conectar as duas metades.</strong></p>
           <p><strong>O Método Integração Soma-Cognitiva</strong> trabalha exatamente nesse espaço de integração. Não é mais uma abordagem. É a conexão que faltava entre todas as que você já fez.</p>
         </div>
       </div>
@@ -1463,18 +1251,11 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
   </div>
 </section>
 
-
-<section class="close" aria-label="Fechamento — Decisão final">
+<section class="close" aria-label="Fechamento">
   <div class="col">
-
     <div class="rule-gold"></div>
-
-    <p class="close-quote rv">
-      "Você pode continuar investindo em mais consciência e, provavelmente, continuar entendendo cada vez melhor os padrões que continuam se repetindo."
-      </p>
-      <p class="close-logic rv" style="margin-top:1.5rem">Isso tem valor, mas <strong>você atingirá o limite ao trabalhar metade do sistema.</strong></p>
-
-    <p class="close-logic rv">Ou você pode escolher completar a outra metade. Integrar a sua mente com o seu corpo. Fechar esses espaços onde os seus padrões sobrevivem. <strong>Sua mente já fez. Só falta integrar o corpo.</strong></p>
+    <p class="close-quote rv">"Você pode continuar investindo em mais consciência e entendendo melhor os padrões que continuam se repetindo."</p>
+    <p class="close-logic rv">Isso tem valor, mas <strong>você atingirá o limite ao trabalhar metade do sistema.</strong> Ou você pode escolher completar a outra metade.</p>
 
     <div class="before-after rv">
       <div class="ba-head">
@@ -1482,112 +1263,91 @@ footer p{font-size:.78rem;color:rgba(248,245,240,.2)}
         <div class="ba-h">Depois da Integração Soma-Cognitiva</div>
       </div>
       <div class="ba-row">
-        <div class="ba-c">Você acorda com tensão no peito, sem motivo aparente. Sua mente sabe que "está tudo bem". Seu corpo discorda.</div>
-        <div class="ba-c">Você acorda e simplesmente levanta. Sem negociação interna.</div>
+        <div class="ba-c" data-label="Antes da Integração">Você acorda com tensão no peito, sem motivo aparente. A mente diz que está bem, o corpo discorda.</div>
+        <div class="ba-c" data-label="Depois da Integração">Você acorda e simplesmente levanta. Sem negociação interna.</div>
       </div>
       <div class="ba-row">
-        <div class="ba-c">Você coloca um limite e passa horas ruminando. A mente diz que foi certo. O corpo diz que não.</div>
-        <div class="ba-c">Você coloca um limite e segue com o dia. Você confia e se sustenta sozinho.</div>
+        <div class="ba-c" data-label="Antes da Integração">Você toma uma decisão e liga para alguém pedindo validação.</div>
+        <div class="ba-c" data-label="Depois da Integração">Você toma a decisão e não liga para ninguém. Sua confiança se sustenta.</div>
       </div>
       <div class="ba-row">
-        <div class="ba-c">Você toma uma decisão e liga para alguém pedindo validação, porque seu corpo não sustenta o que sua mente decidiu.</div>
-        <div class="ba-c">Você toma a decisão e não liga para ninguém. A sua confiança não precisa de ninguém confirmando.</div>
-      </div>
-      <div class="ba-row">
-        <div class="ba-c">Você repete o padrão e não sai do lugar.</div>
-        <div class="ba-c">Você controlou o padrão, ele perdeu a força e você consegue se sustentar.</div>
+        <div class="ba-c" data-label="Antes da Integração">Você coloca um limite e passa horas ruminando. A mente diz que foi certo. O corpo diz que não.</div>
+        <div class="ba-c" data-label="Depois da Integração">Você coloca um limite e segue com o dia. Você confia e se sustenta sozinha.</div>
       </div>
     </div>
 
     <div class="hooks rv">
       <p class="hook-line">"Você entende tudo sobre seus padrões e eles continuam se repetindo. Existe uma razão."</p>
       <p class="hook-line">"Sua mente já fez a parte dela. Seu corpo ainda não acompanhou."</p>
-      <p class="hook-line">"O teto da terapia: quando entender mais não muda mais nada."</p>
       <p class="hook-line">"Você não está presa por falta de consciência. Está presa por falta de integração."</p>
-      <p class="hook-line">"Seus padrões não vivem na sua mente nem no seu corpo. Vivem no espaço entre os dois."</p>
     </div>
 
-    <a href="https://prioridade.seheilen.com" class="btn btn-sage-lg rv">Aplicar agora</a>
-
-    <div class="rule-gold"></div>
-
+    <a href="https://prioridade.seheilen.com" class="btn btn-sage-lg rv" style="margin-top:2rem">Aplicar agora</a>
   </div>
 </section>
 
-
-</main><footer aria-label="Rodapé do site">
+</main>
+<footer>
   <div class="ft-logo">se<em>heilen</em></div>
-  <p>© 2020 Seheilen Toyama · Método Integração Soma-Cognitiva · Todos os direitos reservados</p>
+  <p>© 2024 Seheilen Toyama · Método Integração Soma-Cognitiva</p>
 </footer>
 
-
 <script>
-/* ── SCRIPTS ── */
 (function(){
+  window.addEventListener('scroll',()=>{
+    const h=document.documentElement;
+    const pct=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
+    const prog=document.getElementById('prog');
+    if(prog){prog.style.width=pct+'%'; prog.setAttribute('aria-valuenow',Math.round(pct));}
+  },{passive:true});
 
-/* PROGRESS BAR */
-window.addEventListener('scroll',()=>{
-  const h=document.documentElement;
-  const pct=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
-  const prog=document.getElementById('prog');
-  if(prog){
-    prog.style.width=pct+'%';
-    prog.setAttribute('aria-valuenow',Math.round(pct));
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(entries=>{
+      entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('in'),i*55);});
+    },{threshold:.07,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  } else {
+    document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
   }
-},{passive:true});
 
-/* SCROLL REVEAL */
-if('IntersectionObserver' in window){
-  const io=new IntersectionObserver(entries=>{
-    entries.forEach((e,i)=>{
-      if(e.isIntersecting)setTimeout(()=>e.target.classList.add('in'),i*55);
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const target=document.querySelector(a.getAttribute('href'));
+      if(target){
+        e.preventDefault();
+        window.scrollTo({top:target.getBoundingClientRect().top+window.pageYOffset-68,behavior:'smooth'});
+      }
     });
-  },{threshold:.07,rootMargin:'0px 0px -40px 0px'});
-  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
-} else {
-  document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
-}
+  });
 
-/* FAQ ACCORDION */
-function toggleFaq(btn){
-  var ico=btn.querySelector('.fi-ico');
-  var ans=btn.nextElementSibling;
-  var isOpen=ans.classList.contains('open');
-  document.querySelectorAll('.fi-a').forEach(function(a){a.classList.remove('open')});
-  document.querySelectorAll('.fi-ico').forEach(function(i){i.classList.remove('open');i.textContent='+'});
-  document.querySelectorAll('[data-faq-trigger]').forEach(function(b){b.setAttribute('aria-expanded','false')});
-  if(!isOpen){
-    ans.classList.add('open');
-    ico.classList.add('open');
-    ico.textContent='×';
-    btn.setAttribute('aria-expanded','true');
+  /* FAQ ACCORDION */
+  function toggleFaq(btn){
+    var ico=btn.querySelector('.fi-ico');
+    var ans=btn.nextElementSibling;
+    var isOpen=ans.classList.contains('open');
+    document.querySelectorAll('.fi-a').forEach(function(a){a.classList.remove('open')});
+    document.querySelectorAll('.fi-ico').forEach(function(i){i.classList.remove('open');i.textContent='+'});
+    document.querySelectorAll('[data-faq-trigger]').forEach(function(b){b.setAttribute('aria-expanded','false')});
+    if(!isOpen){
+      ans.classList.add('open');
+      ico.classList.add('open');
+      ico.textContent='×';
+      btn.setAttribute('aria-expanded','true');
+    }
   }
-}
-document.addEventListener('click',function(e){
-  const btn=e.target.closest('[data-faq-trigger]');
-  if(btn)toggleFaq(btn);
-});
-document.addEventListener('keydown',function(e){
-  if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-faq-trigger]')){
-    e.preventDefault();
-    toggleFaq(e.target);
-  }
-});
-
-/* SMOOTH ANCHOR (intercepta todos os links para #, inclusive os cartões) */
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click',e=>{
-    const target=document.querySelector(a.getAttribute('href'));
-    if(target){
+  document.addEventListener('click',function(e){
+    const btn=e.target.closest('[data-faq-trigger]');
+    if(btn)toggleFaq(btn);
+  });
+  document.addEventListener('keydown',function(e){
+    if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-faq-trigger]')){
       e.preventDefault();
-      window.scrollTo({top:target.getBoundingClientRect().top+window.pageYOffset-68,behavior:'smooth'});
+      toggleFaq(e.target);
     }
   });
-});
 
 })();
 
-/* MOBILE CTA BAR */
 (function(){
   var bar=document.getElementById('mobileCta');
   if(!bar)return;
@@ -1597,20 +1357,17 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     var pastHero=hero&&window.scrollY>hero.offsetHeight;
     var atApply=apply&&apply.getBoundingClientRect().top<window.innerHeight;
     if(pastHero&&!atApply){
-      bar.classList.add('visible');
-      bar.setAttribute('aria-hidden','false');
+      bar.classList.add('visible'); bar.setAttribute('aria-hidden','false');
     }else{
-      bar.classList.remove('visible');
-      bar.setAttribute('aria-hidden','true');
+      bar.classList.remove('visible'); bar.setAttribute('aria-hidden','true');
     }
   },{passive:true});
 })();
 </script>
 
 <div class="mobile-cta-bar" id="mobileCta" aria-hidden="true">
-  <a href="https://prioridade.seheilen.com" class="btn btn-sage" style="width:100%;max-width:400px;text-align:center">
-    Aplicar agora ›
-  </a>
+  <a href="https://prioridade.seheilen.com" class="btn btn-sage" style="width:100%;max-width:400px;text-align:center">Aplicar agora ›</a>
 </div>
+
 </body>
 </html>
