@@ -2,15 +2,18 @@
 # Regras de acesso para robôs - Seheilen.com
 # --------------------------------------------------
 
-# Regra geral para todos os robôs de busca (Google, Bing, etc.)
+# Regra geral
 User-agent: *
-Content-Signal: search=yes,ai-train=no
+Content-Signal: search=yes,ai-train=yes
 Allow: /
 
 # --------------------------------------------------
-# Permissões explícitas para rastreadores modernos e IAs
+# Permissões explícitas para rastreadores e IAs
 # --------------------------------------------------
 User-agent: Amazonbot
+Allow: /
+
+User-agent: anthropic-ai
 Allow: /
 
 User-agent: Applebot-Extended
@@ -31,13 +34,19 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
 User-agent: GPTBot
 Allow: /
 
 User-agent: meta-externalagent
 Allow: /
 
+User-agent: PerplexityBot
+Allow: /
+
 # --------------------------------------------------
-# Mapa do site (Fundamental para o SEO)
+# Mapa do site
 # --------------------------------------------------
 Sitemap: https://seheilen.com/index.xml
